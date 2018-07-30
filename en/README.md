@@ -1,1 +1,1 @@
-# manuals
+# English manual for TJBot
