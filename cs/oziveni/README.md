@@ -17,8 +17,8 @@ Postup:
 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
-3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu klávesnici, myš a eventuálně RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi (pokud využijete WiFi, tak se z desktopu nakonfigurujte připojení).
-4. Povolte na Raspberry-Pi SSH připojení, aby se šlo na Raspberry-Pi připojit vzdálěně přes terminál nebo PuTTY (Windows):
+3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a eventuálně RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat.
+4. Povolte na Raspberry-Pi SSH připojení, aby se šlo na Raspberry-Pi připojit vzdálěně přes terminál nebo PuTTY (Windows). Do Terminálu napište:
 ```
 sudo raspi-config
 ```
