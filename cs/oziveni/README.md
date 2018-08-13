@@ -1,4 +1,9 @@
 # Oživujeme TJBota na Raspberry-Pi
+1. [Rychlé oživení z předpřipravené image] (#faststart)
+
+## <a name="faststart"></a>Rychlé oživení z předpřipravené image 
+## <a name="fulljourney"></a>Oživení hezky od píky 
+
 
 Raspberry-Pi využívá jako operační systém Raspbian, který je postaven na Debian Linuxu.
 Celý Raspbian je pak na microSD kartě. Napřed tedy musíme na microSD kartu nahrát OS Raspbian. Budete k tomu potřebovat:
