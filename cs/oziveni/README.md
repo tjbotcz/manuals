@@ -1,7 +1,12 @@
 # Oživujeme TJBota na Raspberry-Pi
-1. [Rychlé oživení z předpřipravené image] (#faststart)
+Vyberte si svoji cestu...
+1. [Rychlé oživení z předpřipravené image](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
+2. [Oživení hezky od píky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
 
 ## <a name="faststart"></a>Rychlé oživení z předpřipravené image 
+
+Určitě se už nemůžete dočkat až TJBota oživíte. Proto jsme pro vás připravili již hotovou image, na které je předkonfigurovaný Raspbian, připravený pro provoz TJBota. 
+
 ## <a name="fulljourney"></a>Oživení hezky od píky 
 
 
@@ -18,7 +23,7 @@ Postup:
 
 ![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
 
-2. Stáhni si a nainstaluj SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstaluj Raspbian OS na microSD kartu (vyber stáhnutý .img soubor, vyber připojenou SD kartu , a…Flash!)
+2. Stáhněte si a nainstalujte SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstalujte Raspbian OS na microSD kartu (vyberte stáhnutý .img soubor, vyberte připojenou SD kartu , a…Flash!)
 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
