@@ -69,6 +69,9 @@ Postup:
   cd ..
   sudo node tjbotcz_lite.js
   ```
+  
+  
+---
 
 
 ## <a name="fulljourney"></a>Oživení hezky od píky 
