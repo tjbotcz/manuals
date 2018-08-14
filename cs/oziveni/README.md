@@ -7,6 +7,34 @@ Vyberte si svoji cestu...
 
 Určitě se už nemůžete dočkat až TJBota oživíte. Proto jsme pro vás připravili již hotovou image, na které je předkonfigurovaný Raspbian, připravený pro provoz TJBota. 
 
+Budete potřebovat:
+
+* připojení k internetu, aby sis mohl stáhnout Raspbian OS
+* počítač se slotem na SD kartu a adaptér na microSD karty nebo čtečku SD/microSD karet
+* USB klávesnici, USB myš
+* LCD s HDMI vstupem a HDMI kabel
+
+Postup:
+1. Stáhněte si předpřipravenou image TJBota z BUDE DOPLNENO
+
+2. Stáhněte si a nainstalujte SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstalujte Raspbian OS na microSD kartu (vyberte stáhnutý tjbotcz_lite.img soubor, vyberte připojenou SD kartu , a…Flash!)
+
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
+
+3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat. Připojení k internetu budete potřebovat pro krok 4.
+
+4. Na Desktopu máte připravnený skript "run-me-first.sh", který spusťte (dvojklik a execute in terminal). Skript vám stáhne z internetu nejnovější verzi programu TJBotCZ_lite a dotáhne potřebné závislosti.
+
+5. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
+
+* Watson Assistant (služba pomocí které se vytváří dialogy pro chat)
+* Speech to Text (služba převádějící zvukový záznam na text)
+* Text to Speech (služba převádějící text na zvuk)
+* Visual Recognition (služba analyzující obrázky)
+
+  Služby si zprovozněte podle návodu v sekci "watson"
+
+
 ## <a name="fulljourney"></a>Oživení hezky od píky 
 
 
