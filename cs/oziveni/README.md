@@ -15,7 +15,7 @@ Budete potřebovat:
 * LCD s HDMI vstupem a HDMI kabel
 
 Postup:
-1. Stáhněte si předpřipravenou image TJBota z BUDE DOPLNENO
+1. Stáhněte si předpřipravenou [image TJBota](https://drive.google.com/open?id=1LJBOGV22bPoveNz0kiXSYCnW8kOh20xo) .
 
 2. Stáhněte si a nainstalujte SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstalujte Raspbian OS na microSD kartu (vyberte stáhnutý tjbotcz_lite.img soubor, vyberte připojenou SD kartu , a…Flash!)
 
@@ -34,7 +34,16 @@ Postup:
 
   Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
 
-6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat.
+6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi:
+
+MacOS:
+```
+ssh pi@<ipadresa>
+```
+Windows:
+
+
+Budete vyzváni k zadání hesla. Výchozí heslo je: **_raspberry_**.
 
 
 ## <a name="fulljourney"></a>Oživení hezky od píky 
