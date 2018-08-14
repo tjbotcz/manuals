@@ -18,7 +18,9 @@ Registrace je zdarma a získáte tak přístup k službám potřebným pro TJBot
 
 ## Služba Speech to Text
 
-V záložce "Catalog" vyhledejte službu _**Speech to Text**_ a klikněte na tlačítko "Create". Spustí se vám služba 
+V záložce "Catalog" vyhledejte službu _**Speech to Text**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na ikonu "Show" si zobrazíte přihlašovací údaje ke službě. Ty budete potřebovat vložit do konfiguračního souboru na TJBotovi (credentials.js).
+
+![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png)
 
 ## Služba Text to Speech
 
