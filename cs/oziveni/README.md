@@ -32,7 +32,9 @@ Postup:
 * Text to Speech (služba převádějící text na zvuk)
 * Visual Recognition (služba analyzující obrázky)
 
-  Služby si zprovozněte podle návodu v sekci "watson"
+  Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
+
+6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat.
 
 
 ## <a name="fulljourney"></a>Oživení hezky od píky 
