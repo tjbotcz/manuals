@@ -71,7 +71,8 @@ Postup:
   sudo node tjbotcz_lite.js
   ```
   
-  
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+
 ---
 
 
