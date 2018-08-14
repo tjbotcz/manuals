@@ -62,9 +62,10 @@ Postup:
   nano credentials.js
   ```
   Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
   Uložení a zavření editoru: CTRL+X, Y, Enter.
   
-10. Tak a teď už jen spustit TJBota !!!
+10. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
   ```
   cd ..
   sudo node tjbotcz_lite.js
