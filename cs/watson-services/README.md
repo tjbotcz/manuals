@@ -18,6 +18,8 @@ Registrace je zdarma a získáte tak přístup k službám potřebným pro TJBot
 
 ## Služba Speech to Text
 
+V záložce "Catalog" vyhledejte službu _**Speech to Text**_ a klikněte na tlačítko "Create". Spustí se vám služba 
+
 ## Služba Text to Speech
 
 ## Služba Visual Recognition
