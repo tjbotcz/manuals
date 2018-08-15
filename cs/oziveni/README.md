@@ -66,6 +66,7 @@ Postup:
   Uložení a zavření editoru: CTRL+X, Y, Enter.
   
 10. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
+  TJBot je nakonfigurován, aby mluvil mužským hlasem a slyšel na jméno Michael (vyslovujte anglicky "Majkl"). To znamená, že bude rozpoznávat věty, které v sobě mají slovo Michael.
   ```
   cd ..
   sudo node tjbotcz_lite.js
