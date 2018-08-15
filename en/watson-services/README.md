@@ -1,0 +1,1 @@
+# English manual for TJBot
