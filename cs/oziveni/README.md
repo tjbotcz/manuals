@@ -24,7 +24,7 @@ Budete potřebovat:
 * LCD s HDMI vstupem a HDMI kabel
 
 Postup:
-1. Stáhněte si předpřipravenou [image TJBota](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) .
+1. Stáhněte si předpřipravenou [image TJBota](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) a rozbalte ji.
 
 2. Stáhněte si a nainstalujte SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstalujte Raspbian OS na microSD kartu (vyberte stáhnutý tjbotcz_lite.img soubor, vyberte připojenou SD kartu , a…Flash!)
 
