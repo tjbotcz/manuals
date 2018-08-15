@@ -18,13 +18,27 @@ Registrace je zdarma a získáte tak přístup k službám potřebným pro TJBot
 
 ## Služba Speech to Text
 
-V záložce "Catalog" vyhledejte službu _**Speech to Text**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na ikonu "Show" si zobrazíte přihlašovací údaje ke službě. Ty budete potřebovat vložit do konfiguračního souboru na TJBotovi (credentials.js).
+V záložce "Catalog" vyhledejte službu _**Speech to Text**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na ikonu "Show" si zobrazíte přihlašovací údaje ke službě (username a password). Ty budete potřebovat vložit do konfiguračního souboru na TJBotovi (credentials.js).
 
 ![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png)
 
 ## Služba Text to Speech
 
+V záložce "Catalog" vyhledejte službu _**Text to Speech**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na ikonu "Show" si zobrazíte přihlašovací údaje ke službě (username a password). Ty budete potřebovat vložit do konfiguračního souboru na TJBotovi (credentials.js).
+
+![T2S Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/t2s-credentials.png)
+
 ## Služba Visual Recognition
 
+V záložce "Catalog" vyhledejte službu _**Visual Recognition**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na ikonu "Show" si zobrazíte přihlašovací údaje ke službě. Ty budete potřebovat vložit do konfiguračního souboru na TJBotovi (credentials.js). V případě této služby jde o tzv. API KEY, který budete potřebovat.
+
+![Visual Recognition API KEY](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/visual-recognition-credentials.png)
+
 ## Služba Watson Assisstant
+
+Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na tlačítko "Launch" se vám otevře nové okno s nástrojem pro vytváření chatu. V záložce workspace naleznete ikonu k nahrání staženého dialogu (viz obrázek  níže).
+
+![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
+
+
 
