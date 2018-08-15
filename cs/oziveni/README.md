@@ -2,8 +2,16 @@
 Vyberte si svoji cestu...
 1. [Rychlé oživení z předpřipravené image](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
 2. [Oživení hezky od píky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
+3. Pár návodů, které se můžou hodit
+    * Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)
+    * Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)
+    * Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)
+    * Nastavení pevné IP adresy na Raspberry Pi 
+    * Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky
+    * Nastavení audio výstupu na jack
+    
 
-## <a name="faststart"></a>Rychlé oživení z předpřipravené image 
+## Rychlé oživení z předpřipravené image 
 
 Určitě se už nemůžete dočkat až TJBota oživíte. Proto jsme pro vás připravili již hotovou image, na které je předkonfigurovaný Raspbian, připravený pro provoz TJBota. 
 
@@ -77,7 +85,7 @@ Postup:
 ---
 
 
-## <a name="fulljourney"></a>Oživení hezky od píky 
+## Oživení hezky od píky 
 
 
 Raspberry-Pi využívá jako operační systém Raspbian, který je postaven na Debian Linuxu.
@@ -192,4 +200,103 @@ npm install
   ```
   
 ![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+
+---
+
+## Pár návodů, které se můžou hodit
+
+### Kopírování z Windows na Raspberry Pi přes příkazovou řádku
+Otevřete si CMD line a otevřete adresář, kde máte soubor, který chcete kopírovat (příkaz cd = change directory). Pak použijte následující příkaz, kde zkontrolujte, zda máte nainstalované PuTTY aa zda platí cesta C:\Program Files\PuTTY\pscp.exe. “file.txt” je název kopírovaného souboru a místo “your_pi” dosaďte IP adresu vašeho Raspberry Pi (musí být na stejné síti):
+
+```
+"C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite
+```
+
+
+### Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)
+Otevřete Terminal a otevřete adresář, kde máte soubor, který chcete kopírovat (příkaz cd = change directory). Pak použijte následující příkaz, kde “file.txt” je název kopírovaného souboru a místo “your_pi” dosaďte IP adresu vašeho Raspberry Pi (musí být na stejné síti):
+
+```
+scp file.txt pi@your_pi:~/Desktop/tjbotcz_lite
+```
+
+
+### Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)
+Pokud jste v SSH přihlášeni na TJBot Raspbian, tak se napřed odhlaste:
+
+```
+logout
+```
+
+V terminálu na Mac OS napište příkaz pro kopírování:
+
+```
+scp <username na Raspberry Pi>@<ip adresa Raspberry Pi>:/<celá cesta k souboru na Raspberry pi> <celá cesta k uložení na Mac OS>
+```
+
+Příklad:
+
+```
+scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Honza/Desktop
+```
+
+Pak budete vyzváni k zadání hesla do raspberry Pi.
+
+
+### Nastavení pevné IP adresy na Raspberry Pi 
+Připojte se přes SSH nebo PuTTY na Raspberry Pi. 
+
+```
+sudo nano /etc/dhcpcd.conf
+```
+
+Odkomentujte příslušnou část a upravte dle potřeby.
+
+
+
+### Hlasitost Raspberry Pi z příkazové řádky
+Připojte se přes SSH nebo PuTTY na Raspberry Pi. Následující kód nastaví hlasitost na 90%. Zdá se mi, že hlasitost se zvedá ne lineárně, takže rozdíl mezi 90 % a 95 % je markantní.
+
+```
+amixer  sset PCM,0 90%
+```
+
+Další možností je udělat si alias zkratku, kterou budete zesilovat/zeslabovat hlasitost. Otevřete si v nano editoru .bashrc
+
+```
+nano ~/.bashrc
+```
+
+a na konec souboru přidejte
+```
+# Increase volume by 5%
+alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%'
+# Decrease volume by 5%
+alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%'
+```
+Restartujte Raspberry-Pi. Poté stačí v příkazové řádce vždy napsat  `volup`  nebo  `voldown`  a hlasitost se vždy zvýší/sníží o 5%.
+
+
+
+### Nastavení audio výstupu na reproduktor
+Někdy se stává, že TJBota neslyšíte, i když máte hlasitost naplno. S největší pravděpodobností totiž jde audio do HDMI a nikoliv do připojeného reproduktoru. Pak použijte následující příkaz:
+
+```
+sudo amixer cset numid=3 1
+```
+Poslední číslo udává audio výstup (0=auto, 1=jack, 2=HDMI)
+
+
+### Uvolnění místa na SD kartě
+Pokud máte 16GB microSD kartu, tak jste asi v pohodě. Pokud máte 8GB kartu, se kterou se TJBot běžně dodává, tak vám po instalaci zbydou cca 2GB. Ideální kandidáti na smazání jsou Wolfram a LibreOffice. Ani jeden z těchto programů nebudete s TJBotem potřebovat a uvolní vám zhruba dodatečný 1GB místa na kartě.
+Stačí do terminálu napsat:
+
+```
+sudo apt-get purge wolfram-engine
+sudo apt-get purge libreoffice*
+sudo apt-get autoremove
+```
+
+---
+
 
