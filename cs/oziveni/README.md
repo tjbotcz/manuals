@@ -3,12 +3,13 @@ Vyberte si svoji cestu...
 1. [Rychlé oživení z předpřipravené image](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
 2. [Oživení hezky od píky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
 3. Pár návodů, které se můžou hodit
-    * Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)
-    * Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)
-    * Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)
-    * Nastavení pevné IP adresy na Raspberry Pi 
-    * Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky
-    * Nastavení audio výstupu na jack
+    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-windows-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku)
+    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-mac-os-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
+    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-rasberry-pi-do-mac-os-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
+    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-pevn%C3%A9-ip-adresy-na-raspberry-pi)
+    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#hlasitost-raspberry-pi-z-p%C5%99%C3%ADkazov%C3%A9-%C5%99%C3%A1dky)
+    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
+    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
     
 
 ## Rychlé oživení z předpřipravené image 
@@ -278,7 +279,7 @@ Restartujte Raspberry-Pi. Poté stačí v příkazové řádce vždy napsat  `vo
 
 
 
-### Nastavení audio výstupu na reproduktor
+### Nastavení audio výstupu na jack
 Někdy se stává, že TJBota neslyšíte, i když máte hlasitost naplno. S největší pravděpodobností totiž jde audio do HDMI a nikoliv do připojeného reproduktoru. Pak použijte následující příkaz:
 
 ```
