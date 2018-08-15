@@ -36,9 +36,15 @@ V záložce "Catalog" vyhledejte službu _**Visual Recognition**_ a klikněte na
 
 ## Služba Watson Assisstant
 
-Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na tlačítko "Launch" se vám otevře nové okno s nástrojem pro vytváření chatu. V záložce workspace naleznete ikonu k nahrání staženého dialogu (viz obrázek  níže).
+Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  [Stáhněte si dialog zde](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na tlačítko "Launch" se vám otevře nové okno s nástrojem pro vytváření chatu. V záložce workspace naleznete ikonu k nahrání staženého dialogu (viz obrázek  níže).
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
+
+Po nahrání dialogu se vám tento nově vytvořený workspace otevře. Pod ikonou připomínající šneka najdete potřebné přihlašovací údaje pro konfigurační soubor na TJBotovi (credentials.js). V případě Watson Assisstant služby jsou to 3 údaje: workspace id, username a password.
+
+![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
+
+---
 
 
 
