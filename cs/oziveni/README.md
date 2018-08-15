@@ -142,4 +142,51 @@ cd <název_adresáře>
 ```
 npm install
 ```
-11.
+11. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
+
+* Watson Assistant (služba pomocí které se vytváří dialogy pro chat)
+* Speech to Text (služba převádějící zvukový záznam na text)
+* Text to Speech (služba převádějící text na zvuk)
+* Visual Recognition (služba analyzující obrázky)
+
+  Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
+
+12. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi (musíte být s počítačem na stejné síti/WiFi jako TJBot):
+
+  MacOS:
+  ```
+  ssh pi@<ipadresa>
+  ```
+  Windows (do zvyrazněného pole zadejte IP adresu TJBota):
+
+  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+
+
+  Budete vyzváni k zadání hesla. Výchozí heslo je: **_raspberry_**.
+
+13. V otevřeném terminálu (cmd okně ve Windows) přejděte na adresář, kde jsou uloženy konfigurační soubory TJBota:
+
+  ```
+  cd Desktop/tjbotcz_lite/configuration
+  ```
+14. Vytvořte si kopii souborů credentials.default.js a config.default.js a kopie pojmenujte credentials.js a config.js. Můžete to udělat vzdáleně přes příkazovou řádku (terminál/cmd okno):
+  ```  
+  cp config.default.js config.js
+  cp credentials.default.js credentials.js
+  ```
+15. V editoru (nano = název textového editoru v Raspbianu) vložte potřebné přihlašovací údaje k jednotlivým službám.
+  ```
+  nano credentials.js
+  ```
+  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+  Uložení a zavření editoru: CTRL+X, Y, Enter.
+  
+16. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
+  ```
+  cd ..
+  sudo node tjbotcz_lite.js
+  ```
+  
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+
