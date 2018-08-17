@@ -1,16 +1,16 @@
 # Bringing TJBota to life (on Raspberry Pi)
 Choose your path...
 1. [Faststart from ready-made image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
+2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Some how-to's that may come handy
 
-    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-windows-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku)
-    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-mac-os-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
-    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-rasberry-pi-do-mac-os-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
-    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-pevn%C3%A9-ip-adresy-na-raspberry-pi)
-    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#hlasitost-raspberry-pi-z-p%C5%99%C3%ADkazov%C3%A9-%C5%99%C3%A1dky)
-    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
-    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
+    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)]()
+    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)]()
+    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)]()
+    * [Nastavení pevné IP adresy na Raspberry Pi]()
+    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky]()
+    * [Nastavení audio výstupu na jack]()
+    * [Uvolnění místa na SD kartě]()
     
 ## Faststart from ready-made image 
 
