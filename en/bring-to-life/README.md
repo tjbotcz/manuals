@@ -62,21 +62,21 @@ Steps:
   ```
   cd Desktop/tjbotcz_lite/configuration
   ```
-8. Vytvořte si kopii souborů credentials.default.js a config.default.js a kopie pojmenujte credentials.js a config.js. Můžete to udělat vzdáleně přes příkazovou řádku (terminál/cmd okno):
+8. Create a copy of credentials.default.js and config.default.js  files and name them credentials.js and config.js accordingly. You can do this also remotly via the Terminal/CMD window:
   ```  
   cp config.default.js config.js
   cp credentials.default.js credentials.js
   ```
-9. V editoru (nano = název textového editoru v Raspbianu) vložte potřebné přihlašovací údaje k jednotlivým službám.
+9. In text editor called nano insert the necessary credentials to individual services.
   ```
   nano credentials.js
   ```
-  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  See picture below for places that need to be filled with credential data from Watson services (do not delete the quotation marks).
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Uložení a zavření editoru: CTRL+X, Y, Enter.
+  Closing and saving the file: CTRL+X, Y, Enter.
   
-10. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
-  TJBot je nakonfigurován, aby mluvil mužským hlasem a slyšel na jméno Michael (vyslovujte anglicky "Majkl"). To znamená, že bude rozpoznávat věty, které v sobě mají slovo Michael.
+10. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
+  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. 
   ```
   cd ..
   sudo node tjbotcz_lite.js
