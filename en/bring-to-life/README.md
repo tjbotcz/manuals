@@ -1,8 +1,8 @@
 # Bringing TJBota to life (on Raspberry Pi)
 Choose your path...
-1. [Faststart from ready-made image](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
+1. [Faststart from ready-made image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
 2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
-3. Some how-tos that may come handy
+3. Some how-to's that may come handy
 
     * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-windows-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku)
     * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-mac-os-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
@@ -44,20 +44,20 @@ Steps:
 
   Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
 
-6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi (musíte být s počítačem na stejné síti/WiFi jako TJBot):
+6. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
 
   MacOS:
   ```
   ssh pi@<ipadresa>
   ```
-  Windows (do zvyrazněného pole zadejte IP adresu TJBota):
+  Windows (enter IP address of TJBota into highlighted field):
 
   ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
 
 
-  Budete vyzváni k zadání hesla. Výchozí heslo je: **_raspberry_**.
+  You will be asked for a password. Default password is: **_raspberry_**.
 
-7. V otevřeném terminálu (cmd okně ve Windows) přejděte na adresář, kde jsou uloženy konfigurační soubory TJBota:
+7. In Terminal (or cmd window in Windows) navigate to folder with configuration files:
 
   ```
   cd Desktop/tjbotcz_lite/configuration
