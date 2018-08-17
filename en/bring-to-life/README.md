@@ -86,4 +86,123 @@ Steps:
 
 ---
 
-# Start from scratch like a PRO
+## Start from scratch like a PRO
+
+Raspberry-Pi uses Raspbian as an operation system, which is built at Debian Linux.
+Then, the whole Raspbian is on a microSD card. Thus, we firstly need to install OS Raspbian on a microSD card. We will need:
+
+*	internet connection to download the Raspbian OS and SW for installing image on the card
+*	a computer with an SD/ microSD card’s slot or an SD/microSD reader
+*	USB keyboard, USB mouse
+*	LCD with HDMI port and HDMI cable.
+
+Steps:
+1. Download Raspbian OS https://www.raspberrypi.org/downloads/ .
+
+![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
+
+2. Download and install SW in order to install image Raspbian, for e.g. Etcher https://etcher.io/ and then install Raspbian OS on microSD card (click/select downloaded .img file, then already connected SD card, and…Flash!)
+
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
+
+3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 5.
+
+4. Permit the connection for the Raspberry-Pi SSH, in order to later continue with Raspberry-Pi distance connection via terminal or PuTTY (Windows). In Terminal write:
+```
+sudo raspi-config
+```
+A menu will open.
+Choose “Interfacing Options”.
+Choose “SSH” and enable it.
+5. Open Terminal and run:
+```
+curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
+```
+This command will download a script from the server, which will run an interactive guide in Terminal window. With this guide you will configure Raspberry Pi for TJBot:
+
+* TJBot name (leave raspberrypi)  - (Enter)
+* IPv6 (disable) - (Y)
+* Google DNS (enable) - (Y)
+* settings local (language) (Y)
+* update OS Raspbianu (Y)
+* update na novější verzi Node.js (N)
+* nastavení připojení kamery (Y)
+* stažení původního programu TJBota a testovacích scénářů (Enter)
+* konfigurace zvukového výstupu (nechte port pro jack-audio povolený) (N)
+* reboot (Y)
+
+6. Nainstalujte node.js ve verzi 9:
+```
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+7. V terminálu otevřete adresář Desktop:
+```
+cd Desktop
+```
+8. Nainstalujte některý z programů pro TJBota (tjbotcz_lite, tjbotcz, tjbotcz_iot):
+```
+git clone https://github.com/tjbotcz/<název_programu>.git
+```
+9. V terminálu otevřete nově vytvořený adresář “tjbotcz_lite”, "tjbotcz" nebo tjbotcz_iot":
+```
+cd <název_adresáře>
+```
+10. Dotáhněte potřebné závislosti programu, tak jak jsou definované v souboru package.json, který jste nainstalovali z gitu v kroku 8:
+```
+npm install
+```
+11. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
+
+* Watson Assistant (služba pomocí které se vytváří dialogy pro chat)
+* Speech to Text (služba převádějící zvukový záznam na text)
+* Text to Speech (služba převádějící text na zvuk)
+* Visual Recognition (služba analyzující obrázky)
+
+  Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
+
+12. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi (musíte být s počítačem na stejné síti/WiFi jako TJBot):
+
+  MacOS:
+  ```
+  ssh pi@<ipadresa>
+  ```
+  Windows (do zvyrazněného pole zadejte IP adresu TJBota):
+
+  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+
+
+  Budete vyzváni k zadání hesla. Výchozí heslo je: **_raspberry_**.
+
+13. V otevřeném terminálu (cmd okně ve Windows) přejděte na adresář, kde jsou uloženy konfigurační soubory TJBota:
+
+  ```
+  cd Desktop/tjbotcz_lite/configuration
+  ```
+14. Vytvořte si kopii souborů credentials.default.js a config.default.js a kopie pojmenujte credentials.js a config.js. Můžete to udělat vzdáleně přes příkazovou řádku (terminál/cmd okno):
+  ```  
+  cp config.default.js config.js
+  cp credentials.default.js credentials.js
+  ```
+15. V editoru (nano = název textového editoru v Raspbianu) vložte potřebné přihlašovací údaje k jednotlivým službám.
+  ```
+  nano credentials.js
+  ```
+  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+  Uložení a zavření editoru: CTRL+X, Y, Enter.
+  
+16. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
+  TJBot je nakonfigurován, aby mluvil mužským hlasem a slyšel na jméno Michael (vyslovujte anglicky "Majkl"). To znamená, že bude rozpoznávat věty, které v sobě mají slovo Michael.
+
+  ```
+  cd ..
+  sudo node tjbotcz_lite.js
+  ```
+  
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+
+---
+
+
+
