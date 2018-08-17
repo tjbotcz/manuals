@@ -11,7 +11,7 @@ In order to setup these services you will need to have an account on IBM Cloud (
 
 Let's create the services and note down the credential details.
 
-## Registration to IBM Cloudu
+## Registration to IBM Cloud
 
 You can register to IBM Cloud at www.bluemix.net.
 
