@@ -70,7 +70,7 @@ Postup:
   ```
   nano credentials.js
   ```
-  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb (jednoduché uvozovky nemažte).
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
   Uložení a zavření editoru: CTRL+X, Y, Enter.
   
