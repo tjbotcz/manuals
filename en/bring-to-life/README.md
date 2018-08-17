@@ -85,3 +85,5 @@ Steps:
 ![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
 
 ---
+
+# Start from scratch like a PRO
