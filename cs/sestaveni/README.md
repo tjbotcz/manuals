@@ -32,6 +32,9 @@ Dobrý popis pro složení TJBota je také na této adrese (v angličtině):
 
 https://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/
 
+Pro lepší výdrž doporučujeme některá místa slepit tavící pistolí. Zejména nohy a chlopně držící Raspberry Pi.
+
 ### Zapojení hardwaru
+
 
 
