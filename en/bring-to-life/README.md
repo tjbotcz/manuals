@@ -12,7 +12,7 @@ Choose your path...
     * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
     * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
     
-    ## Faststart from ready-made image 
+## Faststart from ready-made image 
 
 Clearly you are eager to have TJBot up and running. Therefore we have prepared a ready-made image, where we preconfigured Raspbian for TJBot CZ.
 
@@ -31,18 +31,18 @@ Steps:
 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
-3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat. Připojení k internetu budete potřebovat pro krok 4.
+3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 4.
 
-4. Na Desktopu máte připravnený skript "run-me-first.sh", který spusťte (dvojklik a execute in terminal). Skript vám stáhne z internetu nejnovější verzi programu TJBotCZ_lite a dotáhne potřebné závislosti.
+4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of TJBotCZ_lite program from the internet and will install necessary dependencies.
 
-5. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
+5. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
 
-* Watson Assistant (služba pomocí které se vytváří dialogy pro chat)
-* Speech to Text (služba převádějící zvukový záznam na text)
-* Text to Speech (služba převádějící text na zvuk)
-* Visual Recognition (služba analyzující obrázky)
+* Watson Assistant (service for creating dialogs/chats)
+* Speech to Text (service transcripting voice file to text file)
+* Text to Speech (service synthetizing text to voice)
+* Visual Recognition (service analyzing pictures)
 
-  Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
+  Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
 
 6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi (musíte být s počítačem na stejné síti/WiFi jako TJBot):
 
