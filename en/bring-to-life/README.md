@@ -202,3 +202,101 @@ npm install
 ![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
 
 ---
+
+## Some how-to's that may come handy
+
+### How to copy files from Windows to Raspberry Pi using a command line 
+Open CMD line and addresser. There is a file which you want to copy (cd = change directory).  Then use the next command line, where firstly you need to check whether PuTTY is already installed and check if C:\Program Files\PuTTY\pscp.exe.  is working. The following file: “file.txt” is a name for copying files thus change “your_pi” to IP address of your Raspberry Pi (it has to be at the same network):
+
+```
+"C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite
+```
+
+
+### How to copy files from Mac OS to Raspberry Pi using a command line (in Mac OS)
+Open CMD line and addresser. There is a file which you want to copy (cd = change directory). Then use the next command line where “file.txt” is name for copying files thus change “your_pi” to IP address of your Raspberry Pi (it has to be done in the same network):
+
+```
+scp file.txt pi@your_pi:~/Desktop/tjbotcz_lite
+```
+
+
+### How to copy files from Rasberry Pi to Mac OS using command line (v Mac Os)
+If you are connected to TJBot over SSH, logout first:
+
+```
+logout
+```
+
+In Terminal in Mac OS use command to copy files:
+
+```
+scp <username na Raspberry Pi>@<ip adresa Raspberry Pi>:/<full path to file on Raspberry pi> <full path to where files is to be saved on Mac OS>
+```
+
+Example:
+
+```
+scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Honza/Desktop
+```
+
+You will be asked for password to Raspberry Pi.
+
+
+### How to set up a Raspberry Pi’s IP address 
+Connect to Raspberry Pi over SSH or PuTTy. Then use command:
+
+```
+sudo nano /etc/dhcpcd.conf
+```
+
+In the opened file un-comment the part with static address setting and enter correct values (IP address, router IP address).
+
+
+
+### How to change Raspberry Pi’s volume using the command line 
+Connect via SSH or  PuTTY at Raspberry Pi.  The next line of code will change its volume to 90%. The volume should change in a non-linear way so the difference between 90 % and 95 % is notable.
+
+```
+amixer  sset PCM,0 90%
+```
+
+The next option is to make a short-cut which can change the volume. In editor nano open .bashrc file:
+
+```
+nano ~/.bashrc
+```
+
+and at the end of the file add 
+
+```
+# Increase volume by 5%
+alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%'
+# Decrease volume by 5%
+alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%'
+```
+Restart Raspberry-Pi. Then you can just write `volup`  or  `voldown`  in Terminal and the volume will change up/down by 5%.
+
+
+
+### Nastavení audio výstupu na jack
+Někdy se stává, že TJBota neslyšíte, i když máte hlasitost naplno. S největší pravděpodobností totiž jde audio do HDMI a nikoliv do připojeného reproduktoru. Pak použijte následující příkaz:
+
+```
+sudo amixer cset numid=3 1
+```
+Poslední číslo udává audio výstup (0=auto, 1=jack, 2=HDMI)
+
+
+### Uvolnění místa na SD kartě
+Pokud máte 16GB microSD kartu, tak jste asi v pohodě. Pokud máte 8GB kartu, se kterou se TJBot běžně dodává, tak vám po instalaci zbydou cca 2GB. Ideální kandidáti na smazání jsou Wolfram a LibreOffice. Ani jeden z těchto programů nebudete s TJBotem potřebovat a uvolní vám zhruba dodatečný 1GB místa na kartě.
+Stačí do terminálu napsat:
+
+```
+sudo apt-get purge wolfram-engine
+sudo apt-get purge libreoffice*
+sudo apt-get autoremove
+```
+
+---
+
