@@ -9,8 +9,8 @@ Choose your path...
     * [How to copy files from Rasberry Pi to Mac OS using command line (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
     * [How to set up a Raspberry Pi’s IP address](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
     * [How to change Raspberry Pi’s volume using the command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
-    * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
+    * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
+    * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
     
 ## Faststart from ready-made image 
 
