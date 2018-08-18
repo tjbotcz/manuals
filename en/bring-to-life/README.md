@@ -125,76 +125,75 @@ This command will download a script from the server, which will run an interacti
 * Google DNS (enable) - (Y)
 * settings local (language) (Y)
 * update OS Raspbianu (Y)
-* update na novější verzi Node.js (N)
-* nastavení připojení kamery (Y)
-* stažení původního programu TJBota a testovacích scénářů (Enter)
-* konfigurace zvukového výstupu (nechte port pro jack-audio povolený) (N)
+* update to newer version of Node.js (N)
+* connecting camera (Y)
+* downloading original TJBot and test scenarios (Enter)
+* configuring audio output (leave port for jack-audio enabled) (N)
 * reboot (Y)
 
-6. Nainstalujte node.js ve verzi 9:
+6. Install node.js version 9:
 ```
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
-7. V terminálu otevřete adresář Desktop:
+7. In Terminal open folder Desktop:
 ```
 cd Desktop
 ```
-8. Nainstalujte některý z programů pro TJBota (tjbotcz_lite, tjbotcz, tjbotcz_iot):
+8. Install one of the TJBotCZ programs (tjbotcz_lite, tjbotcz, tjbotcz_iot):
 ```
-git clone https://github.com/tjbotcz/<název_programu>.git
+git clone https://github.com/tjbotcz/<name of tjbotcz program>.git
 ```
-9. V terminálu otevřete nově vytvořený adresář “tjbotcz_lite”, "tjbotcz" nebo tjbotcz_iot":
+9. In Terminal open the newly created folder “tjbotcz_lite”, "tjbotcz" or tjbotcz_iot":
 ```
-cd <název_adresáře>
+cd <name of the folder>
 ```
-10. Dotáhněte potřebné závislosti programu, tak jak jsou definované v souboru package.json, který jste nainstalovali z gitu v kroku 8:
+10. Download dependencies defined in file package.json in the folder with program downloaded in step 8:
 ```
 npm install
 ```
-11. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
+11. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
 
-* Watson Assistant (služba pomocí které se vytváří dialogy pro chat)
-* Speech to Text (služba převádějící zvukový záznam na text)
-* Text to Speech (služba převádějící text na zvuk)
-* Visual Recognition (služba analyzující obrázky)
+* Watson Assistant (service for creating dialogs/chats)
+* Speech to Text (service transcripting voice file to text file)
+* Text to Speech (service synthetizing text to voice)
+* Visual Recognition (service analyzing pictures)
 
-  Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
+  Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
 
-12. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru. Protože přihlašovaí údaje jsou celkem dlouhé, je nejlepší se přihlásit k TJBotovi vzdáleně z počítače, kde jste si vytvářeli watson služby. Z Mac OS využijete Terminal, z Windows využijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), což je program pro vzdálený přístup, který si musíte nainstalovat. V Terminálu nebo přes PuTTy se připojte k TJBotovi (musíte být s počítačem na stejné síti/WiFi jako TJBot):
+12. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
 
   MacOS:
   ```
   ssh pi@<ipadresa>
   ```
-  Windows (do zvyrazněného pole zadejte IP adresu TJBota):
+  Windows (enter IP address of TJBota into highlighted field):
 
   ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
 
 
-  Budete vyzváni k zadání hesla. Výchozí heslo je: **_raspberry_**.
+  You will be asked for a password. Default password is: **_raspberry_**.
 
-13. V otevřeném terminálu (cmd okně ve Windows) přejděte na adresář, kde jsou uloženy konfigurační soubory TJBota:
+13. In Terminal (or cmd window in Windows) navigate to folder with configuration files:
 
   ```
   cd Desktop/tjbotcz_lite/configuration
   ```
-14. Vytvořte si kopii souborů credentials.default.js a config.default.js a kopie pojmenujte credentials.js a config.js. Můžete to udělat vzdáleně přes příkazovou řádku (terminál/cmd okno):
+14. Create a copy of credentials.default.js and config.default.js  files and name them credentials.js and config.js accordingly. You can do this also remotly via the Terminal/CMD window:
   ```  
   cp config.default.js config.js
   cp credentials.default.js credentials.js
   ```
-15. V editoru (nano = název textového editoru v Raspbianu) vložte potřebné přihlašovací údaje k jednotlivým službám.
+15. In text editor called nano insert the necessary credentials to individual services.
   ```
   nano credentials.js
   ```
-  Na obrázku níže jsou vyznačena místa, kde je potřeba doplnit platné přihlašovací údaje z IBM Watson služeb.
+  See picture below for places that need to be filled with credential data from Watson services (do not delete the quotation marks).
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Uložení a zavření editoru: CTRL+X, Y, Enter.
+  Closing and saving the file: CTRL+X, Y, Enter.
   
-16. Tak a teď už jen spustit TJBota !!! Zpátky do adresáře Desktop/tjbotcz_lite ... a jedeme.
-  TJBot je nakonfigurován, aby mluvil mužským hlasem a slyšel na jméno Michael (vyslovujte anglicky "Majkl"). To znamená, že bude rozpoznávat věty, které v sobě mají slovo Michael.
-
+16. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
+  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. 
   ```
   cd ..
   sudo node tjbotcz_lite.js
@@ -203,6 +202,3 @@ npm install
 ![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
 
 ---
-
-
-
