@@ -4,13 +4,13 @@ Choose your path...
 2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Some how-to's that may come handy
 
-    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
-    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
+    * [How to copy files from Windows to Raspberry Pi using a command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
+    * [How to copy files from Mac OS to Raspberry Pi using a command line (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
+    * [How to copy files from Rasberry Pi to Mac OS using command line (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
+    * [How to set up a Raspberry Pi’s IP address](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
+    * [How to change Raspberry Pi’s volume using the command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
+    * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
+    * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
     
 ## Faststart from ready-made image 
 
@@ -279,7 +279,7 @@ Restart Raspberry-Pi. Then you can just write `volup`  or  `voldown`  in Termina
 
 
 
-### Nastavení audio výstupu na jack
+### Setting audio output to jack
 Sometimes you cannot hear TJBot eventhough the volume is set to max. Most probably the audio goes to HDMI and not to connected speaker (via jack). To set output to jack connector use the following:
 
 ```
@@ -288,7 +288,7 @@ sudo amixer cset numid=3 1
 The last number specifies the output (0=auto, 1=jack, 2=HDMI)
 
 
-### Uvolnění místa na SD kartě
+### Get more free space on microSD Card
 If you have 16GB microSD card, you should be fine. However, if you have 8GB card, then after installing you will have approximately 2GB left. You can uninstall Wolfram and LibreOffice to get more free space. As you will not need any of these programs for working with TJBot. You will get an extra 1GB free space.
 
 To remove the programs:
