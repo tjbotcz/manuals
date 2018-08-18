@@ -280,17 +280,18 @@ Restart Raspberry-Pi. Then you can just write `volup`  or  `voldown`  in Termina
 
 
 ### Nastavení audio výstupu na jack
-Někdy se stává, že TJBota neslyšíte, i když máte hlasitost naplno. S největší pravděpodobností totiž jde audio do HDMI a nikoliv do připojeného reproduktoru. Pak použijte následující příkaz:
+Sometimes you cannot hear TJBot eventhough the volume is set to max. Most probably the audio goes to HDMI and not to connected speaker (via jack). To set output to jack connector use the following:
 
 ```
 sudo amixer cset numid=3 1
 ```
-Poslední číslo udává audio výstup (0=auto, 1=jack, 2=HDMI)
+The last number specifies the output (0=auto, 1=jack, 2=HDMI)
 
 
 ### Uvolnění místa na SD kartě
-Pokud máte 16GB microSD kartu, tak jste asi v pohodě. Pokud máte 8GB kartu, se kterou se TJBot běžně dodává, tak vám po instalaci zbydou cca 2GB. Ideální kandidáti na smazání jsou Wolfram a LibreOffice. Ani jeden z těchto programů nebudete s TJBotem potřebovat a uvolní vám zhruba dodatečný 1GB místa na kartě.
-Stačí do terminálu napsat:
+If you have 16GB microSD card, you should be fine. However, if you have 8GB card, then after installing you will have approximately 2GB left. You can uninstall Wolfram and LibreOffice to get more free space. As you will not need any of these programs for working with TJBot. You will get an extra 1GB free space.
+
+To remove the programs:
 
 ```
 sudo apt-get purge wolfram-engine
