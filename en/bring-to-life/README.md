@@ -4,13 +4,13 @@ Choose your path...
 2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Some how-to's that may come handy
 
-    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)]()
-    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)]()
-    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)]()
-    * [Nastavení pevné IP adresy na Raspberry Pi]()
-    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky]()
-    * [Nastavení audio výstupu na jack]()
-    * [Uvolnění místa na SD kartě]()
+    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
+    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
+    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
+    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
+    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
+    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
+    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
     
 ## Faststart from ready-made image 
 
