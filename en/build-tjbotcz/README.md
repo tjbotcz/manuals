@@ -1,4 +1,4 @@
-# Manual for building TJBotCZ and connceting the hardware
+# Manual for building TJBotCZ and connecting the hardware
 
 ---
 ![exclamation](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/exclamation.png) _**NOTICE BEFORE YOU START**_ 
