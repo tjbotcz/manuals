@@ -36,5 +36,42 @@ Pro lepší výdrž doporučujeme některá místa slepit tavící pistolí. Zej
 
 ### Zapojení hardwaru
 
+Na obrázku níže jsou popsány všechny periferie, které můžete k připojení TJBota potřebovat:
+* napájení
+* HDMI pro připojení monitoru
+* camera
+* jack audio výstup pro připojení reproduktoru
+* ethernet pro připojení na internet (pokud nevyužíváte WiFi)
+* USB vstupy pro připojení mikrofonu, myši a klávesnice
+* piny na Raspberry Pi pro připojení RGB LED a serva
 
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi-connect.jpg)
+
+
+**GPIO piny**
+
+Periferie se k Raspberry Pi připojují na jednotlivé piny. Schéma jednotlivých pinů:
+![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png)
+
+
+**Připojení serva na GPIO piny**
+
+Servo využívá piny celkem 3 piny:
+* 5V napětí / + (fyzický pin 02)
+* uzemnění / - (fyzický pin 14)
+* GPIO 7 pro ovládání serva (fyzický pin 26) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
+
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
+
+
+**Připojení RGB LED na GPIO piny**
+
+RGB LED využívá celkem 4 piny:
+* uzemnění / - (fyzický pin 09)
+* GPIO 17 / R (fyzický pin 11) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
+* GPIO 27 / G (fyzický pin 13) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
+* GPIO 22 / B (fyzický pin 15) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
 
