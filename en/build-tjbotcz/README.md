@@ -36,4 +36,44 @@ For longer endurance we recommend stick some parts with glue-gun. Especially leg
 
 ### Connecting the hardware
 
+Picture below shows all the connectivity you might need for TJBot:
+* power adapter
+* HDMI for connecting monitor
+* camera
+* jack audio output for speaker
+* ethernet connecting to internet (in case you do not use WiFi)
+* USB slots for microfone, mouse and keyboard
+* pins on Raspberry Pi for connecting RGB LED and servo
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi-connect.jpg)
+
+
+**GPIO pins**
+
+Peropherals to Raspberry Pi are connected over individual pins. Here is the legend to all the pins:
+![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png)
+
+
+**Connecting servo to GPIO pins**
+
+Servo uses 3 pins:
+* 5V power / + (physical pin 02)
+* ground / - (physical pin 14)
+* GPIO 7 for commands (physical pin 26) - can be configured (config.js - see bring-to-life)
+
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
+
+
+**Connecting RGB LED to GPIO pins**
+
+RGB LED uses 4 pins:
+* ground / - (physical pin 09)
+* GPIO 17 / R (physical pin 11) - can be configured (config.js - see bring-to-life)
+* GPIO 27 / G (physical pin 13) - can be configured (config.js - see bring-to-life)
+* GPIO 22 / B (physical pin 15) - can be configured (config.js - see bring-to-life)
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
+
+
 
