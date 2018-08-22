@@ -33,7 +33,7 @@ Steps:
 
 3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 4.
 
-4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of TJBotCZ_lite program from the internet and will install necessary dependencies.
+4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
 
 5. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
 
@@ -76,7 +76,7 @@ Steps:
   Closing and saving the file: CTRL+X, Y, Enter.
   
 10. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
-  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. 
+  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. For more information about TJBotCZ lite program and what to do with it go to this [repository](https://github.com/tjbotcz/tjbotcz_lite).
   ```
   cd ..
   sudo node tjbotcz_lite.js
