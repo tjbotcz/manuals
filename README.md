@@ -10,7 +10,7 @@
 [![Slovak](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Slovakia.png)](https://github.com/tjbotcz/manuals/tree/master/sk) . 
 [![Spanish](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Spain.png)](https://github.com/tjbotcz/manuals/tree/master/es)
 
-_Available in Croatian, Czech, English, French, German, Lithuanian, Slovak, Spanish._ 
+_Available in Croatian, Czech, English, French, German, Lithuanian, Russian, Slovak, Spanish._ 
 
 Thanks to all the volunteers who are helping with the translations.
 
