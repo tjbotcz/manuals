@@ -1,303 +1,463 @@
-# Oživenie TJBota na Raspberry Pi
+# Brengt TJBota tot leven (op Raspberry Pi)
 
-Zvoľte si postup...
-1. [Rýchle oživenie z pripraveného image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Začnite od piky ako profík](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
-3. Pár návodov, ktoré sa môžu hodiť 
+Kies je pad...
 
-    * [Ako skopírovať súbry z Windowsu na Raspberry Pi použitím príkazového riadku (vo Windows)]https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [Ako skopírovať súbory z Mac OS na Raspberry Pi použitím príkazového riadku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [Ako skopírovať súbory z Rasberry Pi na Mac OS použitím príkazového riadku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [Ako nastaviť pevnú IP adresu na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [Ako ovládať hlasitosť zvukového výstupu Raspberry Pi použitím príkazového riadku](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Nastavenie audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Ako získať viac miesta na microSD karte ](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+
+1. [Faststart van kant-en-klare afbeelding](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
+
+2. [Start vanaf nul als een PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+
+3. Enkele how-to's die van pas kunnen komen
+
+ 
+      * [Hoe bestanden kopiëren van Windows naar Raspberry Pi via een opdrachtregel](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from -Windows-to-framboos-pi-behulp-a-command-line)
+      * [Hoe bestanden kopiëren van Mac OS naar Raspberry Pi via een opdrachtregel (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to -Kopie-files-from-mac-os-to-framboos-pi-behulp-a-command-line-in-mac-os)
+      * [Hoe bestanden kopiëren van Rasberry Pi naar Mac OS met behulp van de opdrachtregel (v Mac OS)] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to- -copy-files-from-rasberry-pi-to-mac-os met behulp van command-line-v-mac-os)
+      * [Hoe een IP-adres van een Raspberry Pi in te stellen](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis -IP adres)
+      * [Hoe het volume van de Raspberry Pi te veranderen via de opdrachtregel](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume- met behulp van de command-line)
+      * [Audio-uitgang instellen op jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
+      * [Krijg meer vrije ruimte op microSD-kaart](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
     
-## Rýchle oživenie z pripraveného obrázku
-
-Určite sa už nemôžete dočkať chvíle, keď TJBota oživíte. Preto sme pripravili hotový obrázok (image), na ktorom je predkonfigurovaný Raspbian, pripravený pre spustenie TJBota.
-
-Budete potrebovať:
-
-*	pripojenie k internetu, aby ste si mohli stiahnuť Raspbian OS
-*	počítač so slotom na SD kartu a adaptér na microSD karty alebo čítačku SD/microSD kariet
-*	USB klávesnicu, USB myš
-*	LCD so vstupom HDMI a kábel HDMI.
 
 
-Postup:
-1. Stiahnite si predpripravený image [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) a rozbaľte ho.
+## Faststart van kant-en-klare afbeelding
 
-2. Stiahnite si a nainštalujte SW na inštaláciu Raspbianu, napr. Etcher: https://etcher.io/ . Nainštalujte Raspbian OS na kartu microSD (vyberte stiahnutý súbor tjbotcz_lite.img, zvoľte pripojenú microSD kartu, a…Flash!)
 
-![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
-3. Vložte nainštalovanú microSD kartu do Raspberry-Pi, pripojte k nemu HDMI monitor, klávesnicu, myš a RJ-45 (ethernet) kábel na internet. Druhou možnosťou je pripojiť sa na internet cez WiFi (ak používate WiFi, musíte v grafickom prostredí OS Raspbian nastaviť pripojenie k Wifi, Raspberry Pi si toto pripojenie bude pamätať). Pripojenie na internet budete potrebovať pre krok 4.
+Het is duidelijk dat je enthousiast bent om TJBot operationeel te hebben. Daarom hebben we een kant-en-klaar beeld voorbereid, waarin we Raspbian voor TJBot CZ hebben voorgeconfigureerd.
 
-4. Na desktope Raspbian máte pripravený script "run-me-first.sh".  Spustite ho (dvojklik a execute in terminal). Script vám stiahne z internetu najnovšiu verziu programu [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) a nainštaluje potrebné závislosti.
 
-5. Na to, aby bolo možné s TJBotom konverzovať, bude potrebné mať pripravené nasledovné služby v IBM Cloud:
+Je hebt nodig:
 
-* Watson Assistant (službu na vytváranie dialógov/chatov)
-* Speech to Text (službu prepisujúcu hlasový súbor do textového súboru)
-* Text to Speech (službu prevádzajúcu text na zvuk)
-* Visual Recognition (službu analyzujúcu obrázky)
 
-  Služby uvediete do prevádzky podľa návodu v sekcii ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+* internetverbinding om het Raspbian OS en SW te downloaden voor het installeren van afbeeldingen op de kaart
 
-6. Ak už máte všetky služby pripravené, vitajte späť a môžeme pokračovať. Teraz budete musieť zadať prihlasovacie údaje k jednotlivým službám do konfiguračného súboru (credentials.js). Keďže sú prihlasovacie údaje dosť dlhé, najlepšie je prihlásiť sa k TJBotovi na diaľku, z počítača, kde ste si vytvárali služby Watson a skopírovať ich. Ak používate Mac OS, použijete Terminal, ak používate Windows, použijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy je program pre vzialený prístup, ktorý si musíte najskôr nainštalovať. Použite teda Terminal alebo PuTTy a pripojte sa na TJBot (váš počítač musí byť na rovnakej sieti/WiFi ako TJBot):
+* een computer met een sleuf voor een SD / microSD-kaart of een SD / microSD-lezer
 
-  MacOS:
+* USB-toetsenbord, USB-muis
+
+* LCD met HDMI-poort en HDMI-kabel.
+
+
+
+Stappen:
+
+
+1. Download het kant-en-klare [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) en pak het uit.
+
+2. Download en installeer SW voor het installeren van de afbeelding van Raspbianu op de microSD-kaart, b.v. Etcher: https://etcher.io/. Gebruik het om gedownloade afbeelding op een microSD-kaart te installeren (kies het bestand tjbotcz_lite.img, selecteer de gematigde microSD-kaart en ... Flash!)
+
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher knippert")
+
+3. Plaats de vooraf geïnstalleerde microSD-kaart in Raspberry-Pi, sluit deze aan met een toetsenbord, een muis of met een RJ-45 (ethernet) internetkabel. De tweede optie is om het via WiFi te verbinden (als je WiFi gebruikt, moet je de verbinding configureren vanuit de OS Raspbian GUI, Raspberry Pi zal deze instelling onthouden voor de toekomst). U hebt de connectiviteit nodig in stap 4.
+
+4. Op Raspbian Desktop hebben we een script "run-me-first.sh" voorbereid. Voer het uit (dubbelklik en voer de terminal uit). Script downloadt de laatste versie van [TJBotCZ_lite-programma](https://github.com/tjbotcz/tjbotcz_lite) van internet en installeert de benodigde afhankelijkheden.
+
+5. Om te kunnen chatten met TJBot moeten de volginf-services worden ingericht in de IBM Cloud:
+
+* Watson-assistent (service voor het maken van dialogen / chats)
+* Speech to Text (spraakbestand voor service-transcriberen naar tekstbestand)
+* Tekst naar spraak (service synthetiseert tekst naar stem)
+* Visuele herkenning (service analyse van afbeeldingen)
+
+  Bepaal de services volgens de handleiding in de map ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+
+6. Als u alle services hebt geleverd, dan verwelkomt u terug en gaan we verder. U moet de inloggegevens van afzonderlijke services invoeren in het configuratiebestand (credentials.js). Aangezien de inloggegevens vrij lange reeksen zijn, is de beste manier om ze in te voeren om op afstand verbinding te maken met TJBot vanaf de computer waarop u de Watson-services hebt gemaakt en deze te kopiëren en plakken. Als u een Mac-gebruiker bent, gebruikt u terminal. Als u Windows gebruikt, gebruikt u [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is een programma voor externe toegang en u moet het eerst installeren. Gebruik Terminal of in PuTTy maak verbinding met TJBot (u moet op hetzelfde netwerk / WiFi staan ??als TJBot):
+
+  
+
+MacOS:
+  
+```
+  
+ssh pi @ <ipadresa>
+  
+```
+
+Windows (voer het IP-adres van TJBota in het gemarkeerde veld in):
+
+  ![PuTTY](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+
+  U wordt om een ??wachtwoord gevraagd. Standaardwachtwoord is: **_raspberry_**.
+
+
+7. Navigeer in Terminal (of het cmd-venster in Windows) naar de map met configuratiebestanden:
+
   ```
-  ssh pi@<ipadresa>
+  
+cd Desktop / tjbotcz_lite / configuratie
   ```
-  Windows (do zvýrazneného políčka zadajte IP adresu TJBota):
 
-  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
-
-
-  Dostanete výzvu na zadanie hesla. Východiskové heslo je: **_raspberry_**.
-
-7. V otvorenom termináli (alebo cmd okne vo Windows) prejdite na adresár, kde sú uložené konfiguračné súbory TJBota:
+ 8. Maak een kopie van de bestanden credentials.default.js en config.default.js en noem ze in overeenstemming hiermee referentiesjs en config.js. U kunt dit ook via het Terminal / CMD-venster op afstand doen:
 
   ```
-  cd Desktop/tjbotcz_lite/configuration
-  ```
-8. Vytvorte si kópiu súboru credentials.default.js a súboru config.default.js a kópie pomenujte credentials.js a config.js. Môžete to urobiť na diaľku cez príkazový riadok (terminál/CMD okno):
-  ```  
   cp config.default.js config.js
-  cp credentials.default.js credentials.js
+
+  cp credentials.default.js referentials.js
   ```
-9. V editore nano (textový editor v Rasbiane) vložte potrebné prihlasovacie údaje k jednotlivým službám.
+
+9. Voeg in de teksteditor genaamd nano de benodigde inloggegevens toe aan afzonderlijke services.
+
   ```
-  nano credentials.js
+nano credentials.js
   ```
-  Na obrázku nižšie sú vyznačené miesta, kde je potrebné doplniť platné prihlasovacie údaje z IBM Watson služieb (jednoduché úvodzovky nevymazávajte).
-  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Uloženie a zatvorenie editoru: CTRL+X, Y, Enter.
+    
+Zie onderstaande afbeelding voor plaatsen die moeten worden gevuld met inloggegevens van Watson-services (verwijder de aanhalingstekens niet).
+
+
+![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+Het bestand sluiten en opslaan: CTRL + X, Y, Enter.
+
+
+10. En nu, breng TJBot tot leven !!! terug naar map Desktop / tjbotcz_lite ... en daar gaan we.
   
-10. A teraz TJBota oživte !!! Vráťte sa do adresára Desktop/tjbotcz_lite ... a ide sa na to! 
-  TJBot je nakonfigurovaný tak, aby dokázal hovoriť mužským hlasom a aby reagoval na meno Michael (vyslovuj "Majkl"). Znamená to, že bude rozpoznávať jedine vety, ktoré obsahujú slovo Michael. Pre viac informácii o TJBotCZ lite programe a ako s ním pracovať viď [repository](https://github.com/tjbotcz/tjbotcz_lite).
-  ```
-  cd ..
+TJBot is geconfigureerd om met mannelijke stem te spreken en reageert op de naam Michael. Dit betekent dat hij alleen zinnen zal herkennen die Michael in zich hebben. Ga naar [repository](https://github.com/tjbotcz/tjbotcz_lite) voor meer informatie over het TJBotCZ lite-programma en wat ermee te doen.
+
+
+  
+cd ..
   sudo node tjbotcz_lite.js
-  ```
+
+  `` `
   
-![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+! [Tjbot-zwaaien] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
 
----
+  ---
 
-## Začnite od piky ako profík   
+## Begin vanaf nul als een PRO
 
-Raspberry-Pi využíva ako operačný systém Raspbian, ktorý je postavený na Debian Linuxe.
-Celý Raspbian je potom na karte microSD. Najskôr teda musíme na kartu microSD nahrať OS Raspbian. Budeme k tomu potrebovať:
 
-*	pripojenie na internet, aby ste si mohli stiahnuť Raspbian OS 
-*	počítač so slotom na SD kartu a adaptér na microSD karty alebo čítačku kariet SD/microSD
-*	USB klávesnicu, USB myš
-*	LCD so vstupom HDMI a kábel HDMI.
+Raspberry-Pi gebruikt Raspbian als een besturingssysteem, dat is gebouwd op Debian Linux.
 
-Postup:
-1. Stiahnite si Raspbian OS z https://www.raspberrypi.org/downloads/ .
+Vervolgens staat de hele Raspbian op een microSD-kaart. We moeten dus in de eerste plaats OS Raspbian op een microSD-kaart installeren. Wij hebben nodig:
 
-![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
 
-2. Stiahnite si a nainštalujte SW na inštaláciu obrázku Raspbianu, napr. Etcher https://etcher.io/ , potom nainštalujte Raspbian OS na kartu microSD (vyberte stiahnutý súbor .img, zvoľte pripojenú SD kartu, a…Flash!)
 
-![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
+* internetverbinding om het Raspbian OS en SW te downloaden voor het installeren van afbeeldingen op de kaart
 
-3. Vložte nainštalovanú kartu microSD do Raspberry-Pi, pripojte k nemu HDMI monitor, klávesnicu a myš a eventuálne RJ-45 (ethernet) kábel na internet. Druhou možnosťou je pripojiť sa na internet cez WiFi (ak používate WiFi, musíte v grafickom prostredí OS Raspbian nastaviť pripojenie k Wifi, Raspberry Pi si toto pripojenie bude pamätať). 
+* een computer met een sleuf voor een SD / microSD-kaart of een SD / microSD-lezer
+* USB-toetsenbord, USB-muis
 
-4. Na Raspberry-Pi povoľte pripojenie SSH, aby bolo neskôr možné pripojiť sa na Raspberry-Pi na diaľku cez terminál alebo cez PuTTY (Windows). Do Terminálu napíšte:
-```
+* LCD met HDMI-poort en HDMI-kabel.
+Steps:
+
+
+1. Download Raspbian OS https://www.raspberrypi.org/downloads/.
+
+
+
+! [Raspbian download] (https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
+
+
+
+2. Download en installeer SW om image Raspbian te installeren, bijvoorbeeld voor Etcher https://etcher.io/ en installeer vervolgens Raspbian OS op microSD-kaart (klik / selecteer gedownload .img-bestand, dan al verbonden SD-kaart, en ... Flash!)
+
+
+
+! [Etcher] (https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher knippert")
+
+3. Plaats de vooraf geïnstalleerde microSD-kaart in Raspberry-Pi, sluit deze aan met een toetsenbord, een muis of met een RJ-45 (ethernet) internetkabel. De tweede optie is om het via WiFi te verbinden (als je WiFi gebruikt, moet je de verbinding configureren vanuit de OS Raspbian GUI, Raspberry Pi zal deze instelling onthouden voor de toekomst). U hebt de connectiviteit nodig in stap 5.
+
+
+
+4. Vergun de verbinding voor de Raspberry-Pi SSH, om later door te gaan met Raspberry-Pi-afstandsverbinding via terminal of PuTTY (Windows). Schrijf in Terminal:
+
+
+`` `
+
 sudo raspi-config
-```
-Otvorí sa menu.
-Zvoľte “Interfacing Options”.
-Zvoľte “SSH” a povoľte ho.
-5. Otvorte Terminál a spusťte nasledovný príkaz:
-```
-curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
-```
-Tento príkaz si stiahne zo serveru skript, ktorý spustí interaktívneho sprievodcu fungujúceho v terminále. Pomocou tohto sprievodcu nakonfigurujete Raspberry Pi pre TJBot:
 
-* TJBot name (ponechajte raspberrypi)  - (Enter)
-* nastavenie IPv6 (zvoľte možnosť vypnúť) - (Y)
-* nastavenie Google DNS (zvoľte možnosť povoliť) - (Y)
-* lokálne nastavenie (jazyk) (Y)
-* update na novšiu verziu OS Raspbianu (Y)
-* update na novšiu verziu Node.js (N)
-* nastavenie pripojenia kamery (Y)
-* stiahnutie pôvodného programu TJBota a testovacích scenárov(Enter)
-* konfigurácia zvukového výstupu (nechajte port pre jack-audio povolený) (N)
+
+`` `
+
+Een menu zal openen.
+
+Kies "Interfacing Options".
+
+Kies "SSH" en schakel het in.
+
+5. Open Terminal en voer uit:
+
+`` `
+
+
+curl -sl http://ibm.biz/tjbot-bootstrap | sudo sh -
+
+
+`` `
+
+
+Met deze opdracht wordt een script gedownload van de server, waarop een interactieve handleiding in het Terminal-venster wordt uitgevoerd. Met deze gids configureert u Raspberry Pi voor TJBot:
+
+
+
+* TJBot naam (laat raspberrypi) - (Enter)
+
+* IPv6 (uitschakelen) - (Y)
+
+* Google DNS (inschakelen) - (Y)
+
+* instellingen lokaal (taal) (Y)
+
+* update OS Raspbianu (Y)
+
+* update naar nieuwere versie van Node.js (N)
+
+* camera aansluiten (Y)
+
+* originele TJBot downloaden en testscenario's (Enter)
+
+* configureren van audio-uitvoer (laat poort voor jack-audio ingeschakeld) (N)
+
 * reboot (Y)
 
-6. Nainštalujte node.js vo verzii 9:
+
+
+6. Installeer node.js versie 9:
+
+
+`` `
+
+Curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get installeer -y nodejs
+
+
 ```
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
-sudo apt-get install -y nodejs
+
+7. In Terminal open folder Desktop:
+
+
 ```
-7. V termináli otvorte adresár Desktop:
-```
+
 cd Desktop
-```
-8. Nainštalujte niektorý z programov pre TJBotCZ (tjbotcz_lite, tjbotcz, tjbotcz_iot):
-```
-git clone https://github.com/tjbotcz/<name of tjbotcz program>.git
-```
-9. V terminále otvorte novovytvorený adresár “tjbotcz_lite”, "tjbotcz" alebo tjbotcz_iot":
-```
-cd <name of the folder>
-```
-10. Dotiahnite potrebné závislosti programu tak, ako sú definované v súbore package.json, ktorý ste nainštalovali z gitu v kroku 8:
-```
-npm install
-```
-11. Na to, aby bolo možné s TJBotom konverzovať, bude potrebné mať pripravené nasledovné služby v IBM Cloud:
 
-* Watson Assistant (službu na vytváranie dialógov/chatov)
-* Speech to Text (službu prepisujúcu hlasový súbor do textového súboru)
-* Text to Speech (službu prevádzajúcu text na zvuk)
-* Visual Recognition (službu analyzujúcu obrázky)
 
-  Služby uvediete do prevádzky podľa návodu v sekcii ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+```
 
-12. Ak už máte všetky služby pripravené, vitajte späť a môžeme pokračovať. Teraz budete musieť zadať prihlasovacie údaje k jednotlivým službám do konfiguračného súboru (credentials.js). Keďže sú prihlasovacie údaje dosť dlhé, najlepšie je prihlásiť sa k TJBotovi na diaľku, z počítača, kde ste si vytvárali služby Watson a skopírovať ich. Ak používate Mac OS, použijete Terminal, ak používate Windows, použijete [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy je program pre vzdialený prístup, ktorý si musíte najskôr nainštalovať. Použite teda Terminal alebo PuTTy a pripojte sa na TJBot (váš počítač musí byť na rovnakej sieti/WiFi ako TJBot): 
+
+8. Installeer een van de TJBotCZ-programma's (tjbotcz_lite, tjbotcz, tjbotcz_iot):
+
+`` `
+git clone https://github.com/tjbotcz/<name van tjbotcz programma> .git
+
+`` `
+9. Open in Terminal de nieuw aangemaakte map "tjbotcz_lite", "tjbotcz" of tjbotcz_iot ":
+
+`` `
+cd <naam van de map>
+
+` `
+10. Download de afhankelijkheden gedefinieerd in bestand package.json in de map met het programma gedownload in stap 8:
+
+`` `
+npm installeren
+
+`` `
+11. Om met TJBot te kunnen chatten, moeten de volginfodiensten worden geleverd in de IBM Cloud:
+
+* Watson-assistent (service voor het maken van dialogen / chats)
+
+* Speech to Text (spraakbestand voor service-transcriberen naar tekstbestand)
+
+* Tekst naar spraak (service synthetiseert tekst naar stem)
+
+* Visuele herkenning (service analyse van afbeeldingen)
+
+  
+Bepaal de services volgens de handleiding in de map ["watson-services"] (https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+
+
+12. Als u alle services hebt ingesteld, dan verwelkomt u terug en gaan we verder. U moet de inloggegevens van afzonderlijke services invoeren in het configuratiebestand (credentials.js). Aangezien de inloggegevens vrij lange reeksen zijn, is de beste manier om ze in te voeren om op afstand verbinding te maken met TJBot vanaf de computer waarop u de Watson-services hebt gemaakt en deze te kopiëren en plakken. Als u een Mac-gebruiker bent, gebruikt u terminal. Als u Windows gebruikt, gebruikt u [PuTTy] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is een programma voor externe toegang en u moet het eerst installeren. Gebruik Terminal of in PuTTy maak verbinding met TJBot (u moet op hetzelfde netwerk / WiFi staan ??als TJBot):
+
 
   MacOS:
-  ```
-  ssh pi@<ipadresa>
-  ```
-  Windows (do zvýrazneného políčka zadajte IP addresu TJBota):
 
-  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+` `
+
+ssh pi @ <ipadresa>
+ 
+`` `
+Windows (voer het IP-adres van TJBota in het gemarkeerde veld in):
+
+  ! [PuTTY] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+
+  U wordt om een ??wachtwoord gevraagd. Standaardwachtwoord is: ** _ raspberry _ **.
 
 
-  Dostanete výzvu na zadanie hesla. Východiskové heslo je: **_raspberry_**.
+13. Navigeer in Terminal (of het cmd-venster in Windows) naar de map met configuratiebestanden:
 
-13. V otvorenom terminále (alebo cmd okne vo Windows) prejdite na adresár, kde sú uložené konfiguračné súbory TJBota:
+`` `
 
-  ```
-  cd Desktop/tjbotcz_lite/configuration
-  ```
-14. Vytvorte si kópiu súboru credentials.default.js a súboru config.default.js a kópie pomenujte credentials.js a config.js. Môžete to urobiť na diaľku cez príkazový riadok (terminál/CMD okno):
-  ```  
-  cp config.default.js config.js
-  cp credentials.default.js credentials.js
-  ```
-15. V editore nano (textový editor v Rasbiane) vložte potrebné prihlasovacie údaje k jednotlivým službám.
-  ```
-  nano credentials.js
-  ```
-   Na obrázku nižšie sú vyznačené miesta, kde je potrebné doplniť platné prihlasovacie údaje z IBM Watson služieb.
-  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Uloženie a zatvorenie editoru: CTRL+X, Y, Enter.
+  cd Desktop / tjbotcz_lite / configuratie
+
+`` `
+14. Maak een kopie van de bestanden credentials.default.js en config.default.js en noem ze in overeenstemming hiermee referentiesjs en config.js. U kunt dit ook via het Terminal / CMD-venster op afstand doen:
+
+  `` `
+ 
+cp config.default.js config.js
   
-16. A teraz TJBota oživte !!! Vráťte sa do adresára Desktop/tjbotcz_lite ... a ide sa na to! 
-  TJBot je nakonfigurovaný tak, aby dokázal hovoriť mužským hlasom a aby reagoval na meno Michael (vyslovuj "Majkl"). Znamená to, že bude rozpoznávať jedine vety, ktoré obsahujú slovo Michael.
-  ```
-  cd ..
+cp credentials.default.js referentials.js
+  
+`` `
+15. Voer in de teksteditor genaamd nano de benodigde inloggegevens in voor afzonderlijke services.
+
+  `` `
+ 
+nano credentials.js
+ 
+`` `
+  Zie onderstaande afbeelding voor plaatsen die moeten worden gevuld met inloggegevens van Watson-services (verwijder de aanhalingstekens niet).
+
+! [credentials.js soubor] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+  
+Het bestand sluiten en opslaan: CTRL + X, Y, Enter.
+  
+
+16. En nu, breng TJBot tot leven !!! terug naar map Desktop / tjbotcz_lite ... en daar gaan we.
+  
+TJBot is geconfigureerd om met mannelijke stem te spreken en reageert op de naam Michael. Dit betekent dat hij alleen zinnen zal herkennen die Michael in zich hebben.
+
+`` `
+cd ..
   sudo node tjbotcz_lite.js
-  ```
   
-![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+`` `
+ 
+! [Tjbot-zwaaien] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
 
 ---
 
-## Pár návodov, ktoré sa môžu hodiť 
 
-### Kopírovanie z Windows na Raspberry Pi použitím príkazového riadku 
-Otvorte si CMD line a adresár, kde máte súbor, ktorý chcete kopírovať (cd = change directory). Potom použite nasledujúci príkaz, kde skontrolujete, či už máte nainštalované PuTTY a či platí cesta C:\Program Files\PuTTY\pscp.exe. Pomenovanie “file.txt” je názov kopírovaného súboru a namiesto “your_pi” dosaďte IP adresu vášho Raspberry Pi (musí byť na rovnakej sieti):
+## Enkele how-to's die van pas kunnen komen
 
-```
-"C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite
-```
+### Bestanden kopiëren van Windows naar Raspberry Pi met behulp van een opdrachtregel
 
+Open de CMD-lijn en adresseerinrichting. Er is een bestand dat je wilt kopiëren (cd = map wijzigen). Gebruik vervolgens de volgende opdrachtregel, waarbij u eerst moet controleren of PuTTY al is geïnstalleerd en controleer of C: \ Program Files \ PuTTY \ pscp.exe. werkt. Het volgende bestand: "file.txt" is een naam voor het kopiëren van bestanden, verander dus "your_pi" naar IP-adres van uw Raspberry Pi (het moet op hetzelfde netwerk zijn):
 
-### Kopírovanie z Mac OS na Raspberry Pi použitím príkazového riadku (v Mac OS)
-Otvorte terminál a adresár, kde máte súbor, ktorý chcete kopírovať (cd = change directory). Potom použite nasledujúci príkaz, kde “file.txt” je názov kopírovaného súboru a namiesto “your_pi” dosaďte IP adresu vášho Raspberry Pi (musí byť na rovnakej sieti):
+`` `
 
-```
-scp file.txt pi@your_pi:~/Desktop/tjbotcz_lite
-```
+"C: \ Program Files \ PuTTY \ pscp.exe" file.txt pi @ your_pi: Desktop / tjbotcz_lite
 
 
-### Kopírovanie z Rasberry Pi do Mac OS použitím príkazového riadku (v Mac Os)
-Pokiaľ ste v SSH prihlásený na TJBot, tak sa najskôr odhláste:
-
-```
-logout
-```
-
-V Terminále na Mac OS napíšte príkaz pre kopírovanie:
-
-```
-scp <username na Raspberry Pi>@<ip adresa Raspberry Pi>:/<celá cesta k súboru na Raspberry pi> <celá cesta k uloženiu na Mac OS>
-```
-
-Príklad:
-
-```
-scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Honza/Desktop
-```
-
-Potom dostanete výzvu na zadanie hesla do Raspberry Pi.
+`` `
 
 
-### Nastavenie pevnej IP adresy na Raspberry Pi
-Pripojte sa cez SSH alebo PuTTy na Raspberry Pi. Potom použite príkaz:
 
-```
+### Hoe bestanden kopiëren van Mac OS naar Raspberry Pi met behulp van een opdrachtregel (in Mac OS)
+
+
+Open de CMD-lijn en adresseerinrichting. Er is een bestand dat je wilt kopiëren (cd = map wijzigen). Gebruik vervolgens de volgende opdrachtregel waar "file.txt" de naam is voor het kopiëren van bestanden, verander dus "your_pi" naar IP-adres van uw Raspberry Pi (het moet in hetzelfde netwerk gedaan worden):
+
+
+
+`` `
+
+
+scp file.txt pi @ your_pi: ~ / Desktop / tjbotcz_lite
+
+
+`` `
+
+
+
+### Bestanden kopiëren van Rasberry Pi naar Mac OS met behulp van de opdrachtregel (v Mac Os)
+
+Als u via SSH bent verbonden met TJBot, logt u eerst uit:
+
+`` `
+uitloggen
+
+`` `
+n Terminal in Mac OS-opdracht gebruiken om bestanden te kopiëren:
+
+`` `
+scp <gebruikersnaam na Raspberry Pi> @ <ip adres Raspberry Pi>: / <volledig pad naar bestand op Raspberry pi> <volledig pad naar waar bestanden moeten worden opgeslagen op Mac OS>
+
+`` `
+
+Voorbeeld:
+
+`` `
+
+scp pi@192.168.1.10: /home/pi/Desktop/tjbotcz_lite/config.js Gebruikers / Honza / Desktop
+
+`` `
+U wordt gevraagd om een ??wachtwoord voor Raspberry Pi.
+
+### Hoe een IP-adres van een Raspberry Pi in te stellen
+
+Maak verbinding met Raspberry Pi via SSH of PuTTy. Gebruik vervolgens het commando:
+
+`` `
 sudo nano /etc/dhcpcd.conf
-```
 
-V otvorenom súbore odkomentujte časť s nastavením statickej adresy a zadajte správne hodnoty (IP adresu, IP adresu routera).
+`` `
 
-
-
-### Hlasitosť Raspberry Pi použitím príkazového riadku 
-Pripojte sa cez SSH alebo PuTTY na Raspberry Pi.  Nasledujúci kód nastaví hlasitosť na 90%. Zdá sa, že hlasitosť sa zvyšuje nelineárne, takže rozdiel medzi 90 % a 95 % je markantný.
-
-```
-amixer  sset PCM,0 90%
-```
-
-ďalšou možnosťou je vytvoriť si alias skratku, ktorou sa bude meniť hlasitosť. V nano editore si otvorte súbor .bashrc:
-
-```
-nano ~/.bashrc
-```
-
-a na koniec súboru pridajte 
-
-```
-# Increase volume by 5%
-alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%'
-# Decrease volume by 5%
-alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%'
-```
-Reštartujte Raspberry-Pi. Potom stačí v príkazovom riadku napísať `volup`  alebo  `voldown` a hlasitosť sa vždy zvýši/zníži o 5%.
+Voeg in het geopende bestand het gedeelte met een statische adresinstelling toe als commentaar en voer de juiste waarden in (IP-adres, router-IP-adres).
 
 
+### Het volume van de Raspberry Pi wijzigen met behulp van de opdrachtregel
+ 
+Maak verbinding via SSH of PuTTY op Raspberry Pi. De volgende regel code wijzigt het volume naar 90%. Het volume moet op een niet-lineaire manier veranderen, dus het verschil tussen 90% en 95% is opmerkelijk.
 
-### Nastavenie audio výstupu na jack
-Niekedy sa stáva, že TJBota nepočujete, aj keď máte hlasitosť nastavenú na maximum. S najväčšou pravdepodobnosťou totiž audio smeruje do HDMI a nie do pripojeného reproduktoru (cez jack). Na nastavenie audio výstupu na jack, použite nasledujúci príkaz:
+`` `
 
-```
-sudo amixer cset numid=3 1
-```
-Posledné číslo udáva audio výstup (0=auto, 1=jack, 2=HDMI)
+amixer sset PCM, 0 90%
+
+`` `
+
+De volgende optie is om een ??snelkoppeling te maken die het volume kan veranderen. In editor nano open .bashrc bestand:
+
+`` `
+
+nano ~ / .bashrc
+`` `
+en voeg aan het einde van het bestand toe
+
+`` `
+
+# Verhoog volume met 5%
+
+alias volup = 'sudo amixer set PCM - $ [$ (amixer krijgt PCM | grep -o [0-9] *% | sed' s /% // ') + 5]%'
+
+# Verlaag het volume met 5%
+
+alias voldown = 'sudo amixer set PCM - $ [$ (amixer krijgt PCM | grep -o [0-9] *% | sed' s /% // ') - 5]%'
+
+`` `
+Start Raspberry-Pi opnieuw. Dan kun je gewoon `volup` of` voldown` in Terminal schrijven en het volume zal met 5% omhoog / omlaag gaan.
 
 
-### Uvoľnenie miesta na karte microSD
-Pokiaľ máte microSD kartu 16GB, malo by všetko prebiehať hladko. Ak máte kartu 8GB, s ktorou sa TJBot bežne dodáva, tak vám po inštalácii zostane približne 2GB. Ideálni kandidáti na zmazanie sú Wolfram a LibreOffice, získate tak viac miesta. Ani jeden z týchto programov nebudete s TJBotom potrebovať. Uvoľní sa vám približne 1GB miesta na karte.
+### De audio-uitgang instellen op jack
 
-Na vymazanie programov stačí napísať:
+Soms hoor je TJBot niet, ook al staat het volume op max. Hoogstwaarschijnlijk gaat het geluid naar HDMI en niet naar aangesloten luidsprekers (via jack). Om de output naar jack-connector in te stellen, gebruikt u het volgende:
 
-```
-sudo apt-get purge wolfram-engine
-sudo apt-get purge libreoffice*
+`` `
+sudo amixer cset numid = 3 1
+
+
+`` `
+Het laatste nummer geeft de uitvoer aan (0 = automatisch, 1 = jack, 2 = HDMI)
+
+
+### Krijg meer vrije ruimte op microSD-kaart
+
+
+Als je een microSD-kaart van 16 GB hebt, zou het goed moeten komen. Als u echter een 8 GB-kaart hebt, hebt u na installatie nog ongeveer 2 GB over. U kunt Wolfram en LibreOffice verwijderen om meer vrije ruimte te krijgen. Omdat u geen van deze programma's nodig hebt om met TJBot te werken. U krijgt een extra vrije ruimte van 1 GB.
+
+Om de programma's te verwijderen:
+
+`` `
+
+sudo apt-get purge wolfram-motor
+
+sudo apt-get purge libreoffice *
+
 sudo apt-get autoremove
-```
+`` `
 
 ---
+
+
+`` `
