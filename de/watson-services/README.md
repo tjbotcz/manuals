@@ -28,13 +28,13 @@ Suche in "Catalog" nach _ **Speech to Text** _ und klicke auf "Create". Neue Sei
  
 ## Text zu Sprache-Dienst
  
-Suche in "Catalog" nach _ **Text to Speech** _ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show” klickst, blendest du die Anmeldeinformationen des Dienstes ein (Benutzername und Passwort). Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben.
+Suche in "Catalog" nach _**Text to Speech**_ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show” klickst, blendest du die Anmeldeinformationen des Dienstes ein (Benutzername und Passwort). Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben.
  
 ![T2S Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/t2s-credentials.png) 
  
 ## Visueller Wahrnehmung-Dienst
  
-Suche in "Catalog" nach _ **Visual Recognition** _ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show” klickst, blendest du die Anmeldeinformationen des Dienstes ein. Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben. Hierbei benötigt man nur das so genannte API KEY.
+Suche in "Catalog" nach _**Visual Recognition**_ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show” klickst, blendest du die Anmeldeinformationen des Dienstes ein. Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben. Hierbei benötigt man nur das so genannte API KEY.
  
 ![Visual Recognition API KEY](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/visual-recognition-credentials.png) 
  
@@ -42,7 +42,7 @@ Suche in "Catalog" nach _ **Visual Recognition** _ und klicke auf "Create". Neue
  
 ## Watson Assistent-Dienst
  
-Watson Assistent ist ein Werkzeug zum Erstellen von Dialogen (Chats). Für den schnellen Start haben wir einen einfachen Dialog vorbereitet, den du in den Dienst importieren kannst, bevor du eigene Chats erstellst. [Lade den Dialog hier herunter](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). Suche in "Catalog" nach _ **Watson Assistant** _ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Mit einem Klick auf den “Launch” -Taste öffnet sich  ein neues Fenster - und bietet das eigentliche Mittel zum Erstellen des Chats an. Wähle den "Arbeitsbereich" Reiter, in dem du das Symbol zum Importieren der heruntergeladenen Dialogdatei finden wirst (siehe Abbildung unten).
+Watson Assistent ist ein Werkzeug zum Erstellen von Dialogen (Chats). Für den schnellen Start haben wir einen einfachen Dialog vorbereitet, den du in den Dienst importieren kannst, bevor du eigene Chats erstellst. [Lade den Dialog hier herunter](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). Suche in "Catalog" nach _**Watson Assistant**_ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Mit einem Klick auf den “Launch” -Taste öffnet sich  ein neues Fenster - und bietet das eigentliche Mittel zum Erstellen des Chats an. Wähle den "Arbeitsbereich" Reiter, in dem du das Symbol zum Importieren der heruntergeladenen Dialogdatei finden wirst (siehe Abbildung unten).
  
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
  
