@@ -20,13 +20,13 @@ L'enregistrement est gratuit (aucune carte de crédit est nécessaire) et vous p
 
 ## Service Speech to Text
 
-Dans "Catalogue", recherchez _ **Speech to Text** _  et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
+Dans "Catalogue", recherchez _**Speech to Text**_  et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
 
 ![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png)
 
 ## Service Text to Speech
 
-Dans "Catalogue", recherchez _ **Text to Speech**_ et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
+Dans "Catalogue", recherchez _**Text to Speech**_ et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
 
 ![T2S Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/t2s-credentials.png)
 
