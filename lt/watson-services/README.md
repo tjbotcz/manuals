@@ -37,7 +37,7 @@ Kataloge ieškokite _**Speech to Text**_ spustelėkite sukurti. Bus atidarytas n
 
 ## Watson Asistento paslauga
 
-Watson Asistentas yra dialogo (pokalbių) kūrimo įrankis. Greitai pradžiai, parengėme paprastą dialogą, kurį galite importuoti į paslaugą prieš pradėdami kurti savo pokalbius. [Atsisiųskite dialogą čia] (https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). Kataloge ieškokite _**Watson Asisstant**_ spustelėkite sukurti. Bus atidarytas naujas puslapis su paslaugos konfigūracija. Paspaudę mygtuką paleisti, jūs atidarysite naują langą - tai tikrasis pokalbių kūrimo įrankis. Pasirinkite Workspace skirtuką, kuriame rasite piktogramą atsisiųsto dialogo failo importavimui (žr. Paveikslėlį žemiau).
+Watson Asistentas yra dialogo (pokalbių) kūrimo įrankis. Greitai pradžiai, parengėme paprastą dialogą, kurį galite importuoti į paslaugą prieš pradėdami kurti savo pokalbius. [Atsisiųskite dialogą čia](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). Kataloge ieškokite _**Watson Asisstant**_ spustelėkite sukurti. Bus atidarytas naujas puslapis su paslaugos konfigūracija. Paspaudę mygtuką paleisti, jūs atidarysite naują langą - tai tikrasis pokalbių kūrimo įrankis. Pasirinkite Workspace skirtuką, kuriame rasite piktogramą atsisiųsto dialogo failo importavimui (žr. Paveikslėlį žemiau).
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
