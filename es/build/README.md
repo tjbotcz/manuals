@@ -13,7 +13,9 @@ Aquí está el Vídeo-manual original para construir el TJBot. Puede seguirlo. L
 * siga las instrucciones en el vídeo manual para que luego no tenga que volver a montarlo de nuevo
   * especialmente cuando conecte las piernas para la estabilidad
   * insertando el servomecanismo
+  
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="http://img.youtube.com/vi/bLt3Cf2Ui3o/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" border="10" /></a>
+
 ### Entonces,  ¿Qué es diferente en TJBotCz?
 1. Parte sosteniendo el altavoz
 2. RGB LED
@@ -23,6 +25,7 @@ Para una resistencia mayor, recomendamos pegar algunas partes con pistola de peg
 Especialmente las piernas y las partes que sostienen la Raspberry Pi en la parte inferior.
 
 ### Conectando el hardware 
+
 La imagen abajo muestra toda la conectividad que puede necesitar para TJBot:
 * adaptador de corriente
 * HDMI para conectar el monitor
@@ -34,17 +37,20 @@ La imagen abajo muestra toda la conectividad que puede necesitar para TJBot:
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi-connect.jpg)
 
 **GPIO pins**
+
 Los periféricos a Raspberry Pi están conectados a través de pines individuales. Aquí está la leyenda de todos los pines:
 
 
 ![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png)
 
 
-** Conectando el servomecanismo a GPIO pines** 
+**Conectando el servomecanismo a GPIO pines** 
+
 El servomecanismo utiliza 3 pines:
 * 5V power / + (physical pin 02)
 * de tierra / - (physical pin 14)
 * GPIO 7 para comandos (pin físico 26) - se puede configurar (config.js – mira ¨Encender TJBot¨)
+
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
 
 **Conectando RGB LED a GPIO pines**
