@@ -1,47 +1,49 @@
 # IBM Cloud: Watson Services
 
-Na to, aby ste oživili TJBota, budete potrebovať služby Watson services dostupné v IBM Cloud - konkrétne mu dodáte tieto schopnosti:
+ Pour donner vie à TJBot vous allez avoir besoin de services Watson disponibles sur IBM Cloud  - plus précisément, vous allez lui donner le pouvoir de:
 
-* Počúvanie -  služba Speech to Text: konverzia hlasových súborov na text, s ktorým môže TJBot ďalej pracovať. 
-* Rozprávanie - služba Text to Speech: konverzia textu na hlasové súbory, ktoré TJBot používa pri rozprávaní.
-* Videnie - služba Visual Recognition: analýza obrázkov, ktoré TJBot vyfotí.
-* Konverzácia - služba Watson Assistant: vytváranie dialógovej logiky, ktorá vám umožní vysoko kvalitný rozhovor s TJBotom.
+* Écouter - le service Speech to Text, convertissant les fichiers vocaux en texte pouvant être traité ultérieurement.
+* Parler - le service Text to speech, conversion du texte en fichiers vocaux utilisés par TJBot pour parler.
+* Voir - le service Visual recognition analysant les images, afin que TJBot puisse vous dire ce qu'il voit.
+* Dialoguer - le service Watson Assistant crée une logique de dialogue pour que vous puissiez avoir une conversation intelligente avec TJBot.
 
-Ak chcete tieto služby používať, potrebujete účet na IBM Cloud (registrácia je bezplatná). Následne môžete spustiť vyššie uvedené služby (v lite verzii zdarma). Každá služba má svoje prihlasovacie údaje, ktoré budete musieť zadať do konfiguračného súboru na TJBotCZ (credentials.js).
+Pour pouvoir utiliser ces services, vous devez disposer d'un compte sur IBM Cloud (l'enregistrement est gratuit). Vous pouvez obtenir gratuitement les services en version allégée. Chaque service possède ses identifiants que vous devrez entrer dans le fichier de configuration de TJBotCZ (credentials.js).
 
-Poďme si teraz vytvoriť služby a získať tak ich prihlasovacie údaje.
+Créons à présent les services et notons les identifiants.
 
-## Registrácia na IBM Cloud
 
-Na IBM Cloud sa môžete sa zaregistrovať na stránke www.bluemix.net.
+## S'enregistrer sur IBM Cloud 
 
-Registrácia je zdarma (nebudete potrebovať žiadnu kreditnú kartu) a umožňuje obstarať si služby potrebné pre TJBota v LITE verzii, ktorá je pre vaše potreby dostatočná. Všetky služby sú dostupné cez záložku "Catalog". 
+Vous pouvez vous enregistrer sur IBM Cloud via www.bluemix.net.
 
-## Služba Speech to Text
+L'enregistrement est gratuit (aucune carte de crédit est nécessaire) et vous permet d'obtenir les services nécessaires en version LITE, ce qui est suffisant pour vos besoins. Tous les services sont accessibles via l'onglet "Catalogue".
 
-V záložke "Catalog" vyhľadajte službu _**Speech to Text**_ a kliknite na tlačidlo "Create". Otvorí sa nová stránka s parametrami služby. Kliknutím na ikonku "Show" zobrazíte prihlasovacie údaje k službe (používateľské meno a heslo). Tie budete musieť zadať do konfiguračného súboru na TJBotCZ  (credentials.js).
+## Service Speech to Text
+
+Dans "Catalogue", recherchez _ **Speech to Text** _  et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
 
 ![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png)
 
-## Služba Text to Speech
+## Service Text to Speech
 
-V záložke "Catalog" vyhľadajte službu  _**Text to Speech**_ a kliknite na tlačidlo "Create". Otvorí sa nová stránka s parametrami služby. Kliknutím na ikonku "Show" zobrazíte prihlasovacie údaje k službe (používateľské meno a heslo). Tie budete musieť zadať do konfiguračného súboru na TJBotCZ (credentials.js).
+Dans "Catalogue", recherchez _ **Text to Speech**_ et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js).
 
 ![T2S Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/t2s-credentials.png)
 
-## Služba Visual Recognition
+## Service Visual Recognition
 
-V záložke "Catalog" vyhľadajte službu _**Visual Recognition**_ a kliknite na "Create". Otvorí sa nová stránka s parametrami služby. Kliknutím na ikonku "Show" zobrazíte prihlasovacie údaje k službe. Tie budete musieť zadať do konfiguračného súboru na TJBotCZ (credentials.js). V prípade tejto služby budete potrebovať jedine takzvaný API KEY. 
+Dans "Catalogue", recherchez _**Visual Recognition**_ et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur l'icône "Show", vous afficherez les identifiants du service (nom d'utilisateur, mot de passe). Vous devrez les entrer dans le fichier de configuration du TJBotCZ (credentials.js). Dans le cas de ce service, il s’agit simplement de API KEY, dont vous aurez besoin.
 
 ![Visual Recognition API KEY](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/visual-recognition-credentials.png)
 
-## Služba Watson Assistant
+## Service Watson Assistant
 
-Watson Assisstant je nástroj na vytváranie dialógov (chatov). Aby ste mohli rýchlo začať, pripravili sme jednoduché dialógové okno, ktoré môžete importovať do služby skôr, ako začnete vytvárať svoje vlastné rozhovory (chaty). [Dialóg si stiahnte tu](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). V záložke "Catalog" vyhľadajte _**Watson Assistant**_ a kliknite na "Create". Otvorí sa nová stránka s parametrami služby. Kliknutím na tlačidlo "Launch" získate nové okienko - skutočný nástroj na vytváranie chatov. V záložke "Workspace" nájdete ikonku na importovanie stiahnutého súboru s dialógom (pozri obrázok nižšie).
+Watson Assistant est un outil de création de boîtes de dialogue (chats). Pour un démarrage rapide, nous avons préparé une boîte de dialogue simple que vous pouvez importer dans le service avant de créer vos propres chats. [Télécharger le dialogue ici](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). Dans "Catalogue", recherchez _**Watson Assistant**_ et cliquez sur "Create". Une nouvelle page avec la configuration du service s'ouvrira. En cliquant sur le bouton "Launch", vous ouvrirez une nouvelle fenêtre - le vrai outil de création de chats. Sélectionnez l'onglet "Workspace" où vous trouverez l'icône permettant d'importer le fichier de dialogue téléchargé (voir l'image ci-dessous).
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
-Po tom, ako importujete dialóg, sa otvorí novovytvorený pracovný priestor. Prostredníctvom ikonky s podobou slimáka sa dostanete k potrebným prihlasovacím údajom, ktoré potrebujete pre konfiguračný súbor na TJBotovi (credentials.js). Pre službu Watson Assistant exitujú 3 prihlasovacie údaje: workspace id (prístup do pracovného priestoru), username (používateľské meno) a password (heslo).
+Après l'importation de la boîte de dialogue, l'espace de travail nouvellement créé s'ouvrira. 
+L'icône qui représente un escargot vous amènera vers les identifiants dont vous aurez besoin pour le fichier de configuration sur TJBot (credentials.js). En cas de service Watson Assistant, il existe 3 identifiants : l'identifiant d'espace de travail, le nom d'utilisateur et le mot de passe.
 
 ![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
 
