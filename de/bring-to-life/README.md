@@ -1,8 +1,8 @@
 # TJBot zum Leben erwecken (auf Raspberry Pi)
  
 Wähle deinen Weg aus…
-1. [Schnellstart mit vorbereitetem Bild] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Fang von vorne, wie ein Fachmann an] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Schnellstart mit vorbereitetem Bild](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
+2. [Fang von vorne, wie ein Fachmann an](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Einige Anleitungstipps, die dir nützlich sein könnten
  
 * [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
