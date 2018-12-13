@@ -1,5 +1,5 @@
 # TJBotCZ Manuals
-!(https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Croatia.png) !(https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Croatia.png)
+![flag](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Croatia.png) ![flag](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Croatia.png)
 
 Here you will find manuals to:
 
