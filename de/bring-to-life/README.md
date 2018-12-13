@@ -42,25 +42,25 @@ Schritte:
 * Text zu Sprache (Dienst, der Text in die Stimme synthetisiert)
 * visuelle Wahrnehmung (die Analyse von Bildern)
  
-Aktiviere die Dienste gemäß dem Handbuch im Ordner ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+ Aktiviere die Dienste gemäß dem Handbuch im Ordner ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
  
-6. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gebe die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
+6. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gebe die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
  
  
 Mac OS:
-`` `
-ssh pi @ <ipadresse>
-`` `
+  ```
+  ssh pi @ <ipadresse>
+  ```
 Windows (gib die IP-Adresse von TJBot in das markierte Feld ein):
  
-! [PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
  
  
 Du wirst nach einem Passwort gefragt. Das Standard-Passwort ist:  **_raspberry_**.
  
 7. Navigiere im Terminal (oder cmd-Fenster in Windows) zu einem Ordner mit Konfigurationsdateien:
  
-``` 
+  ``` 
   cd Desktop/tjbotcz_lite/configuration 
   ``` 
  
@@ -74,21 +74,21 @@ Du wirst nach einem Passwort gefragt. Das Standard-Passwort ist:  **_raspberry_*
   ```  
  
 9. Im Texteditor namens nano füge die notwendigen Zugangsdaten zu den einzelnen Diensten ein.
-``` 
+  ``` 
   nano credentials.js 
   ``` 
 Siehe Bild unten für jeweilige Stellen, wo die Anmeldeinformationen aus Watson-Services eingetragen werden müssen (die Anführungszeichen nicht löschen).
-! [credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
 Schließen und Speichern der Datei: Speichern und Schließen von STRG + X, Y, Enter.
  
 10. Und jetzt, erwecke deinenTJBot zum Leben !!! zurück zum Ordner Desktop / tjbotcz_lite ... und los geht's.
 TJBot ist konfiguriert mit männlicher Stimme zu sprechen und auf den Namen Michael zu reagieren. Das bedeutet, er wird nur die Sätze erkennen, die den Namen Michael enthalten. Weitere Informationen über das TJBotCZ lite-Programm und was damit zu tun ist, findest du in [Repository](https://github.com/tjbotcz/tjbotcz_lite).
-`` `
-cd ..
-sudo node tjbotcz_lite.js 
-`` `
+ ```
+  cd ..
+  sudo node tjbotcz_lite.js 
+ ```
  
-! [tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
  
  
  
@@ -105,9 +105,9 @@ Dennoch ist der ganze Raspbian auf einer microSD-Karte gespeichert. Also müssen
 Schritte:
 1. Lade Raspbian OS https://www.raspberrypi.org/downloads/ herunter.
  
-! [Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
+![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
  
-2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/.  Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
+2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/. Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
  
 Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
  
