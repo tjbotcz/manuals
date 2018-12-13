@@ -5,11 +5,13 @@ Wähle deinen Weg aus…
 2. [Fang von vorne, wie ein Fachmann an](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Einige Anleitungstipps, die dir nützlich sein könnten
  
-* [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
-* [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)  * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os) 
-* [Wie kann man die IP-Adresse des Raspberry Pis einstellen] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address) * [Wie ändert man die Lautstärke von Raspberry Pi mit der Befehlszeile] ((https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
-* [Audio-Ausgang auf die Buchse setzen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#setting-audio-output-to-jack)
-* [Mehr freien Speicherplatz auf der microSD-Karte erstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#get-more-free-space-on-microsd-card)
+   * [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
+   * [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
+   * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
+   * [Wie kann man die IP-Adresse des Raspberry Pis einstellen](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
+   * [Wie ändert man die Lautstärke von Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
+    * [Audio-Ausgang auf die Buchse setzen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#setting-audio-output-to-jack)
+    * [Mehr freien Speicherplatz auf der microSD-Karte erstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#get-more-free-space-on-microsd-card)
  
 ## Schnellstart mit vorbereitetem Bild
  
@@ -23,15 +25,15 @@ Du benötigst:
 * LCD mit HDMI-Anschluss und HDMI-Kabel.
  
 Schritte:
-1. Lade das Bild [image of TJBotCZ] (https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) herunter und entpacke es.
+1. Lade das Bild [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) herunter und entpacke es.
  
-2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/.  Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
+2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/. Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
  
 Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
  
 3. Setz die vorinstallierte microSD-Karte in den Raspberry-Pi ein, verbinde es mit einem HDMI-Bildschirm, einer Tastatur, einer Maus oder mit einem RJ-45 (Ethernet) Internetkabel. Die zweite Möglichkeit ist es über WiFi zu verbinden (solltest du WiFi benutzen, musst du erstmal die Verbindung vom Betriebssystem Raspbian GUI konfigurieren, Raspberry Pi wird diese Einstellung für das nächste Mal merken). Die Verbindung wird für den Schritt 4 benötigt.
  
-4. Auf Raspbian Desktop haben wir eine Skript "run-me-first.sh" vorbereitet. Fuhr es aus (Doppelklick und Ausführen im Terminal). Die Skript lädt die neueste Version des [TJBotCZ_lite-Programms] (https://github.com/tjbotcz/tjbotcz_lite) aus dem Internet herunter und installiert notwendige Abhängigkeiten.
+4. Auf Raspbian Desktop haben wir eine Skript "run-me-first.sh" vorbereitet. Fuhr es aus (Doppelklick und Ausführen im Terminal). Die Skript lädt die neueste Version des [TJBotCZ_lite-Programms](https://github.com/tjbotcz/tjbotcz_lite) aus dem Internet herunter und installiert notwendige Abhängigkeiten.
  
 5. Um mit TJBot chatten zu können, müssen die folgenden Dienste in der IBM Cloud bereitgestellt werden:
  
@@ -40,7 +42,7 @@ Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.pn
 * Text zu Sprache (Dienst, der Text in die Stimme synthetisiert)
 * visuelle Wahrnehmung (die Analyse von Bildern)
  
-Aktiviere die Dienste gemäß dem Handbuch im Ordner ["watson-services"] (https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
+Aktiviere die Dienste gemäß dem Handbuch im Ordner ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
  
 6. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gebe die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
  
@@ -51,7 +53,7 @@ ssh pi @ <ipadresse>
 `` `
 Windows (gib die IP-Adresse von TJBot in das markierte Feld ein):
  
-! [PuTTy] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+! [PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
  
  
 Du wirst nach einem Passwort gefragt. Das Standard-Passwort ist:  **_raspberry_**.
@@ -76,17 +78,17 @@ Du wirst nach einem Passwort gefragt. Das Standard-Passwort ist:  **_raspberry_*
   nano credentials.js 
   ``` 
 Siehe Bild unten für jeweilige Stellen, wo die Anmeldeinformationen aus Watson-Services eingetragen werden müssen (die Anführungszeichen nicht löschen).
-! [credentials.js soubor] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+! [credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
 Schließen und Speichern der Datei: Speichern und Schließen von STRG + X, Y, Enter.
  
 10. Und jetzt, erwecke deinenTJBot zum Leben !!! zurück zum Ordner Desktop / tjbotcz_lite ... und los geht's.
-TJBot ist konfiguriert mit männlicher Stimme zu sprechen und auf den Namen Michael zu reagieren. Das bedeutet, er wird nur die Sätze erkennen, die den Namen Michael enthalten. Weitere Informationen über das TJBotCZ lite-Programm und was damit zu tun ist, findest du in [Repository] (https://github.com/tjbotcz/tjbotcz_lite).
+TJBot ist konfiguriert mit männlicher Stimme zu sprechen und auf den Namen Michael zu reagieren. Das bedeutet, er wird nur die Sätze erkennen, die den Namen Michael enthalten. Weitere Informationen über das TJBotCZ lite-Programm und was damit zu tun ist, findest du in [Repository](https://github.com/tjbotcz/tjbotcz_lite).
 `` `
 cd ..
 sudo node tjbotcz_lite.js 
 `` `
  
-! [tjbot-waving] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+! [tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
  
  
  
@@ -103,7 +105,7 @@ Dennoch ist der ganze Raspbian auf einer microSD-Karte gespeichert. Also müssen
 Schritte:
 1. Lade Raspbian OS https://www.raspberrypi.org/downloads/ herunter.
  
-! [Raspbian download] (https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
+! [Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
  
 2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/.  Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
  
@@ -170,7 +172,7 @@ npm installieren
 Aktiviere die Dienste gemäß dem Handbuch im Ordner  ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md). 
  
  
-12. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gib die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
+12. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gib die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
  
 Mac OS:
 `` `
@@ -178,7 +180,7 @@ ssh pi @ <ipadresse>
 `` `
 Windows (gib die IP-Adresse von TJBot in das markierte Feld ein):
  
-! [PuTTy] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+! [PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
  
  
 Du wirst nach einem Passwort gefragt. Standard-Passwort ist:  **_raspberry_**.
@@ -201,7 +203,7 @@ Du wirst nach einem Passwort gefragt. Standard-Passwort ist:  **_raspberry_**.
   nano credentials.js 
   ``` 
 Siehe Bild unten für jeweilige Stellen, wo die Anmeldeinformationen aus Watson-Services eingetragen werden müssen (die Anführungszeichen nicht löschen).
-! [credentials.js soubor] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+! [credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
 Schließen und Speichern der Datei: IN CZ VERSION: Speichern und Schließen von STRG + X, Y, Enter.
  
 16. Und jetzt, erwecke deinen TJBot zum Leben !!! zurück zum Ordner Desktop / tjbotcz_lite ... und los geht's.
