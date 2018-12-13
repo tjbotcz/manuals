@@ -35,7 +35,11 @@ La imagen abajo muestra toda la conectividad que puede necesitar para TJBot:
 
 **GPIO pins**
 Los periféricos a Raspberry Pi están conectados a través de pines individuales. Aquí está la leyenda de todos los pines:
+
+
 ![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png)
+
+
 ** Conectando el servomecanismo a GPIO pines** 
 El servomecanismo utiliza 3 pines:
 * 5V power / + (physical pin 02)
