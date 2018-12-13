@@ -21,7 +21,7 @@ Die Registrierung ist kostenlos (keine Kreditkarte erforderlich) und ermöglicht
  
 ## Sprache zum Text-Dienst
  
-Suche in "Catalog" nach _ **Speech to Text** _ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show" klickst, blendest du die Anmeldeinformationen des Dienstes ein (Benutzername und Passwort). Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben.
+Suche in "Catalog" nach _**Speech to Text**_ und klicke auf "Create". Neue Seite mit Service-Konfiguration wird geöffnet. Wenn du auf das Symbol “Show" klickst, blendest du die Anmeldeinformationen des Dienstes ein (Benutzername und Passwort). Du solltest diese in die TJBotCZ-Konfigurationsdatei (credentials.js) eingeben.
  
 ![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png) 
  
