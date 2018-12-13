@@ -6,6 +6,7 @@
 [![French](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-France.png)](https://github.com/tjbotcz/manuals/tree/master/fr) . 
 [![German](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Germany.png)](https://github.com/tjbotcz/manuals/tree/master/de) . 
 [![Lithuanian](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Lithuania.png)](https://github.com/tjbotcz/manuals/tree/master/lt) . 
+[![Russian](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Russia.png)](https://github.com/tjbotcz/manuals/tree/master/ru) . 
 [![Slovak](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Slovakia.png)](https://github.com/tjbotcz/manuals/tree/master/sk) . 
 [![Spanish](https://github.com/tjbotcz/manuals/raw/master/images/flag-of-Spain.png)](https://github.com/tjbotcz/manuals/tree/master/es)
 
