@@ -6,10 +6,10 @@ _1. PRESTE ATENCIÓN CUANDO DOBLE EL CARTÓN, SI LO DOBLA MAL, NECESITARÁ UN PE
  _2. PREPÁRASE PARA ENSUCIARSE. EL CORTE LASER DEL CARTÓN DEJA MANCHAS NEGRAS EN SUS MANOS. (Os recomendamos limpiar cada parte con un pañuelo de papel.)
 
 ### Vídeo-manual
-Aquí está el Vídeo-manual original para construir el TJBot. Puede seguirlo. La única diferencia que hay es en conectar el LED. TJBOtCZ utiliza RGB LED tradicional  el cual está sobre una plataforma debajo de la parte superior (la cabeza)  mire las fotos abajo. Para reparar el LED, recomendamos utilizar una masilla adhesiva reutilizable (¨Blue Tack¨) o una goma pegajosa similar.
+Aquí está el Vídeo-manual original para construir el TJBot. Puede seguirlo. La única diferencia que hay es en conectar el LED. TJBOtCZ utiliza RGB LED tradicional  el cual está sobre una plataforma debajo de la parte superior (la cabeza) – mire las fotos abajo. Para reparar el LED, recomendamos utilizar una masilla adhesiva reutilizable (¨Blue Tack¨) o una goma pegajosa similar.
 
 **Tenga cuidado.**
-* Doble el cartón de una manera correcta (en algunas partes hay instrucciones "doble arriba o "doble abajo  más vale prevenir que lamentar :)
+* Doble el cartón de una manera correcta (en algunas partes hay instrucciones "doble arriba“ o "doble abajo“ – más vale prevenir que lamentar :)
 * siga las instrucciones en el vídeo manual para que luego no tenga que volver a montarlo de nuevo
   * especialmente cuando conecte las piernas para la estabilidad
   * insertando el servomecanismo
@@ -40,15 +40,15 @@ Los periféricos a Raspberry Pi están conectados a través de pines individuale
 El servomecanismo utiliza 3 pines:
 * 5V power / + (physical pin 02)
 * de tierra / - (physical pin 14)
-* GPIO 7 para comandos (pin físico 26) - se puede configurar (config.js  mira ¨Encender TJBot¨)
+* GPIO 7 para comandos (pin físico 26) - se puede configurar (config.js – mira ¨Encender TJBot¨)
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
 
 **Conectando RGB LED a GPIO pines**
 RGB LED usa 4 pines:
 * de tierra / - (physical pin 09)
-* GPIO 17 / R (physical pin 11)  puede ser configurado (config.js - see bring-to-life)
-* GPIO 27 / G (physical pin 13)  puede ser configurado (config.js - see bring-to-life)
-* GPIO 22 / B (physical pin 15)  puede ser configurado (config.js - see bring-to-life)
+* GPIO 17 / R (physical pin 11) – puede ser configurado (config.js - see bring-to-life)
+* GPIO 27 / G (physical pin 13) – puede ser configurado (config.js - see bring-to-life)
+* GPIO 22 / B (physical pin 15) – puede ser configurado (config.js - see bring-to-life)
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
 
