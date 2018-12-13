@@ -280,7 +280,7 @@ Korrigiere den Teil  in der geöffneten Datei, der die  statischen Adresseinstel
 Verbinde dich über SSH oder PuTTY am Raspberry Pi. Die nächste Codezeile ändert ihre Lautstärke auf 90%. Das Volumen sollte sich nicht linear ändern, daher sollte der Unterschied zwischen 90% und 95% bemerkenswert sein.
  
 ```
-Amixer sset PCM, 0 90%
+amixer sset PCM, 0 90%
 ```
  
 Die nächste Option ist eine Abkürzung, die die Lautstärke ändern kann. Im Editor nano  .bashrc Datei öffnen:
