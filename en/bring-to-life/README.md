@@ -1,4 +1,4 @@
-# Bringing TJBota to life (on Raspberry Pi)
+# Bringing TJBotCZ to life (on Raspberry Pi)
 Choose your path...
 1. [Faststart from ready-made image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
 2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
