@@ -29,7 +29,7 @@ Schritte:
  
 2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/. Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
  
-Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
  
 3. Setz die vorinstallierte microSD-Karte in den Raspberry-Pi ein, verbinde es mit einem HDMI-Bildschirm, einer Tastatur, einer Maus oder mit einem RJ-45 (Ethernet) Internetkabel. Die zweite Möglichkeit ist es über WiFi zu verbinden (solltest du WiFi benutzen, musst du erstmal die Verbindung vom Betriebssystem Raspbian GUI konfigurieren, Raspberry Pi wird diese Einstellung für das nächste Mal merken). Die Verbindung wird für den Schritt 4 benötigt.
  
