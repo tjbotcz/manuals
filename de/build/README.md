@@ -49,13 +49,13 @@ Das Bild unten zeigt alle Verbindungsteile, die man für TJBot benötigen könnt
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi-connect.jpg) 
  
  
-** GPIO-Stifte **
+**GPIO-Stifte**
  
 Peripheriegeräte zum Raspberry Pi sind über einzelne Stifte verbunden. Hier ist die Legende zu allen Stiften:
 ![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png) 
  
  
-** Servo an GPIO-Stifte anschließen **
+**Servo an GPIO-Stifte anschließen**
  
 Servo verwendet 3 Stifte:
 * 5V power / + (physischer Stift 02)
@@ -64,7 +64,7 @@ Servo verwendet 3 Stifte:
  
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg) 
  
-** RGB-LED an GPIO-Stifte anschließen **
+**RGB-LED an GPIO-Stifte anschließen**
  
 RGB LED verwendet 4 Stifte:
 * Masse / - (physischer Stift 09)
