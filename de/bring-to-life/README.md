@@ -109,23 +109,23 @@ Schritte:
  
 2. Lade die Software herunter und installiere es, um ein Image von Raspbian auf die microSD-Karte installieren zu können, z. B. Etcher: https://etcher.io/. Verwende es, um das heruntergeladene Bild auf die microSD-Karte zu installieren (suche die Datei tjbotcz_lite.img aus, wähle die geladene microSD-Karte und... Flash!)
  
-Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
  
 3. Setz die vorinstallierte microSD-Karte in den Raspberry-Pi ein, verbinde es mit einem HDMI-Bildschirm, einer Tastatur, einer Maus oder mit einem RJ-45 (Ethernet) Internetkabel. Die zweite Möglichkeit ist es über WiFi zu verbinden (solltest du WiFi benutzen, musst du erstmal die Verbindung vom Betriebssystem Raspbian GUI konfigurieren, Raspberry Pi wird diese Einstellung für das nächste Mal merken). Die Verbindung wird für den Schritt 4 benötigt.
  
  
 4. Erlaube die Verbindung für den Raspberry-Pi SSH, um später mit Raspberry-Pi Fernverbindung über das Terminal oder PuTTY (Windows) fortzusetzen.  Gib im Terminal ein:
-`` `
+```
 sudo raspi-config
-`` `
+```
 Ein Menü wird geöffnet.
 Gib “interfacing Options” (Schnittstellenoptionen) ein.
 Gib "SSH" und aktiviere es.
  
 5. Öffne das Terminal und führe folgendes aus:
-`` `
+```
 curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
-`` `
+```
 Dieser Befehl lädt eine Skript vom Server herunter, auf der ein interaktiver Leitfaden im Terminal-Fenster ausgeführt wird. Mit dieser Anleitung konfigurierst du Raspberry Pi für TJBot:
  
 * TJBot Name (Lass raspberrypi)  - (Enter) 
@@ -141,27 +141,26 @@ Dieser Befehl lädt eine Skript vom Server herunter, auf der ein interaktiver Le
  
  
 6. Installiere node.js Version 9:
-`` `
+```
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 sudo apt-get install -y Nodejs
-`` `
+```
 7. Öffne den Ordner Desktop im Terminal, :
-`` `
+```
 cd Desktop
-`` `
+```
 8. Installiere ein der TJBotCZ-Programme (tjbotcz_lite, tjbotcz, tjbotcz_iot):
-`` `
+```
 git clone https://github.com/tjbotcz/ <Name des tjbotcz-Programms> .git
-`` `
+```
 9. Öffne im Terminal den neu erstellten Ordner "tjbotcz_lite", "tjbotcz" oder "tjbotcz_iot":
-`` `
+```
 cd <Name des Ordners>
-`` `
+```
 10. Lade die Abhängigkeiten herunter, die in der Datei package.json im Ordner mit dem in Schritt 8 heruntergeladenen Programm definiert sind:
-`` `
+```
 npm installieren
- 
-`` `
+```
 11. Um mit TJBot chatten zu können, müssen die folgenden Dienste in der IBM Cloud bereitgestellt werden:
  
 * Watson Assistent (Dienst zum Erstellen von Dialogen / Chats)
@@ -175,20 +174,21 @@ Aktiviere die Dienste gemäß dem Handbuch im Ordner  ["watson-services"](https:
 12. Wenn du alle Dienste eingerichtet hast, dann willkommen zurück und lass uns fortfahren. Gib die Anmeldeinformationen einzelner Dienste in die Konfigurationsdatei (credentials.js) ein. Da es sich bei den Anmeldeinformationen um recht lange Zeichenfolgen handelt, besteht die beste Eingabemöglichkeit wäre, eine Fernverbindung mit TJBot von dem Computer herzustellen, auf dem du die Watson-Dienste erstellt und diese kopiert und eingefügt hast. Wenn du ein Mac-Benutzer bist, verwende das Terminal. Wenn du Windows verwendest, benutze [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy ist ein Fernverbindungprogramm , das zuerst installiert werden soll. Verwende das Terminal oder in PuTTy (connect to TJBot) verbinden mit TJBot (du sollst auf dem gleichen Netzwerk / WiFi wie TJBot sein):
  
 Mac OS:
-`` `
+```
 ssh pi @ <ipadresse>
-`` `
+```
 Windows (gib die IP-Adresse von TJBot in das markierte Feld ein):
  
-! [PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
  
  
 Du wirst nach einem Passwort gefragt. Standard-Passwort ist:  **_raspberry_**.
  
 13. Navigiere im Terminal (oder cmd-Fenster in Windows) zu einem Ordner mit Konfigurationsdateien:
  
-``` 
-  cd Desktop/tjbotcz_lite/configuration 
+  ``` 
+  cd Desktop/tjbotcz_lite/configuration
+  ```
  
 14. Erstelle eine Kopie der Dateien "credentials.default.js" und "config.default.js", und benenne sie entsprechend mit "credentials.js" und "config.js".  Dies kannst du auch entfernt über das Terminal / CMD-Fenster tun:
  
@@ -196,24 +196,23 @@ Du wirst nach einem Passwort gefragt. Standard-Passwort ist:  **_raspberry_**.
   ```   
   cp config.default.js config.js 
   cp credentials.default.js credentials.js 
- 
   ```  
 15.  Im Texteditor namens nano füge die notwendigen Zugangsdaten zu den einzelnen Diensten ein.
-``` 
+  ``` 
   nano credentials.js 
   ``` 
 Siehe Bild unten für jeweilige Stellen, wo die Anmeldeinformationen aus Watson-Services eingetragen werden müssen (die Anführungszeichen nicht löschen).
-! [credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
+![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
 Schließen und Speichern der Datei: IN CZ VERSION: Speichern und Schließen von STRG + X, Y, Enter.
  
 16. Und jetzt, erwecke deinen TJBot zum Leben !!! zurück zum Ordner Desktop / tjbotcz_lite ... und los geht's.
-TJBot ist konfiguriert mit männlicher Stimme zu sprechen und auf den Namen Michael zu reagieren. Das bedeutet, er wird nur die Sätze erkennen, die den Namen Michael enthalten. Weitere Informationen über das TJBotCZ lite-Programm und was damit zu tun ist, findest du in [Repository] (https://github.com/tjbotcz/tjbotcz_lite).
-`` `
+TJBot ist konfiguriert mit männlicher Stimme zu sprechen und auf den Namen Michael zu reagieren. Das bedeutet, er wird nur die Sätze erkennen, die den Namen Michael enthalten. Weitere Informationen über das TJBotCZ lite-Programm und was damit zu tun ist, findest du in [Repository](https://github.com/tjbotcz/tjbotcz_lite).
+```
 cd ..
 sudo node tjbotcz_lite.js 
-`` `
+```
  
-! [tjbot-waving] (https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
  
  
 ---
@@ -223,19 +222,18 @@ sudo node tjbotcz_lite.js
 ### So kopierst du die Dateien von Windows auf Raspberry Pi mit der Befehlszeile
 Öffne die CMD-Zeile und den Absender. Es gibt eine Datei, die du kopieren sollst (cd = change directory / Verzeichnis ändern). Verwende dann die nächste Befehlszeile, wo du zunächst beachten müsst, ob PuTTY bereits vorhanden und installiert ist, und ob C: \ Program Files \ PuTTY \ pscp.exe funktioniert. Die folgende Datei: "file.txt" ist ein Name zum Kopieren von Dateien, dementsprechend ändere  "your_pi" in die IP-Adresse deines Raspberry Pi (es muss sich im selben Netzwerk befinden):
  
-`` `
+```
 "C: \ Programme \ PuTTY \ pscp.exe" file.txt pi @ your_pi: Desktop / tjbotcz_lite
- 
-`` `
+```
  
  
  
 ### So kopierst du die Dateien von Mac BS auf Raspberry Pi  mit der Befehlszeile (in Mac BS)
 Öffne die CMD-Zeile und den Absender CZ VERSION: Terminal und Addresser. Es gibt eine Datei, die du kopieren sollst (cd = change directory / Verzeichnis ändern). Dann benutze die nächste Befehlszeile, wo "file.txt" der Name für das Kopieren von Dateien ist, also ändere "your_pi" in die IP-Adresse deines Raspberry Pi (es muss im selben Netzwerk gemacht werden):
  
-`` `
+```
 scp file.txt pi @ ihr_pi: ~ / Desktop / tjbotcz_lite
-`` `
+```
  
  
 ### So kopierst du Dateien von Rasberry Pi ins Mac BS mit der Befehlszeile (in Mac BS)
@@ -250,14 +248,12 @@ Im Mac BS verwende  im Terminal den Befehl zum Kopieren von Dateien:
  
 ``` 
 scp <username na Raspberry Pi>@<ip adresa Raspberry Pi>:/<full path to file on Raspberry pi> <full path to where files is to be saved on Mac OS> 
- 
 ``` 
  
 Beispiel:
  
 ``` 
 scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Honza/Desktop 
- 
 ``` 
 Du wirst nach einem Passwort für Raspberry Pi gefragt.
  
@@ -272,9 +268,9 @@ In the opened file un-comment the part with static address setting and enter cor
  
 Verbinde dich mit Raspberry Pi über SSH oder PuTTy. Dann benutze den Befehl:
  
-`` `
+```
 sudo nano /etc/dhcpcd.conf
-`` `
+```
  
 Korrigiere den Teil  in der geöffneten Datei, der die  statischen Adresseinstellung enthält und gib die korrekten Werte ein (IP-Adresse, Router-IP-Adresse).
  
@@ -283,9 +279,9 @@ Korrigiere den Teil  in der geöffneten Datei, der die  statischen Adresseinstel
 ### Wie ändert man das Volume von Raspberry Pi über die Befehlszeile?
 Verbinde dich über SSH oder PuTTY am Raspberry Pi. Die nächste Codezeile ändert ihre Lautstärke auf 90%. Das Volumen sollte sich nicht linear ändern, daher sollte der Unterschied zwischen 90% und 95% bemerkenswert sein.
  
-`` `
+```
 Amixer sset PCM, 0 90%
-`` `
+```
  
 Die nächste Option ist eine Abkürzung, die die Lautstärke ändern kann. Im Editor nano  .bashrc Datei öffnen:
  
@@ -300,9 +296,8 @@ und am Ende der Datei hinzufügen
 alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%' 
 # Decrease volume by 5% 
 alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%' 
- 
- 
-`` `
+
+```
 Starten Sie Raspberry-Pi neu. Dann kannst du einfach "volup" oder "voldown" in Terminal schreiben und die Lautstärke wird um 5% erhöht / verringert.
  
  
@@ -310,9 +305,9 @@ Starten Sie Raspberry-Pi neu. Dann kannst du einfach "volup" oder "voldown" in T
 ### Einstellung der Audioausgabe für die Buchse
 Manchmal kann man TJBot nicht hören, obwohl die Lautstärke auf max eingestellt ist. Höchstwahrscheinlich geht der Ton an HDMI und nicht an den angeschlossenen Lautsprecher (über die Buchse). Gehe folgendermaßen vor, um den Ausgang für den Buchsenanschluss festzulegen:
  
-`` `
+```
 sudo amixer cset numid = 3 1
-`` `
+```
 Die letzte Nummer gibt den Ausgang an (0 = auto, 1 = Buchse, 2 = HDMI)
  
  
