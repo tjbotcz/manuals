@@ -1,303 +1,310 @@
-# Bringing TJBotCZ to life (on Raspberry Pi)
-Choose your path...
-1. [Faststart from ready-made image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Start from scratch like a PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
-3. Some how-to's that may come handy
-
-    * [How to copy files from Windows to Raspberry Pi using a command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [How to copy files from Mac OS to Raspberry Pi using a command line (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [How to copy files from Rasberry Pi to Mac OS using command line (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [How to set up a Raspberry Pi’s IP address](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [How to change Raspberry Pi’s volume using the command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
-    
-## Faststart from ready-made image 
-
-Clearly you are eager to have TJBot up and running. Therefore we have prepared a ready-made image, where we preconfigured Raspbian for TJBot CZ.
-
-You will need:
-
-*	internet connection to download the Raspbian OS and SW for installing image on the card
-*	a computer with an SD/ microSD card’s slot or an SD/microSD reader
-*	USB keyboard, USB mouse
-*	LCD with HDMI port and HDMI cable.
-
-
-Steps:
-1. Download the ready-made [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) and unpack it.
-
-2. Download and install SW for installing image of Raspbianu to the microSD card, e.g. Etcher: https://etcher.io/ . Use it to install downloaded image on microSD card (choose tjbotcz_lite.img file, select mounted microSD card , and…Flash!)
-
-![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
-
-3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 4.
-
-4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
-
-5. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
-
-* Watson Assistant (service for creating dialogs/chats)
-* Speech to Text (service transcripting voice file to text file)
-* Text to Speech (service synthetizing text to voice)
-* Visual Recognition (service analyzing pictures)
-
-  Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
-
-6. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
-
-  MacOS:
-  ```
-  ssh pi@<ipadresa>
-  ```
-  Windows (enter IP address of TJBota into highlighted field):
-
-  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
-
-
-  You will be asked for a password. Default password is: **_raspberry_**.
-
-7. In Terminal (or cmd window in Windows) navigate to folder with configuration files:
-
-  ```
-  cd Desktop/tjbotcz_lite/configuration
-  ```
-8. Create a copy of credentials.default.js and config.default.js  files and name them credentials.js and config.js accordingly. You can do this also remotly via the Terminal/CMD window:
-  ```  
-  cp config.default.js config.js
-  cp credentials.default.js credentials.js
-  ```
-9. In text editor called nano insert the necessary credentials to individual services.
-  ```
-  nano credentials.js
-  ```
-  See picture below for places that need to be filled with credential data from Watson services (do not delete the quotation marks).
-  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Closing and saving the file: CTRL+X, Y, Enter.
+# Oživljavanje TJBot-a (na Raspberry Pi-u) 
+ 
+Izaberi svoj put… 
+1. [Brzi start putem gotove slike](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image) 
+2. [Započni od nule kao stručnjak](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro) 
+3. Neki savjeti i trikovi koji bi ti mogli koristiti 
+ 
+    * [Kako kopirati datoteke iz Windows OS-a na Raspberry Pi koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
+    * [Kako kopirati datoteke iz Mac OS-a na Raspberry Pi koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os) 
+    * [Kako kopirati datoteke iz Rasberry Pi-a na Mac OS koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os) 
+    * [Kako postaviti IP adresu Raspberry Pi-a](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address) 
+    * [Kako podesiti glasnoću zvuka Raspberry Pi-a koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
+    * [Postavljanje audio izlaza na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack) 
+    * [Stvaranje više prostora za pohranu na microSD kartici](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card) 
+     
+## Brzi start putem gotove slike 
+ 
+Sigurno jedva čekaš imati svojeg TJBota, spremnog za korištenje. Stoga smo pripremili gotovu sliku sustava na kojoj je već konfiguriran Raspbian za TJBot CZ. 
+ 
+Potrebni su ti: 
+ 
+*internetska veza za spuštanje Raspbian OS-a i softvera za instalaciju slike na karticu
+*računalo s utorom  za SD/ microSD karticu ili SD/microSD čitač
+*USB tipkovnica, USB miš
+*LCD s HDMI portom i HDMI kabel. 
+ 
+ 
+Postupak: 
+1. Spusti gotovu sliku [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) i raspakiraj je. 
+ 
+2. Spusti i instaliraj softver potreban za instalaciju slike Raspbiana na microSD karticu (npr. Etcher: https://etcher.io/ .  Prilikom instalacije prethodno spuštene slike na microSD karticu odaberi tjbotcz_lite.img datoteku, odaberi umetnutu microSD karticu i…Flash!) 
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
+ 
+3. Umetni prethodno instaliranu microSD karticu u Raspberry-Pi, spoji uređaj s HDMI ekranom, tipkovnicom, mišem i s RJ-45 (eternet) internet kabelom. Druga opcija je spajanje putem WIFI veze  (ako koristiš WiFi morati ćeš konfigurirati vezu preko Raspbianovog grafičkog korisničkog sučelja, a postavke će biti pohranjene pri svakom slijedećem spajanju). Povezanost s internetom biti će ti potrebna i u slijedećem koraku. 
+ 
+4. Na radnoj površini Raspbiana pripremljena je skripta "run-me-first.sh".  Pokreni je (dvostruki klik i naredba execute u tekstualnom sučelju). Skripta će spustiti najnoviju inačicu programa [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) sa interneta te instalirati potrebne dependencije. 
+ 
+5. Kako bi chat s TJBotom bio moguć, na IBM Cloudu moraju biti  omogućene slijedeće usluge: 
+ 
+* Watson pomoćnik (usluga za stvaranje dialoga/chatova) 
+* govor u tekst (usluga transkribiranja glasovne datoteke u tekstualnu) 
+* tekst u govor (usluga pretvaranja teksta u glas) 
+* vidno prepoznavanje (usluga analize slika) 
+ 
+Pokreni usluge prema uputstvima u ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md) mapi. 
+ 
+6.Ako je za tebe prethodan korak već rješen, dobrodošao/la natrag u postupak i nastavimo dalje! 
+Unesi korisničke podatke svake pojedine usluge u konfiguracijsku datoteku (credentials.js). Pošto korisnički podaci tvore dugačke linije, najbolji način za njihov unos je putem daljinskog povezivanja s  TJBotom s računala, na kojem su omogućene Watson usluge, a potom njihovo kopiranje i lijepljenje sa računala na TJBot. Ako si Mac korisnik, koristi program terminal, a ako koristiš Windows OS, koristi [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy je program daljinskog pristupa i potrebno ga je prethodno instalirati na računalo. Koristeći program terminal ili PuTTy spoji se s TJBotom (pritom je potrebno biti na istoj mreži/WiFiju kao i TJBot): 
+ 
+  MacOS: 
+  ``` 
+  ssh pi@<ipadresa> 
+  ``` 
+  Windows (unesi IP adresu TJBot-a u označeno polje): 
+ 
+  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png) 
+ 
+  Pojaviti će se upit za lozinku. Generirana lozinka je: **_raspberry_**. 
+ 
+7. U terminalu (ili cmd prozoru u Windowsu) slijedi put do mape s konfiguracisjkim datotekama: 
+ 
+  ``` 
+  cd Desktop/tjbotcz_lite/configuration 
+  ``` 
+8. Napravi kopiju credentials.default.js i config.default.js  datoteka i nazovi ih credentials.js i config.js. To možeš napraviti i putem daljinskog povezivanja u Terminalu ili u CMD prozoru: 
+  ```   
+  cp config.default.js config.js 
+  cp credentials.default.js credentials.js 
+  ``` 
+9. U alat za obradu teksta zvan nano umetni potrebne pristupne podatke za odgovarajuće usluge. 
+  ``` 
+  nano credentials.js 
+  ``` 
+  Vidi sliku dolje na kojoj su označena sva mjesta koja se moraju ispuniti korisničkim podacima Watson usluga  (ne briši navodnike). 
+  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png) 
+  Zatvaranje i spremanje datoteke CTRL+X, Y, Enter. 
+   
+10. A sada, oživi svogTJBota !!!  Vrati se do mape Desktop/tjbotcz_lite ... i krenimo. 
+TJBot je namješten da govori muškim glasom i odgovara na ime Michael. To znači da će prepoznati samo one rečenice koja sadrže ime Michael. Više informacija o TJBotCZ lite programu i kako ga koristiti, naći ćeš na ovom mjestu [repository](https://github.com/tjbotcz/tjbotcz_lite). 
+  ``` 
+  cd .. 
+  sudo node tjbotcz_lite.js 
+  ``` 
+   
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif) 
+ 
+--- 
+ 
+## Započni od nule kao stručnjak
+ 
+Raspberry-Pi koristi Raspbian kao operativni sustav, koji je sagrađen na Debian Linuxu. 
+Sav Raspbian je na microSD kartici. Stoga je nužno prvo instalirati operativni sustav Raspbian na microSD karticu.  
+Potrebni su nam: 
+ 
+*internetska veza za spuštanje Raspbian OS i softvera za instalaciju slike na karticu
+*računalo s utorom za SD/ microSD karticu ili  SD/microSD čitač
+*USB tipkovnica, USB miš 
+*LCD s HDMI portom i HDMI kabelom. 
+ 
+Upute: 
+1. Spusti Raspbian OS https://www.raspberrypi.org/downloads/ . 
+ 
+![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download") 
+ 
+2. Spusti i instaliraj softver, kako bi instalacija slike Raspbian bila moguća, za npr. Etcher https://etcher.io/ , a nakon toga instaliraj Raspbian OS  na microSD karticu (klikni/odaberi downloaded .img file, potom već spojenu SD karticu, i…Flash!) 
+ 
+![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
+ 
+3. Umetni prethodno instaliranu microSD karticu u Raspberry-Pi, spoji uređaj s HDMI ekranom, tipkovnicom, mišem i s RJ-45 (eternet) internet kabelom. Druga opcija je spajanje putem WIFI veze  (ako koristiš WiFi morati ćeš konfigurirati vezu preko Raspbianovog grafičkog korisničkog sučelja, a postavke će biti pohranjena pri slijedećem spajanju). Povezanost s internetom biti će ti potrebna u koraku broj 5.
   
-10. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
-  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. For more information about TJBotCZ lite program and what to do with it go to this [repository](https://github.com/tjbotcz/tjbotcz_lite).
-  ```
-  cd ..
-  sudo node tjbotcz_lite.js
-  ```
-  
-![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
-
----
-
-## Start from scratch like a PRO
-
-Raspberry-Pi uses Raspbian as an operation system, which is built at Debian Linux.
-Then, the whole Raspbian is on a microSD card. Thus, we firstly need to install OS Raspbian on a microSD card. We will need:
-
-*	internet connection to download the Raspbian OS and SW for installing image on the card
-*	a computer with an SD/ microSD card’s slot or an SD/microSD reader
-*	USB keyboard, USB mouse
-*	LCD with HDMI port and HDMI cable.
-
-Steps:
-1. Download Raspbian OS https://www.raspberrypi.org/downloads/ .
-
-![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
-
-2. Download and install SW in order to install image Raspbian, for e.g. Etcher https://etcher.io/ and then install Raspbian OS on microSD card (click/select downloaded .img file, then already connected SD card, and…Flash!)
-
-![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
-
-3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 5.
-
-4. Permit the connection for the Raspberry-Pi SSH, in order to later continue with Raspberry-Pi distance connection via terminal or PuTTY (Windows). In Terminal write:
-```
-sudo raspi-config
-```
-A menu will open.
-Choose “Interfacing Options”.
-Choose “SSH” and enable it.
-5. Open Terminal and run:
-```
-curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
-```
-This command will download a script from the server, which will run an interactive guide in Terminal window. With this guide you will configure Raspberry Pi for TJBot:
-
-* TJBot name (leave raspberrypi)  - (Enter)
-* IPv6 (disable) - (Y)
-* Google DNS (enable) - (Y)
-* settings local (language) (Y)
-* update OS Raspbianu (Y)
-* update to newer version of Node.js (N)
-* connecting camera (Y)
-* downloading original TJBot and test scenarios (Enter)
-* configuring audio output (leave port for jack-audio enabled) (N)
-* reboot (Y)
-
-6. Install node.js version 9:
-```
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-7. In Terminal open folder Desktop:
-```
-cd Desktop
-```
-8. Install one of the TJBotCZ programs (tjbotcz_lite, tjbotcz, tjbotcz_iot):
-```
-git clone https://github.com/tjbotcz/<name of tjbotcz program>.git
-```
-9. In Terminal open the newly created folder “tjbotcz_lite”, "tjbotcz" or tjbotcz_iot":
-```
-cd <name of the folder>
-```
-10. Download dependencies defined in file package.json in the folder with program downloaded in step 8:
-```
-npm install
-```
-11. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
-
-* Watson Assistant (service for creating dialogs/chats)
-* Speech to Text (service transcripting voice file to text file)
-* Text to Speech (service synthetizing text to voice)
-* Visual Recognition (service analyzing pictures)
-
-  Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
-
-12. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
-
-  MacOS:
-  ```
-  ssh pi@<ipadresa>
-  ```
-  Windows (enter IP address of TJBota into highlighted field):
-
-  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
-
-
-  You will be asked for a password. Default password is: **_raspberry_**.
-
-13. In Terminal (or cmd window in Windows) navigate to folder with configuration files:
-
-  ```
-  cd Desktop/tjbotcz_lite/configuration
-  ```
-14. Create a copy of credentials.default.js and config.default.js  files and name them credentials.js and config.js accordingly. You can do this also remotly via the Terminal/CMD window:
-  ```  
-  cp config.default.js config.js
-  cp credentials.default.js credentials.js
-  ```
-15. In text editor called nano insert the necessary credentials to individual services.
-  ```
-  nano credentials.js
-  ```
-  See picture below for places that need to be filled with credential data from Watson services (do not delete the quotation marks).
-  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Closing and saving the file: CTRL+X, Y, Enter.
-  
-16. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
-  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. 
-  ```
-  cd ..
-  sudo node tjbotcz_lite.js
-  ```
-  
-![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
-
----
-
-## Some how-to's that may come handy
-
-### How to copy files from Windows to Raspberry Pi using a command line 
-Open CMD line and addresser. There is a file which you want to copy (cd = change directory).  Then use the next command line, where firstly you need to check whether PuTTY is already installed and check if C:\Program Files\PuTTY\pscp.exe.  is working. The following file: “file.txt” is a name for copying files thus change “your_pi” to IP address of your Raspberry Pi (it has to be at the same network):
-
-```
-"C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite
-```
-
-
-### How to copy files from Mac OS to Raspberry Pi using a command line (in Mac OS)
-Open CMD line and addresser. There is a file which you want to copy (cd = change directory). Then use the next command line where “file.txt” is name for copying files thus change “your_pi” to IP address of your Raspberry Pi (it has to be done in the same network):
-
-```
-scp file.txt pi@your_pi:~/Desktop/tjbotcz_lite
-```
-
-
-### How to copy files from Rasberry Pi to Mac OS using command line (v Mac Os)
-If you are connected to TJBot over SSH, logout first:
-
-```
-logout
-```
-
-In Terminal in Mac OS use command to copy files:
-
-```
-scp <username na Raspberry Pi>@<ip adresa Raspberry Pi>:/<full path to file on Raspberry pi> <full path to where files is to be saved on Mac OS>
-```
-
-Example:
-
-```
-scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Honza/Desktop
-```
-
-You will be asked for password to Raspberry Pi.
-
-
-### How to set up a Raspberry Pi’s IP address 
-Connect to Raspberry Pi over SSH or PuTTy. Then use command:
-
-```
-sudo nano /etc/dhcpcd.conf
-```
-
-In the opened file un-comment the part with static address setting and enter correct values (IP address, router IP address).
-
-
-
-### How to change Raspberry Pi’s volume using the command line 
-Connect via SSH or  PuTTY at Raspberry Pi.  The next line of code will change its volume to 90%. The volume should change in a non-linear way so the difference between 90 % and 95 % is notable.
-
-```
-amixer  sset PCM,0 90%
-```
-
-The next option is to make a short-cut which can change the volume. In editor nano open .bashrc file:
-
-```
-nano ~/.bashrc
-```
-
-and at the end of the file add 
-
-```
-# Increase volume by 5%
-alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%'
-# Decrease volume by 5%
-alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%'
-```
-Restart Raspberry-Pi. Then you can just write `volup`  or  `voldown`  in Terminal and the volume will change up/down by 5%.
-
-
-
-### Setting audio output to jack
-Sometimes you cannot hear TJBot eventhough the volume is set to max. Most probably the audio goes to HDMI and not to connected speaker (via jack). To set output to jack connector use the following:
-
-```
-sudo amixer cset numid=3 1
-```
-The last number specifies the output (0=auto, 1=jack, 2=HDMI)
-
-
-### Get more free space on microSD Card
-If you have 16GB microSD card, you should be fine. However, if you have 8GB card, then after installing you will have approximately 2GB left. You can uninstall Wolfram and LibreOffice to get more free space. As you will not need any of these programs for working with TJBot. You will get an extra 1GB free space.
-
-To remove the programs:
-
-```
-sudo apt-get purge wolfram-engine
-sudo apt-get purge libreoffice*
-sudo apt-get autoremove
-```
-
----
+4. Dozvoli spajanje Raspberry-Pi i SSH-a (Secure Shell mrežni protokol ), kako bi kasnije bilo moguće nastaviti s daljinskim povezivanjem Raspberry-Pi-a putem terminala ili PuTTYja (Windows). U terminal  napiši: 
+``` 
+sudo raspi-config 
+``` 
+Otvoriti će se izbornik. 
+Izaberi “Interfacing Options” (razmjena opcija). 
+Izaberi “SSH” i omogući ga. 
+ 
+5. Open Terminal and run: 
+``` 
+curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh - 
+``` 
+Ova naredba će spustiti skriptu sa servera koja će pokrenuti interaktivni vodič u prozoru terminala. Pomoću ovog vodiča konfigurirati ćeš Raspberry Pi za korištenje TJBota: 
+ 
+* TJBot ime (ostavi raspberrypi)  - (Enter) 
+* IPv6 (disable) - (Y) 
+* Google DNS (enable) - (Y) 
+* settings local (language) (Y) 
+* update OS Raspbian(Y) 
+* update to newer version of Node.js (N) 
+* connecting camera (Y) 
+* downloading original TJBot and test scenarios (Enter) 
+* configuring audio output (leave port for jack-audio enabled) (N) 
+* reboot (Y) 
+ 
+6. Instaliraj node.js inačicu 9: 
+``` 
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - 
+sudo apt-get install -y nodejs 
+``` 
+7. Otvori mapu Desktop u terminalu: 
+``` 
+cd Desktop 
+``` 
+8. Instaliraj jedan od TJBotCZ programa(tjbotcz_lite, tjbotcz, tjbotcz_iot): 
+``` 
+git clone https://github.com/tjbotcz/<name of tjbotcz program>.git 
+``` 
+9. U terminalu otvori nedavno kreiranu mapu “tjbotcz_lite”, "tjbotcz" ili tjbotcz_iot": 
+``` 
+cd <name of the folder> 
+``` 
+10. Spusti dependencije definirane u datoteci package.json u mapi s programom spuštenim u prethodnom koraku broj 8: 
+``` 
+npm install 
+``` 
+ 
+11. Kako bi chat s TJBotom bio moguć, na IBM Cloudu moraju biti  omogućene slijedeće usluge: 
+ 
+* Watson pomoćnik (usluga za stvaranje dialoga/chatova) 
+* govor u tekst (usluga transkribiranja glasovne datoteke u tekstualnu) 
+* tekst u govor (usluga pretvaranja teksta u glas) 
+* vidno prepoznavanje (usluga analize slika) 
+ 
+Pokreni usluge prema uputstvima u ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md) mapi. 
+ 
+12. Imaš li već omogućene usluge, dobrodošao/la natrag i nastavimo dalje! 
+Unesi korisničke podatke svake pojedine usluge u konfiguracijsku datoteku (credentials.js). Pošto korisnički podaci čine dugačke linije, najbolji način za njihov unos je putem daljinskog povezivanja s  TJBotom sa računala s kojeg su omogućene Watson usluge, a potom njihovo kopiranje i lijepljenje sa računala na TJBot. Ako si Mac korisnik, koristi program terminal, a ako koristiš Windows OS, koristi [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy je program daljinskog pristupa i potrebno ga je prethodno instalirati na računalo. Korištenje programa terminala ili PuTTy spoji se s  TJBotom (potrebno je biti na istoj mreži/WiFiju kao i TJBot): 
+ 
+ 
+MacOS: 
+  ``` 
+  ssh pi@<ipadresa> 
+  ``` 
+  Windows (unesi IP adresu TJBot-a u označeno polje): 
+ 
+  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png) 
+ 
+  Pojaviti će se upit za lozinku. Generirana lozinka je: **_raspberry_**. 
+ 
+13. U terminalu (ili cmd prozoru u Windowsu) slijedi put do mape s konfiguracisjkim datotekama: 
+ 
+  ``` 
+  cd Desktop/tjbotcz_lite/configuration 
+ 
+  ``` 
+14. Napravi kopiju credentials.default.js i config.default.js  datoteka i nazovi ih credentials.js i config.js. To možeš napraviti i putem daljinskog povezivanja u Terminalu ili u CMD prozoru: 
+  ```   
+  cp config.default.js config.js 
+  cp credentials.default.js credentials.js 
+  ``` 
+ 
+15. U alat za obradu teksta zvan nano umetni potrebne pristupne podatke za odgovarajuće usluge. 
+  ``` 
+  nano credentials.js 
+  ``` 
+  Vidi sliku dolje na kojoj su označena sva mjesta koja se moraju ispuniti korisničkim podacima Watson usluga  (ne briši navodnike). 
+  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png) 
+  Zatvaranje i spremanje datoteke CTRL+X, Y, Enter. 
+   
+16. A sada, oživi svogTJBota !!! Vrati se do mape Desktop/tjbotcz_lite ... i krenimo. 
+  TJBot je namješten da govori muškim glasom i odgovara na ime Michael. To znači da će prepoznati samo one rečenice koja sadrže ime Michael. Više informacija o TJBotCZ lite programu i kako ga koristiti, naći ćeš na ovom mjestu [repository](https://github.com/tjbotcz/tjbotcz_lite). 
+  ``` 
+  cd .. 
+  sudo node tjbotcz_lite.js 
+  ``` 
+   
+![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif) 
+ 
+--- 
+ 
+## Neki savjeti i trikovi koji bi ti mogli koristiti 
+ 
+### Kako kopirati datoteke s Windowsa na Raspberry Pi koristeći tekstualno sučelje
+Otvori naredbenu liniju i adresant. Kopiraj datoteku (cd = change directory).  Potom, koristeći slijedeću naredbenu liniju, gdje prije svega moraš utrditi da li je PuTTYveć instaliran i provjeri da li C:\Program Files\PuTTY\pscp.exe.  radi. Datoteka: “file.txt”je ime za kopiranje datoteka pa stoga promijeni “your_pi” u IP adresu svog Raspberry Pija (moraju biti u istoj mreži): 
+ 
+``` 
+"C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite 
+``` 
+ 
+ 
+### Kako kopirati datoteke s  Mac OS to Raspberry Pi koristeći tekstualno sučelje (u Mac OSu) 
+Otvori naredbenu liniju i adresant.  Kopiraj datoteku (cd = change directory). Datoteka: “file.txt”je ime za kopiranje datoteka pa stoga promijeni “your_pi” u IP adresu svog Raspberry Pija (moraju biti u istoj mreži): 
+ 
+``` 
+scp file.txt pi@your_pi:~/Desktop/tjbotcz_lite 
+``` 
+ 
+ 
+### Kako kopirati datoteke s Rasberry Pija u Mac OS koristeći tekstualno sučelje(u Mac OS-u) 
+Ako je TJBot spojen putem SSH, prvo se odjavi: 
+ 
+``` 
+logout 
+``` 
+ 
+U terminalu Mac OS-a upotrijebi naredbu za kopiranje datoteka: 
+ 
+``` 
+scp <ukorisničko ime na Raspberry Pi-u>@<ip adresa Raspberry Pija>:/<cijela adresa datoteke na Raspberry Pi-u> <cijela adresa do mjesta gdje su datoteke pohranjene na Mac OS> 
+``` 
+ 
+Primjer: 
+ 
+``` 
+scp pi@192.168.1.10:/home/pi/Desktop/tjbotcz_lite/config.js Users/Ivan/Desktop 
+``` 
+ 
+Pojaviti će se zahtjev za unos lozinke u Raspberry Pi. 
+ 
+ 
+### Kako namjestiti IP adresu  Raspberry Pi-a
+Spoji se na Raspberry Pi putem SSH ili PuTTy-a. Potom unesi naredbu: 
+ 
+``` 
+sudo nano /etc/dhcpcd.conf 
+``` 
+ 
+U otvorenoj datoteci zamjeni postavke statične adrese i unesi ispravne podatke (IP adresa, IP adresa routera). 
+ 
+ 
+ 
+### Kako promijeniti jačinu  zvuka na Raspberry Pi-u koristeći tekstualno sučelje 
+Spoji se s  Raspberry Pi-em putem SSH ili PuTTY-a.  Slijedeća linija koda će promijeniti jačinu uređaja na 90%. Pošto bi se jačina trebala nelinearno mijenjati, razlika između 90 % i 95 % morala bi biti zamjetna. 
+ 
+``` 
+amixer  sset PCM,0 90% 
+``` 
+ 
+Slijedeća opcija je načiniti prečac za promjenu jačine zvuka. U nano alatu za uređivanje otvori datoteku .bashrc: 
+ 
+``` 
+nano ~/.bashrc 
+``` 
+ 
+i na kraju datoteke dodaj  
+ 
+``` 
+# povećanje jačine za 5% 
+alias volup='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')+5]%' 
+# smanjenje jačine za 5% 
+alias voldown='sudo amixer set PCM -- $[$(amixer get PCM|grep -o [0-9]*%|sed 's/%//')-5]%' 
+``` 
+Ponovo pokreni Raspberry-Pi. Zatim možeš samo napisati `volup`  ili  `voldown` u terminalu i jačina će se mijenjati gore/dolje za 5%. 
+ 
+ 
+ 
+### Postavljanje audio izlaza na jack 
+Ponekad ne možeš čuti TJBot dovoljno glasno, premda je jačina zvuka podešena na maksimum. Najvjerojatnije zvuk izlazi na HDMI, a ne na spojeni zvučnik (preko jacka). Za podešavanje izlaza na jack konektor koristi slijedeće: 
+ 
+``` 
+sudo amixer cset numid=3 1 
+``` 
+Zadnji broj određuje izlaz (0=auto, 1=jack, 2=HDMI) 
+ 
+ 
+### Dobijanje više mjesta za pohranu na microSD  kartici
+Ako imaš microSD karticu od 16GB, trebalo bi ti biti dosta prostora za pohranu. Međutim, ako imaš karticu od 8GB, nakon instalacije ostati će ti otprilike 2GB slobodnog prostora. Možeš deinstalirati Wolfram i LibreOffice da oslobodiš više prostora, pošto te programe nećeš trebati za rad s TJBotom. I time ćeš dobiti dodatnih 1GB slobodnog prostora. 
+ 
+Za uklanjanje programa: 
+ 
+``` 
+sudo apt-get purge wolfram-engine 
+sudo apt-get purge libreoffice* 
+sudo apt-get autoremove 
+``` 
+ 
+--- 
+ 
 
