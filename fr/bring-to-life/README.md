@@ -26,7 +26,7 @@ Vous allez voir besoin de :
 
 
 Les étapes :
-1. Téléchargez [l'image de TJBotCZ] prête à l'emploi(https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) et extrayez-la.
+1. Téléchargez [l'image de TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) prête à l'emploi et extrayez-la.
 
 2. Téléchargez et installez le logiciel pour pouvoir installer l'image de Raspbian sur la carte microSD, par ex. Etcher: https://etcher.io/ . Utilisez-le pour installer l'image téléchargée sur la carte microSD(sélectionnez le fichier tjbotcz_lite.img, sélectionnez la carte microSD montée, et …flashez!)
 
