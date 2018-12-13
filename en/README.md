@@ -1,4 +1,4 @@
-# Manuals for TJBotCZ
+# Manuals for TJBotCZ V.1
 
 Folder _**bring-to-life**_ contains manuals to configure Raspberry pi, upload sample program and run it.
 
