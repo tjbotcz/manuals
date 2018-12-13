@@ -19,16 +19,16 @@ Sigurno jedva čekaš imati svojeg TJBota, spremnog za korištenje. Stoga smo pr
  
 Potrebni su ti: 
  
-*internetska veza za spuštanje Raspbian OS-a i softvera za instalaciju slike na karticu
-*računalo s utorom  za SD/ microSD karticu ili SD/microSD čitač
-*USB tipkovnica, USB miš
-*LCD s HDMI portom i HDMI kabel. 
+* internetska veza za spuštanje Raspbian OS-a i softvera za instalaciju slike na karticu
+* računalo s utorom  za SD/ microSD karticu ili SD/microSD čitač
+* USB tipkovnica, USB miš
+* LCD s HDMI portom i HDMI kabel. 
  
  
 Postupak: 
 1. Spusti gotovu sliku [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) i raspakiraj je. 
  
-2. Spusti i instaliraj softver potreban za instalaciju slike Raspbiana na microSD karticu (npr. Etcher: https://etcher.io/ .  Prilikom instalacije prethodno spuštene slike na microSD karticu odaberi tjbotcz_lite.img datoteku, odaberi umetnutu microSD karticu i…Flash!) 
+2. Spusti i instaliraj softver potreban za instalaciju slike Raspbiana na microSD karticu (npr. Etcher: https://etcher.io/ . Prilikom instalacije prethodno spuštene slike na microSD karticu odaberi tjbotcz_lite.img datoteku, odaberi umetnutu microSD karticu i…Flash!) 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing") 
  
 3. Umetni prethodno instaliranu microSD karticu u Raspberry-Pi, spoji uređaj s HDMI ekranom, tipkovnicom, mišem i s RJ-45 (eternet) internet kabelom. Druga opcija je spajanje putem WIFI veze  (ako koristiš WiFi morati ćeš konfigurirati vezu preko Raspbianovog grafičkog korisničkog sučelja, a postavke će biti pohranjene pri svakom slijedećem spajanju). Povezanost s internetom biti će ti potrebna i u slijedećem koraku. 
