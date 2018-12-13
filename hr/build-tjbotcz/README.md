@@ -52,7 +52,7 @@ Svi periferni uređaji spojeni su na Raspberry Pi putem zasebnih pinova. Legenda
 ![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png) 
  
  
-**spajanje serva na GPIO pinove** 
+**Spajanje serva na GPIO pinove** 
  
 Servo koristi 3 pina: 
 * 5V snage / + (fizički pin 02) 
@@ -63,7 +63,7 @@ Servo koristi 3 pina:
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg) 
  
  
-**spajanje RGB LED-a na GPIO pinove** 
+**Spajanje RGB LED-a na GPIO pinove** 
  
 RGB LED koristi 4 pina: 
 * uzemljenje / - (fizički pin 09) 
