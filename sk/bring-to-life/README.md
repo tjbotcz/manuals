@@ -1,7 +1,7 @@
 # Oživenie TJBota na Raspberry Pi
 
 Zvoľte si postup...
-1. [Rýchle oživenie z pripraveného obrázku](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
+1. [Rýchle oživenie z pripraveného image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
 2. [Začnite od piky ako profík](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Pár návodov, ktoré sa môžu hodiť 
 
