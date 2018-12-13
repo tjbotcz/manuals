@@ -193,7 +193,8 @@ npm install
   Failo uždarymas ir išsaugojimas: CTRL+X, Y, Enter.
   
 16. O dabar, prikelkite TJBot gyvenimui !!! Grįžkite atgal į aplanką Desktop/tjbotcz_lite ... ir tęskime.
-  TJBot yra sukonfigūruotas kalbėti vyrišku balsu ir reaguoja į vardą Michael. Tai reiškia , had jis atpažins tik tuos sakinius, kuriuose yra vardas Michael.   ```
+  TJBot yra sukonfigūruotas kalbėti vyrišku balsu ir reaguoja į vardą Michael. Tai reiškia , had jis atpažins tik tuos sakinius, kuriuose yra vardas Michael.   
+  ```
   cd ..
   sudo node tjbotcz_lite.js
   ```
@@ -204,7 +205,8 @@ npm install
 
 ## Galintys praversti patarimai
 
-###  Kaip kopijuoti failus iš "Windows" į "Raspberry Pi" naudojant komandinę eilutę. Atidarykite CMD eilutę ir adresą. Ten rasite failą, kurį norite nukopijuoti (cd = pakeisti katalogą).  Tada naudokite kitą komandų eilutę, kur pirmiausia turite patikrinti, ar PuTTY jau yra įdiegtas, ir patikrinkite, ar C: \ Program Files \ PuTTY \ pscp.exe. veikia. Toliau įvardijamas failas: “file.txt” yra skirtas įvardinti kopijuojamus failus, todėl jūsų “your_pi” turi būti pakeistas į Raspberry Pi IP addresą ( Tai turi būti atliekama tame pačiame tinkle):
+###  Kaip kopijuoti failus iš "Windows" į "Raspberry Pi" naudojant komandinę eilutę. 
+Atidarykite CMD eilutę ir adresą. Ten rasite failą, kurį norite nukopijuoti (cd = pakeisti katalogą).  Tada naudokite kitą komandų eilutę, kur pirmiausia turite patikrinti, ar PuTTY jau yra įdiegtas, ir patikrinkite, ar C: \ Program Files \ PuTTY \ pscp.exe. veikia. Toliau įvardijamas failas: “file.txt” yra skirtas įvardinti kopijuojamus failus, todėl jūsų “your_pi” turi būti pakeistas į Raspberry Pi IP addresą ( Tai turi būti atliekama tame pačiame tinkle):
 
 ```
 "C:\Program Files\PuTTY\pscp.exe" file.txt pi@your_pi:Desktop/tjbotcz_lite
