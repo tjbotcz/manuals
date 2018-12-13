@@ -64,7 +64,7 @@ Servo naudoja 3 kaiščius:
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
 
 
-** RGB LED prijungimas prie GPIO jungčių**
+**RGB LED prijungimas prie GPIO jungčių**
 
 RGB LED naudoja 4 kaiščius:
 * žemė / - (fizinis kaištis 09)
