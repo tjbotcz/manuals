@@ -5,11 +5,11 @@ Wähle deinen Weg aus…
 2. [Fang von vorne, wie ein Fachmann an](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Einige Anleitungstipps, die dir nützlich sein könnten
  
-* [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
-* [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)  * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os) 
+* [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
+* [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)  * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os) 
 * [Wie kann man die IP-Adresse des Raspberry Pis einstellen] (https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address) * [Wie ändert man die Lautstärke von Raspberry Pi mit der Befehlszeile] ((https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
-* [Audio-Ausgang auf die Buchse setzen] (https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#setting-audio-output-to-jack)
-* [Mehr freien Speicherplatz auf der microSD-Karte erstellen] (https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#get-more-free-space-on-microsd-card)
+* [Audio-Ausgang auf die Buchse setzen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#setting-audio-output-to-jack)
+* [Mehr freien Speicherplatz auf der microSD-Karte erstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#get-more-free-space-on-microsd-card)
  
 ## Schnellstart mit vorbereitetem Bild
  
