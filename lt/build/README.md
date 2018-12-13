@@ -1,77 +1,76 @@
-# Návod na zostavenie TJBotCZ a pripojenie hardvéru 
+# TJBot kūrimo ir įrangos sujungimo vadovas
 
 ---
-![exclamation](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/exclamation.png) _** UPOZORNENIE PREDTÝM NEŽ ZAČNETE**_ 
+![šauktukas](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/exclamation.png) _**PRANEŠIMAS PRIEŠ PRADŽIĄ**_ 
 
- _1. DÁVAJTE SI POZOR PRI SKLADANÍ KARTÓNU. AK HO POSKLADÁTE NESPRÁVNE, BUDETE HO MUSIEŤ PRILEPIŤ LEPIDLOM._
+ _1. ATSARGIAI SULANKSTYKITE KARTONĄ. JEI SULANKSTYSITE NETEISINGAI, JUMS PRIREIKS KLIJŲ JOG TAI SUTVARKYTUMĖTE._
  
- _2. PRI PRÁCI SA ZAŠPINÍTE. LASEROM VYREZANÝ KARTÓN ZANECHÁVA NA RUKÁCH ČIERNE ŠKVRNY._
+ _2. PASIRUOŠKITE IŠSIPURVINTI. KARTONAS PALIEKA JUODAS DĖMES ANT RANKŲ._
 
-(Odporúčame vám utrieť každý diel papierovým obrúskom.)
-
+(Rekomenduojame kiekvieną dalį nuvalyti popierine servetėle.)
 ---
 
-### Videonávod
-Tu je originálny video návod ako zostaviť TJBota, pokojne sa ním môžete riadiť. Jediným väčším rozdielom je pripojenie LED diódy. TJBotCZ používa klasickú RGB diódu, ktorá je iba položená na platforme pod vrchnou časťou (hlavou) - pozrite si fotografie nižšie. Ak chcete diódu upevniť, odporúčame použiť Blue Tack alebo podobnú lepiacu gumu na plagáty, tzv. žuvačku. 
-
-**Dávajte si pozor:**
-* poskladajte kartón správnym smerom (na niektorých častiach je pokyn "fold up" (ohni hore) alebo "fold down" (ohni dolu) - lepšie viackrát overiť, ako neskôr ľutovať :)
-* držte sa postupu vo video návode, aby ste ho nemuseli neskôr prerábať 
-  * hlavne keď pripájate nôžky pre stabilitu
-  * servo vložte v určenej etape  
+### Vaizdo vadovas
+Čia yra originalus vaizdo vadovas, skirtas TJBot sukurti. Jūs galite jį sekti. Vienintelis  didelis skirtumas yra LED prijungimas. TJBot naudoja tradicinį RGB LED, kuris tiesiog padėtas ant platformos po viršutine dalimi (galva) - žr. toliau pateiktas nuotraukas. Norėdami sureguliuoti LED,mes siūlome naudoti "Blue Tack" arba panašią lipnią gumą.
+**Būkite atsargus:**
+* Lankstykite kartoną tinkamu būdu (ant kai kurių dalių, nurodytos instrukcijos "fold up" arba "fold down" - taigi geriau būti atsargiam :)
+* laikykitės tvarkos nurodytos vaizdo vadove, kad po to neturėtumėte visko perdaryti.
+  * Ypač prijungiant kojas stabilumui užtikrinti
+  * įterpiant servo
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="http://img.youtube.com/vi/bLt3Cf2Ui3o/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" border="10" /></a>
 
-### Čo je teda na TJBotCZ odlišné?
+### Taigi kuo TJBot skiriasi?
 
-1. Diel pre uchytenie reproduktora.
+1. Dalis kurioje laikomas garsiakalbis.
 2. RGB LED
 
-Dobrý návod ako zostaviť TJBota je k dispozícii aj tu (v angličtine):
+Geras gidas TJBot surinkimui yra čia:
 
 https://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/
 
-Pre dlhšiu životnosť odporúčame prilepiť niektoré časti lepiacou pištoľou, najmä nohy a chlopne držiace Raspberry Pi. 
+Ilgaamžiškumui užtikrinti, rekomenduojame kai kurias dalis suklijuoti klijų-ginklu. Ypač kojas ir dalis laikančias Raspberry Pi apačioje.
 
-### Pripájanie hardvéru
+### Įrenginio prijungimas
 
-Obrázok nižšie znázorňuje všetky periférie, ktoré môžete pre pripojenie TJBota potrebovať:
-* napájanie 
-* HDMI pre pripojenie monitora
-* camera 
-* jack audio výstup pre reproduktor
-* ethernet pre pripojenie na internet (v prípade, že nepoužívate WiFi)
-* USB vstupy pre mikrofón, myš a klávesnicu
-* PINy na Raspberry Pi pre pripojenie RGB LED a serva
+Žemiau pateiktame paveikslėlyje parodytos visos priemonės, kurių gali prireikti TJBot:
+* maitinimo adapteris
+* HDMI prijungimui prie kompiuterio ekrano
+* fotoaparatas
+* Lizdo garso išvestis garsiakalbiui
+* "Ethernet" prisijungimas prie interneto (jei nenaudojate "Wi-Fi")
+* USB lizdai mikrofonui, pelėms ir klaviatūrai
+* Raspberry Pi jungtys, skirtos prijungti RGB LED ir servo
+
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi-connect.jpg)
 
 
-**GPIO piny**
+**GPIO jungtys**
 
-Periférie sa na Raspberry Pi pripájajú cez jednotlivé piny. Tu je schéma ku všetkým pinom:
+Periferiniai įrenginiai prie Raspberry Pi yra prijungti per atskiras jungtis. Čia yra legenda visoms jungtims:
 ![gpio pins](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/rpi_pins.png)
 
 
-**Pripájanie serva k GPIO pinom**
+**Prijungimas prie GPIO jungčių**
 
-Servo používa 3 piny:
-* 5V napätie / + (fyzický pin 02)
-* uzemnenie / - (fyzický pin 14)
-* GPIO 7 pre ovládanie serva (fyzický pin 26) - možno konfigurovať v konfiguračnom súbore TJBotCZ (config.js - pozri Oživenie)
+Servo naudoja 3 kaiščius:
+* 5V galia / + (fizinis kaištis 02)
+* žemė / - (fizinis kaištis 14)
+* GPIO 7 komandoms (fizinis kaištis 26) - gali būti sukonfigūruotas (config.js - see bring-to-life)
 
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-servo.jpg)
 
 
-**Pripájanie RGB LED na GPIO piny**
+** RGB LED prijungimas prie GPIO jungčių**
 
-RGB LED používa 4 piny:
-* uzemnenie / - ( fyzický pin 09)
-* GPIO 17 / R (fyzický pin 11) - možno konfigurovať v konfiguračnom súbore TJBotCZ (config.js - pozri Oživenie)
-* GPIO 27 / G (fyzický pin 13) - možno konfigurovať v konfiguračnom súbore TJBotCZ (config.js - pozri Oživenie)
-* GPIO 22 / B (fyzický pin 15) - možno konfigurovať v konfiguračnom súbore TJBotCZ (config.js - pozri Oživenie)
+RGB LED naudoja 4 kaiščius:
+* žemė / - (fizinis kaištis 09)
+* GPIO 17 / R (fizinis kaištis 11) - gali būti sukonfigūruotas (config.js - see bring-to-life)
+* GPIO 27 / G (fizinis kaištis 13) - gali būti sukonfigūruotas (config.js - see bring-to-life)
+* GPIO 22 / B (fizinis kaištis 15) - gali būti sukonfigūruotas (config.js - see bring-to-life)
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
 
