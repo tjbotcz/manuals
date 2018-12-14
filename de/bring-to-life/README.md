@@ -1,17 +1,17 @@
 # TJBot zum Leben erwecken (auf Raspberry Pi)
  
 Wähle deinen Weg aus…
-1. [Schnellstart mit vorbereitetem Bild](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Fang von vorne, wie ein Fachmann an](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Schnellstart mit vorbereitetem Bild](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#schnellstart-mit-vorbereitetem-bild)
+2. [Fang von vorne, wie ein Fachmann an](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#fang-von-vorne-wie-ein-fachmann-an)
 3. Einige Anleitungstipps, die dir nützlich sein könnten
  
-   * [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
-   * [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-   * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-   * [Wie kann man die IP-Adresse des Raspberry Pis einstellen](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-   * [Wie ändert man die Lautstärke von Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
-    * [Audio-Ausgang auf die Buchse setzen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#setting-audio-output-to-jack)
-    * [Mehr freien Speicherplatz auf der microSD-Karte erstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#get-more-free-space-on-microsd-card)
+   * [Wie kopiert man die Dateien von Windows aufs Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#so-kopierst-du-die-dateien-von-windows-auf-raspberry-pi-mit-der-befehlszeile) 
+   * [Anleitung zum Kopieren von Dateien von Mac Betriebsystem aufs Raspberry Pi mit der Befehlszeile (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#so-kopierst-du-die-dateien-von-mac-bs-auf-raspberry-pi--mit-der-befehlszeile-in-mac-bs)
+   * [Kopieren von Dateien von Rasberry Pi ins Mac Betriebsystem mit der Befehlszeile (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#so-kopierst-du-dateien-von-rasberry-pi-ins-mac-bs-mit-der-befehlszeile-in-mac-bs)
+   * [Wie kann man die IP-Adresse des Raspberry Pis einstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#so-richtest-du-die-ip-adresse-eines-raspberry-pi-ein)
+   * [Wie ändert man die Lautstärke von Raspberry Pi mit der Befehlszeile](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#wie-%C3%A4ndert-man-das-volume-von-raspberry-pi-%C3%BCber-die-befehlszeile) 
+    * [Audio-Ausgang auf die Buchse setzen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#einstellung-der-audioausgabe-f%C3%BCr-die-buchse)
+    * [Mehr freien Speicherplatz auf der microSD-Karte erstellen](https://github.com/tjbotcz/manuals/tree/master/de/bring-to-life#mehr-freien-speicherplatz-auf-der-microsd-karte-erhalten)
  
 ## Schnellstart mit vorbereitetem Bild
  
