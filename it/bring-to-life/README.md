@@ -5,13 +5,13 @@ Scegli il tuo percorso ...
 2. [Inizia da zero come un PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
 3. Alcuni consigli pratici
 
-    * [Come copiare i file da Windows a Raspberry Pi utilizzando la riga di comando](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#)
-    * [Come copiare i file da Mac OS a Raspberry Pi utilizzando la riga di comando (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#)
-    * [Come copiare i file da Rasberry Pi a Mac OS utilizzando la riga di comando (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#)
-    * [Come configurare l'indirizzo IP di Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#)
-    * [Come modificare il volume di Raspberry Pi utilizzando la riga di comando](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#)
-    * [Impostare l’audio sull’uscita jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Ottenere più spazio libero su microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#Ottieni più spazio libero sulla scheda microSD)
+    * [Come copiare i file da Windows a Raspberry Pi utilizzando la riga di comando]()
+    * [Come copiare i file da Mac OS a Raspberry Pi utilizzando la riga di comando (in Mac OS)]()
+    * [Come copiare i file da Rasberry Pi a Mac OS utilizzando la riga di comando (v Mac OS)]()
+    * [Come configurare l'indirizzo IP di Raspberry Pi]()
+    * [Come modificare il volume di Raspberry Pi utilizzando la riga di comando]()
+    * [Impostare l’audio sull’uscita jack]()
+    * [Ottenere più spazio libero su microSD Card]()
     
 ## Avvio rapido da ready-made image (dall'immagine già pronta) 
 
