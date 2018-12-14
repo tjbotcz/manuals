@@ -11,7 +11,7 @@ Scegli il tuo percorso ...
     * [Come configurare l'indirizzo IP di Raspberry Pi]()
     * [Come modificare il volume di Raspberry Pi utilizzando la riga di comando]()
     * [Impostare l’audio sull’uscita jack]()
-    * [Ottenere più spazio libero su microSD Card]()
+    * [Ottenere più spazio libero su microSD Card](https://github.com/tjbotcz/manuals/blob/master/it/bring-to-life/README.md#ottieni-pi%C3%B9-spazio-libero-sulla-scheda-microsd)
     
 ## Avvio rapido da ready-made image (dall'immagine già pronta) 
 
