@@ -151,7 +151,7 @@ cd <nome della cartella>
 ```
 10. Scaricare le dipendenze definite nel file package.json nella cartella con il programma scaricato nel passaggio 8:
 ```
-installazione di npm
+npm install
 ```
 11. Per poter chattare con TJBot è necessario avere i seguenti servizi forniti in IBM Cloud:
 
