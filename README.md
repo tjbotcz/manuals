@@ -14,3 +14,5 @@ _Available in Croatian, Czech, English, French, German, Lithuanian, Russian, Slo
 
 Thanks to all the volunteers who are helping with the translations.
 
+The latest version of the manuals is V1.
+
