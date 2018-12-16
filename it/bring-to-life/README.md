@@ -61,7 +61,7 @@ Windows (inserire l'indirizzo IP di TJBota nel campo evidenziato):
 7. In Terminale (o in una finestra di cmd in Windows) navigare alla cartella con i file di configurazione:
 
   ```
-  cd Desktop / tjbotcz_lite / configuration
+  cd Desktop/tjbotcz_lite/configuration
   ```
 8. Creare una copia dei file credentials.default.js e config.default.js e denominarli di conseguenza in credentials.js e config.js. E’ possibile farlo anche da remoto tramite Terminale / CMD Window:
 
@@ -93,7 +93,7 @@ Quindi, l'intero Raspbian si trova su una scheda microSD. Pertanto, dobbiamo pri
 Sarà necessario:
 
 * connessione Internet per scaricare il sistema operativo e il software Raspbian per l'installazione dell'immagine sulla scheda
-* un computer con slot per scheda SD / microSD o lettore SD / microSD
+* un computer con slot per scheda SD/microSD o lettore SD/microSD
 * Tastiera USB, mouse USB
 * LCD con porta HDMI e cavo HDMI.
 
@@ -178,7 +178,7 @@ npm install
 13. In Terminale (o in una finestra di cmd in Windows) accedere alla cartella con i file di configurazione:
 
   ```
-  cd Desktop / tjbotcz_lite / configuration
+  cd Desktop/tjbotcz_lite/configuration
   ```
 14. Creare una copia dei file credentials.default.js e config.default.js e denominarli di conseguenza in credentials.js e config.js. Puoi farlo anche da remoto tramite la finestra Terminal / CMD:
   ```
@@ -210,7 +210,7 @@ npm install
 Apri la linea CMD e l'indirizzatore. Li si trova il file che vuoi copiare (cd = cambia directory). Quindi utilizza la riga di comando successiva, dove prima è necessario verificare se PuTTY è già installato e controllare se C: \ Programmi \ PuTTY \ pscp.exe. sta lavorando. Il seguente file: "file.txt" è il nome per copiare i file, quindi cambia "your_pi" in indirizzo IP del tuo Raspberry Pi (deve essere nella stessa rete):
 
 ```
-"C: \ Programmi \ PuTTY \ pscp.exe" file.txt pi @ your_pi: Desktop / tjbotcz_lite
+"C:\Programmi\PuTTY\pscp.exe" file.txt pi @ your_pi: Desktop/tjbotcz_lite
 ```
 
 
@@ -218,7 +218,7 @@ Apri la linea CMD e l'indirizzatore. Li si trova il file che vuoi copiare (cd = 
 Apri la linea CMD e l'indirizzatore. Li si trova il file che vuoi copiare (cd = cambia directory). Quindi usa la riga di comando successiva dove "file.txt" è il nome per copiare i file, quindi cambia "your_pi" in indirizzo IP del tuo Raspberry Pi (deve essere fatto nella stessa rete):
 
 ```
-scp file.txt pi @ your_pi: ~ / Desktop / tjbotcz_lite
+scp file.txt pi @ your_pi: ~/Desktop/tjbotcz_lite
 ```
 
 
@@ -265,7 +265,7 @@ amixer sset PCM, 0 90%
 L'opzione successiva è quella di creare una scorciatoia che possa modificare il volume. Nell'editor nano apri il file .bashrc:
 
 ```
-nano ~ / .bashrc
+nano ~ /.bashrc
 ```
 
 e alla fine del file aggiungere
