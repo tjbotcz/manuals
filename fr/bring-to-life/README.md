@@ -1,17 +1,17 @@
 # Donner vie à TJBot (sur Raspberry Pi)
 
 Choisissez votre façon de faire...
-1. [Faststart à partir d'une image prête à l'emploi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Partir de zéro comme un PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Faststart à partir d'une image prête à l'emploi](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#faststart-%C3%A0-partir-dune-image-pr%C3%AAte-%C3%A0-lemploi)
+2. [Partir de zéro comme un PRO](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#partir-de-z%C3%A9ro-comme-un-pro)
 3. Quelques conseils pratiques qui peuvent être utiles
 
-    * [Comment copier des fichiers de Windows vers Raspberry Pi en utilisant une ligne de commande](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [Comment copier des fichiers de Mac OS vers Raspberry Pi en utilisant une ligne de commande (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [Comment copier des fichiers de Raspberry Pi vers Mac OS en utilisant la ligne de commande (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [Comment configurer l’adresse IP d’un Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [Comment changer le volume du son du Raspberry Pi en utilisant la ligne de commande](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Réglage de la sortie audio sur jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Obtenez plus d'espace libre sur la carte microSD](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+    * [Comment copier des fichiers de Windows vers Raspberry Pi en utilisant une ligne de commande](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#comment-copier-des-fichiers-de-windows-vers-raspberry-pi-en-utilisant-une-ligne-de-commande)
+    * [Comment copier des fichiers de Mac OS vers Raspberry Pi en utilisant une ligne de commande (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#comment-copier-des-fichiers-de-mac-os-vers-raspberry-pi-en-utilisant-une-ligne-de-commande-sous-mac-os)
+    * [Comment copier des fichiers de Raspberry Pi vers Mac OS en utilisant la ligne de commande (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#comment-copier-des-fichiers-de-raspberry-pi-vers-mac-os-%C3%A0-laide-de-la-ligne-de-commande-sous-mac-os)
+    * [Comment configurer l’adresse IP d’un Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#comment-configurer-ladresse-ip-dun-raspberry-pi)
+    * [Comment changer le volume du son du Raspberry Pi en utilisant la ligne de commande](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#comment-changer-le-volume-du-raspberry-pi-en-utilisant-la-ligne-de-commande)
+    * [Réglage de la sortie audio sur jack](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#r%C3%A9glage-de-la-sortie-audio-vers-le-jack)
+    * [Obtenez plus d'espace libre sur la carte microSD](https://github.com/tjbotcz/manuals/tree/master/fr/bring-to-life#obtenez-plus-despace-libre-sur-la-carte-microsd)
     
 ## Faststart à partir d'une image prête à l'emploi 
 
