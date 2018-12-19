@@ -1,17 +1,17 @@
 # Portare TJBota in vita (su Raspberry Pi)
 
 Scegli il tuo percorso ...
-1. [Avvio rapido da ready-made image (dall'immagine già pronta)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Inizia da zero come un PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Avvio rapido da ready-made image (dall'immagine già pronta)](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#avvio-rapido-da-ready-made-image-dallimmagine-gi%C3%A0-pronta)
+2. [Inizia da zero come un PRO](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#inizia-da-zero-come-un-pro)
 3. Alcuni consigli pratici
 
-    * [Come copiare i file da Windows a Raspberry Pi utilizzando la riga di comando]()
-    * [Come copiare i file da Mac OS a Raspberry Pi utilizzando la riga di comando (in Mac OS)]()
-    * [Come copiare i file da Rasberry Pi a Mac OS utilizzando la riga di comando (v Mac OS)]()
-    * [Come configurare l'indirizzo IP di Raspberry Pi]()
-    * [Come modificare il volume di Raspberry Pi utilizzando la riga di comando]()
-    * [Impostare l’audio sull’uscita jack]()
-    * [Ottenere più spazio libero su microSD Card](https://github.com/tjbotcz/manuals/blob/master/it/bring-to-life/README.md#ottieni-pi%C3%B9-spazio-libero-sulla-scheda-microsd)
+    * [Come copiare i file da Windows a Raspberry Pi utilizzando la riga di comando](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#come-copiare-file-da-windows-a-raspberry-pi-usando-la-riga-di-comando)
+    * [Come copiare i file da Mac OS a Raspberry Pi utilizzando la riga di comando (in Mac OS)](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#come-copiare-file-da-mac-os-a-raspberry-pi-usando-la-riga-di-comando-in-mac-os)
+    * [Come copiare i file da Rasberry Pi a Mac OS utilizzando la riga di comando (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#come-copiare-file-da-rasberry-pi-a-mac-os-utilizzando-la-riga-di-comando-v-mac-os)
+    * [Come configurare l'indirizzo IP di Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#come-impostare-lindirizzo-ip-di-raspberry-pi)
+    * [Come modificare il volume di Raspberry Pi utilizzando la riga di comando](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#come-cambiare-il-volume-di-raspberry-pi-usando-la-riga-di-comando)
+    * [Impostare l’audio sull’uscita jack](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#impostare-luscita-audio-sul-jack)
+    * [Ottenere più spazio libero su microSD Card](https://github.com/tjbotcz/manuals/tree/master/it/bring-to-life#ottieni-pi%C3%B9-spazio-libero-sulla-scheda-microsd)
     
 ## Avvio rapido da ready-made image (dall'immagine già pronta) 
 
