@@ -5,13 +5,13 @@ Elija el modo...
 2. [Instalación de cero para usuarios avanzados](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#empiece-desde-cero-como-usuario-avanzado)
 3. Los siguientes links contienen temas de ayuda para instalar su TJBot.
 
-    * [¿Cómo copiar archivos desde Windows a Raspberry-Pi usando la consola de windows.?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [¿Cómo copiar archivos desde Mac OS a Raspberry-Pi usando la consola (en Mac OS)?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [¿Cómo copiar archivos desde Rasberry Pi a Mac OS usando la consola de comandos(v Mac Os)?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [¿Cómo configurar la dirección IP de una Raspberry Pi’s?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [¿Cómo cambiar el volumen de la Raspberry Pi’s usando la linea de comandos?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Configuracion de la salida de audio a conector jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Adquiera mas espacio en su Tarjeta microSD](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+    * [¿Cómo copiar archivos desde Windows a Raspberry-Pi usando la consola de windows.?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-copiar-archivos-de-windows-a-raspberry-pi-utilizando-la-linea-de-comandos)
+    * [¿Cómo copiar archivos desde Mac OS a Raspberry-Pi usando la consola (en Mac OS)?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-copiar-archivos-desde-mac-os-a-la-raspberry-pi-utilizando-la-linea-de-comandos)
+    * [¿Cómo copiar archivos desde Rasberry Pi a Mac OS usando la consola de comandos(v Mac Os)?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-copiar-archivos-desde-rasberry-pi-a-mac-os-usando-la-linea-de-comando-para-mac-os)
+    * [¿Cómo configurar la dirección IP de una Raspberry Pi’s?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-configurar-la-direcci%C3%B3n-ip-de-raspberry-pi)
+    * [¿Cómo cambiar el volumen de la Raspberry Pi’s usando la linea de comandos?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-cambiar-el-volumen-de-raspberry-pi-mediante-la-linea-de-comando)
+    * [Configuracion de la salida de audio a conector jack](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#setting-audio-output-to-jack)
+    * [Adquiera mas espacio en su Tarjeta microSD](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#para-hacer-mas-espacio-en-la-tarjeta-microsim)
     
 ## Instalación rápida desde una configuración ya establecida. 
 
@@ -280,7 +280,7 @@ Reinicie Raspberry-Pi. Despues podrá escribir `volup`  o  `voldown`  en el Term
 
 
 
-### Setting audio output to jack
+### Especificar la salida audio al jack
 A veces puede suceder que no escuche a TJBot incluso si el volumen está al máximo, posiblemente el audio va a traves de HDMI y no esta conectado al altavoz mediante el conector "jack". Para conectarlo utilice el siguiente comando:
 
 ```
@@ -289,7 +289,7 @@ sudo amixer cset numid=3 1
 El ultimo número especifica la salida (output) (0=auto, 1=jack, 2=HDMI)
 
 
-### Para hacer mas espacio en la tarjeta microSIM.
+### Para hacer mas espacio en la tarjeta microSD.
 Si tiene 16GB microSD, debería de ser suficiente, pero si tiene 8gb despues de instalar todo le quedarán 2gb mas o menos, lo cual limitaría un poco la capacidad, puede desisntalar Wolfram y LibreOffice para tener un poco mas de espacio. No va a necesitar ninguno de esos programas para trabajar con TJBot en el futuro y obtendrá 1GB extra de espacio.
 
 Para eliminar programas:
