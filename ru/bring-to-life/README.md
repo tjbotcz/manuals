@@ -3,16 +3,16 @@
  
 Выберите ваш способ... 
 1. [Быстрый старт с подготовленного изображения](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9-%D1%81%D1%82%D0%B0%D1%80%D1%82-%D1%81-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
-2. [Начать с нуля как профессионал](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+2. [Начать с нуля как профессионал](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BD%D0%B0%D1%87%D0%BD%D0%B8%D1%82%D0%B5-%D1%81-%D0%BD%D1%83%D0%BB%D1%8F-%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB)
 3. Некоторые практические советы
 
-	* [Как скопировать файлы с Windows на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-	* [Как скопировать файлы с Mac OS на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-	* [Как скопировать файлы с Rasberry Pi на Mac OS используя командную строку (в Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-	* [Как настроить IP адрес для Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-	* [Как менять громкость на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-	* [Настройка аудиовыхода на джек](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-	* [Как освободить больше места на microSD карте](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+	* [Как скопировать файлы с Windows на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B-%D1%81-windows-%D0%BD%D0%B0-raspberry-pi-%D0%BF%D1%80%D0%B8-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8)
+	* [Как скопировать файлы с Mac OS на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B-%D1%81-mac-%D0%BE%D1%81-%D0%BD%D0%B0-raspberry-pi-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%83%D1%8E-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D1%83-%D0%BD%D0%B0-mac-%D0%BE%D1%81)
+	* [Как скопировать файлы с Rasberry Pi на Mac OS используя командную строку (в Mac Os)](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B-%D1%81-rasberry-pi-%D0%BD%D0%B0-mac-os-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%83%D1%8E-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D1%83-%D0%BD%D0%B0-mac-%D0%BE%D1%81)
+	* [Как настроить IP адрес для Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81-raspberry-pi)
+	* [Как менять громкость на Raspberry Pi используя командную строку](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B3%D1%80%D0%BE%D0%BC%D0%BA%D0%BE%D1%81%D1%82%D1%8C-raspberry-pi-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8)
+	* [Настройка аудиовыхода на джек](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0-%D0%BD%D0%B0-%D0%B4%D0%B6%D0%B5%D0%BA)
+	* [Как освободить больше места на microSD карте](https://github.com/tjbotcz/manuals/tree/master/ru/bring-to-life#%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8%D1%82%D1%8C-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BC%D0%B5%D1%81%D1%82%D0%B0-%D0%BD%D0%B0-microsd-%D0%BA%D0%B0%D1%80%D1%82%D0%B5)
 
 ## Быстрый старт с подготовленного изображения
 
