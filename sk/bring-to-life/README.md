@@ -1,17 +1,17 @@
 # Oživenie TJBota na Raspberry Pi
 
 Zvoľte si postup...
-1. [Rýchle oživenie z pripraveného image](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Začnite od piky ako profík](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Rýchle oživenie z pripraveného image](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#r%C3%BDchle-o%C5%BEivenie-z-pripraven%C3%A9ho-obr%C3%A1zku)
+2. [Začnite od piky ako profík](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#za%C4%8Dnite-od-piky-ako-prof%C3%ADk)
 3. Pár návodov, ktoré sa môžu hodiť 
 
-    * [Ako skopírovať súbry z Windowsu na Raspberry Pi použitím príkazového riadku (vo Windows)]https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [Ako skopírovať súbory z Mac OS na Raspberry Pi použitím príkazového riadku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [Ako skopírovať súbory z Rasberry Pi na Mac OS použitím príkazového riadku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [Ako nastaviť pevnú IP adresu na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [Ako ovládať hlasitosť zvukového výstupu Raspberry Pi použitím príkazového riadku](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Nastavenie audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Ako získať viac miesta na microSD karte ](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+    * [Ako skopírovať súbry z Windowsu na Raspberry Pi použitím príkazového riadku (vo Windows)](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#kop%C3%ADrovanie-z-windows-na-raspberry-pi-pou%C5%BEit%C3%ADm-pr%C3%ADkazov%C3%A9ho-riadku)
+    * [Ako skopírovať súbory z Mac OS na Raspberry Pi použitím príkazového riadku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#kop%C3%ADrovanie-z-mac-os-na-raspberry-pi-pou%C5%BEit%C3%ADm-pr%C3%ADkazov%C3%A9ho-riadku-v-mac-os)
+    * [Ako skopírovať súbory z Rasberry Pi na Mac OS použitím príkazového riadku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#kop%C3%ADrovanie-z-rasberry-pi-do-mac-os-pou%C5%BEit%C3%ADm-pr%C3%ADkazov%C3%A9ho-riadku-v-mac-os)
+    * [Ako nastaviť pevnú IP adresu na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#nastavenie-pevnej-ip-adresy-na-raspberry-pi)
+    * [Ako ovládať hlasitosť zvukového výstupu Raspberry Pi použitím príkazového riadku](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#hlasitos%C5%A5-raspberry-pi-pou%C5%BEit%C3%ADm-pr%C3%ADkazov%C3%A9ho-riadku)
+    * [Nastavenie audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#nastavenie-audio-v%C3%BDstupu-na-jack)
+    * [Ako získať viac miesta na microSD karte ](https://github.com/tjbotcz/manuals/tree/master/sk/bring-to-life#uvo%C4%BEnenie-miesta-na-karte-microsd)
     
 ## Rýchle oživenie z pripraveného obrázku
 
