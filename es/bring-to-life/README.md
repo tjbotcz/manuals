@@ -280,7 +280,7 @@ Reinicie Raspberry-Pi. Despues podrá escribir `volup`  o  `voldown`  en el Term
 
 
 
-### Especificar la salida audio al jack
+### Configuracion de la salida de audio a conector jack
 A veces puede suceder que no escuche a TJBot incluso si el volumen está al máximo, posiblemente el audio va a traves de HDMI y no esta conectado al altavoz mediante el conector "jack". Para conectarlo utilice el siguiente comando:
 
 ```
@@ -289,7 +289,7 @@ sudo amixer cset numid=3 1
 El ultimo número especifica la salida (output) (0=auto, 1=jack, 2=HDMI)
 
 
-### Para hacer mas espacio en la tarjeta microSD.
+### Adquiera mas espacio en su Tarjeta microSD
 Si tiene 16GB microSD, debería de ser suficiente, pero si tiene 8gb despues de instalar todo le quedarán 2gb mas o menos, lo cual limitaría un poco la capacidad, puede desisntalar Wolfram y LibreOffice para tener un poco mas de espacio. No va a necesitar ninguno de esos programas para trabajar con TJBot en el futuro y obtendrá 1GB extra de espacio.
 
 Para eliminar programas:
