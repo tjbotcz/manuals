@@ -1,17 +1,17 @@
 # Oživljavanje TJBot-a (na Raspberry Pi-u) 
  
 Izaberi svoj put… 
-1. [Brzi start putem gotove slike](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image) 
-2. [Započni od nule kao stručnjak](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro) 
+1. [Brzi start putem gotove slike](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#brzi-start-putem-gotove-slike) 
+2. [Započni od nule kao stručnjak](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#zapo%C4%8Dni-od-nule-kao-stru%C4%8Dnjak) 
 3. Neki savjeti i trikovi koji bi ti mogli koristiti 
  
-    * [Kako kopirati datoteke iz Windows OS-a na Raspberry Pi koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line) 
-    * [Kako kopirati datoteke iz Mac OS-a na Raspberry Pi koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os) 
-    * [Kako kopirati datoteke iz Rasberry Pi-a na Mac OS koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os) 
-    * [Kako postaviti IP adresu Raspberry Pi-a](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address) 
-    * [Kako podesiti glasnoću zvuka Raspberry Pi-a koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line) 
-    * [Postavljanje audio izlaza na jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack) 
-    * [Stvaranje više prostora za pohranu na microSD kartici](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card) 
+    * [Kako kopirati datoteke iz Windows OS-a na Raspberry Pi koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#kako-kopirati-datoteke-s-windowsa-na-raspberry-pi-koriste%C4%87i-tekstualno-su%C4%8Delje) 
+    * [Kako kopirati datoteke iz Mac OS-a na Raspberry Pi koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#kako-kopirati-datoteke-s--mac-os-to-raspberry-pi-koriste%C4%87i-tekstualno-su%C4%8Delje-u-mac-osu) 
+    * [Kako kopirati datoteke iz Rasberry Pi-a na Mac OS koristeći tekstualno sučelje (u Mac OS-u)](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#kako-kopirati-datoteke-s-rasberry-pija-u-mac-os-koriste%C4%87i-tekstualno-su%C4%8Deljeu-mac-os-u) 
+    * [Kako postaviti IP adresu Raspberry Pi-a](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#kako-namjestiti-ip-adresu--raspberry-pi-a) 
+    * [Kako podesiti glasnoću zvuka Raspberry Pi-a koristeći tekstualno sučelje](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#kako-promijeniti-ja%C4%8Dinu--zvuka-na-raspberry-pi-u-koriste%C4%87i-tekstualno-su%C4%8Delje) 
+    * [Postavljanje audio izlaza na jack](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#postavljanje-audio-izlaza-na-jack) 
+    * [Stvaranje više prostora za pohranu na microSD kartici](https://github.com/tjbotcz/manuals/tree/master/hr/bring-to-life#dobijanje-vi%C5%A1e-mjesta-za-pohranu-na-microsd--kartici) 
      
 ## Brzi start putem gotove slike 
  
