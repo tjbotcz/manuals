@@ -1,8 +1,8 @@
 # Encender TJBot (con Raspberry Pi)
 
 Elija el modo...
-1. [Instalación rápida desde una configuración ya establecida](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Instalación de cero para usuarios avanzados](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Instalación rápida desde una configuración ya establecida](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#instalaci%C3%B3n-r%C3%A1pida-desde-una-configuraci%C3%B3n-ya-establecida)
+2. [Instalación de cero para usuarios avanzados](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#empiece-desde-cero-como-usuario-avanzado)
 3. Los siguientes links contienen temas de ayuda para instalar su TJBot.
 
     * [¿Cómo copiar archivos desde Windows a Raspberry-Pi usando la consola de windows.?](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
