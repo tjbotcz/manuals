@@ -1,16 +1,16 @@
 # Prikelkite TJBot gyvenimui (Raspberry Pi)
 
 Pasirinkite save kelią...
-1. [Greitai pradėti naudojantis jau sukurtu atvaizdu](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#faststart-from-ready-made-image)
-2. [Pradėti nuo nulio kaip PRO](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#start-from-scratch-like-a-pro)
+1. [Greitai pradėti naudojantis jau sukurtu atvaizdu](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#greitai-prad%C4%97ti-naudojantis-jau-sukurtu-atvaizdu)
+2. [Pradėti nuo nulio kaip PRO](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#prad%C4%97kite-nuo-nulio-kaip-pro)
 3. Keletas patarimų, kurie gali praversti 
-    * [Kaip kopijuoti failus iš Windows į Raspberry Pi naudojantis komandine eilute](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-windows-to-raspberry-pi-using-a-command-line)
-    * [Kaip kopijuoti failus iš Mac OS į Raspberry Pi naudojant komandinę eilutę ("Mac OS")](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-mac-os-to-raspberry-pi-using-a-command-line-in-mac-os)
-    * [Kaip kopijuoti failus iš Rasberry Pi į Mac OS, naudojant komandinę eilutę (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-copy-files-from-rasberry-pi-to-mac-os-using-command-line-v-mac-os)
-    * [Kaip nustatyti "Raspberry Pi" IP adresą](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-set-up-a-raspberry-pis-ip-address)
-    * [Kaip pakeisti "Raspberry Pi" talpą naudojant komandinę eilutę](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
-    * [Garso išvesties prijungimas prie lizdo](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
-    * [Gaukite daugiau laisvos vietos "microSD" kortelėje](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+    * [Kaip kopijuoti failus iš Windows į Raspberry Pi naudojantis komandine eilute](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#kaip-kopijuoti-failus-i%C5%A1-windows-%C4%AF-raspberry-pi-naudojant-komandin%C4%99-eilut%C4%99)
+    * [Kaip kopijuoti failus iš Mac OS į Raspberry Pi naudojant komandinę eilutę ("Mac OS")](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#kaip-kopijuoti-failus-i%C5%A1-mac-os-%C4%AF-raspberry-pi-naudojant-komandin%C4%99-eilut%C4%99-mac-os)
+    * [Kaip kopijuoti failus iš Rasberry Pi į Mac OS, naudojant komandinę eilutę (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#kaip-kopijuoti-failus-i%C5%A1-rasberry-pi-%C4%AF-mac-os-naudojant-komandin%C4%99-eilut%C4%99-v-mac-os)
+    * [Kaip nustatyti "Raspberry Pi" IP adresą](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#kaip-nustatyti-raspberry-pi-ip-adres%C4%85)
+    * [Kaip pakeisti "Raspberry Pi" talpą naudojant komandinę eilutę](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#kaip-pakeisti-raspberry-pi-garso-lyg%C4%AF-naudojant-komandin%C4%99-eilut%C4%99)
+    * [Garso išvesties prijungimas prie lizdo](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#garso-i%C5%A1vesties-nustatymas-prie-lizdo)
+    * [Gaukite daugiau laisvos vietos "microSD" kortelėje](https://github.com/tjbotcz/manuals/tree/master/lt/bring-to-life#gaukite-daugiau-laisvos-vietos-microsd-kortel%C4%97je)
     
 ## Greitai pradėti naudojantis jau sukurtu atvaizdu 
 
