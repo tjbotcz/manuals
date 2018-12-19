@@ -10,8 +10,8 @@ Elija el modo...
     * [¿Cómo copiar archivos desde Rasberry Pi a Mac OS usando la consola de comandos(v Mac Os)?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-copiar-archivos-desde-rasberry-pi-a-mac-os-usando-la-linea-de-comando-para-mac-os)
     * [¿Cómo configurar la dirección IP de una Raspberry Pi’s?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-configurar-la-direcci%C3%B3n-ip-de-raspberry-pi)
     * [¿Cómo cambiar el volumen de la Raspberry Pi’s usando la linea de comandos?](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#como-cambiar-el-volumen-de-raspberry-pi-mediante-la-linea-de-comando)
-    * [Configuracion de la salida de audio a conector jack](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#setting-audio-output-to-jack)
-    * [Adquiera mas espacio en su Tarjeta microSD](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#para-hacer-mas-espacio-en-la-tarjeta-microsim)
+    * [Configuracion de la salida de audio a conector jack](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#configuracion-de-la-salida-de-audio-a-conector-jack)
+    * [Adquiera mas espacio en su Tarjeta microSD](https://github.com/tjbotcz/manuals/tree/master/es/bring-to-life#adquiera-mas-espacio-en-su-tarjeta-microsd)
     
 ## Instalación rápida desde una configuración ya establecida. 
 
