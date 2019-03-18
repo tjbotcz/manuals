@@ -1,5 +1,5 @@
 # Manuals for TJBotCZ
-## (Current version: V.1, Latest version: V.1)
+## (Current version: V.2, Latest version: V.2)
 
 ###  >>>>> READ THIS BEFORE YOU PROCEED <<<<<
 
