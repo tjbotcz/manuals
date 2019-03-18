@@ -13,9 +13,17 @@ Let's create the services and note down the credential details.
 
 ## Registration to IBM Cloud
 
-You can register to IBM Cloud at www.bluemix.net.
+You can register to IBM Cloud at [cloud.ibm.com](https://cloud.ibm.com/login).
 
 Registration is free (no credit card needed) and allows you to provision the necessary services in LITE version, that is sufficient for our needs. All the services are accessible via the tab "Catalog". 
+
+Limitations for LITE services (subject to change according to IBM offering):
+* Speech to Text: 100 minutes
+* Text to Speech: 10.000 characters
+* Watson Assistant: 10.000 messages, 5 skills (each 100 nodes)
+* Visual Recognition: 1000 events, 2 custom models
+* Translation: 1.000.000 characters
+* Tone analyzer: 2500 API calls
 
 ## Speech to Text service
 
