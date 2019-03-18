@@ -11,7 +11,7 @@ Choose your path...
     * [How to change Raspberry Pi’s volume using the command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
     * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
     * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
-    * [Clone or backup microSD Card]()
+    * [Cloning microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
 
     
 ## Faststart from ready-made image 
@@ -314,6 +314,39 @@ Second line of code created an image of your microSD card in your Desktop.
     sudo dd if=/dev/<disk number, e.g. disk4> of=~/Desktop/tjbotcz.img conv=sparse bs=1m
     
 Creating the image takes a while. If you want to see the status, just press CTRL+T and the progress will show up in terminal. Created image will have the same size as is the capacity of the microSD card (e.g. 8GB or 16GB).
+
+### How to remotely edit files on TJBotCZ directly from VS Code?
+In order to edit files remotely, you need to have Remote VS Code extenstion installed in your Visual Code Studio and also have rmate installed on your TJBOTCZ (Raspberry Pi).
+
+Installing rmate (Raspberry Pi): 
+On Raspberry pi open terminal (nebo remotely over SSH) a run this commands:
+
+```
+sudo wget -O /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
+sudo chmod a+x /usr/local/bin/rmate
+```
+
+Then in VS Code open Terminal window and connect to Raspberry Pi:
+
+```
+ssh -R 52698:localhost:52698 pi@<ip adresa R-pi>
+```
+
+In the Terminal window navigate to the file you want to edit and run:
+
+```
+rmate <název souboru>
+```
+
+The file will open in VS Code and you can edit it.
+
+Hint: If you do not want to enter  *ssh -R 52698:localhost:52698* *pi@<ip adresa R-pi>* every time, you can create alias. On MacOS create file .bash_profile under your username folder (if not yet existing) and in the file write something like: 
+
+```
+alias tjpi='ssh -R 52698:localhost:52698 pi@10.0.0.29'
+```
+In the above case it then takes just writing *tjpi* in VS Code and you are connected. Of course theIP address has to be changed whenever Raspberry Pi gets a new one.
+
 
 ---
 
