@@ -27,13 +27,13 @@ Limitations for LITE services (subject to change according to IBM offering):
 
 ## Speech to Text service
 
-In "Catalog" search for _**Speech to Text**_ a click on "Create". New page with service configuration will open. Clicking the "Show" icon will unhide the credentials of the service (username a password). You will need to enter those in the TJBotCZ  configuration file (credentials.js).
+In "Catalog" search for _**Speech to Text**_ a click on "Create". New page with service configuration will open. Clicking the "Show" icon will unhide the credentials of the service (apikey and url). You will need to enter those in the TJBotCZ  configuration file (credentials.js).
 
 ![S2T Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/s2t-credentials.png)
 
 ## Text to Speech service
 
-In "Catalog" search for _**Text to Speech**_ a click on "Create". New page with service configuration will open. Clicking the "Show" icon will unhide the credentials of the service (username a password). You will need to enter those in the TJBotCZ  configuration file (credentials.js).
+In "Catalog" search for _**Text to Speech**_ a click on "Create". New page with service configuration will open. Clicking the "Show" icon will unhide the credentials of the service (apikey and url). You will need to enter those in the TJBotCZ  configuration file (credentials.js).
 
 ![T2S Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/t2s-credentials.png)
 
@@ -45,11 +45,11 @@ In "Catalog" search for _**Visual Recognition**_ a click on "Create". New page w
 
 ## Watson Assisstant service
 
-Watson Assisstant is tool for creating dialogs (chats). For fast start we have prepared a simple dialog which you can import to the service before you start creating your own chats. [Download the dialog here](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). In "Catalog" search for _**Watson Assisstant**_ a click on "Create". New page with service configuration will open. Clicking the "Launch" button you get a new window - the actual tool for creating chats. Select "Workspace" tab where you will find icon for importing the downloaded dialog file (see picture below).
+Watson Assisstant is tool for creating dialogs (chats). For fast start we have prepared a simple dialog which you can import to the service before you start creating your own chats. [Download the dialog here](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). In "Catalog" search for _**Watson Assisstant**_ a click on "Create". New page with service configuration will open. Clicking the "Launch" button gets you to the new window - the actual user interface for creating chats. Select "Skills" tab, then create skills by importing the downloaded dialog file. On the tile of the created skills, you can access the credentials for the chat.
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
-After importing the dialog, the newly created workspace will open. Icon imitating snail will bring you to the credential details you need for configuration file on TJBot (credentials.js). In case of Watson Assisstant service there are 3 credentials: workspace id, username a password.
+In case of Watson Assisstant service we are using API V1, so there are 3 credentials you will need: workspace id, username a password. The username will be: *apikey*.
 
 ![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
 
