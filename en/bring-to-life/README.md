@@ -11,6 +11,9 @@ Choose your path...
     * [How to change Raspberry Pi’s volume using the command line](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-change-raspberry-pis-volume-using-the-command-line)
     * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
     * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
+    * [Cloning microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
+    * [How to remotely edit files on TJBotCZ directly from VS Code](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#how-to-remotely-edit-files-on-tjbotcz-directly-from-vs-code)
+
     
 ## Faststart from ready-made image 
 
@@ -27,15 +30,15 @@ You will need:
 Steps:
 1. Download the ready-made [image of TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V) and unpack it.
 
-2. Download and install SW for installing image of Raspbianu to the microSD card, e.g. Etcher: https://etcher.io/ . Use it to install downloaded image on microSD card (choose tjbotcz_lite.img file, select mounted microSD card , and…Flash!)
+2. Download and install SW for installing image of Raspbian to the microSD card - we like to use Etcher https://www.balena.io/etcher/ which is simple and easy. Use it to install downloaded image on microSD card (choose tjbotcz_lite.img file, select mounted microSD card , and…Flash!)
 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
-3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, a mouse or with RJ-45 (ethernet) internet cable. The second option is to connect it via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting fo rthe future). You will need the connectivity in step 4.
+3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, mouse and with RJ-45 (ethernet) internet cable. The second option is to connect it to internet via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting for the future). You will need the connectivity in step 4.
 
 4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
 
-5. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
+5. In order to chat with TJBotCZ we need to have the following services provisioned in the IBM Cloud:
 
 * Watson Assistant (service for creating dialogs/chats)
 * Speech to Text (service transcripting voice file to text file)
@@ -50,7 +53,7 @@ Steps:
   ```
   ssh pi@<ipadresa>
   ```
-  Windows (enter IP address of TJBota into highlighted field):
+  Windows (enter IP address of TJBotCZ into highlighted field):
 
   ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
 
@@ -75,8 +78,8 @@ Steps:
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
   Closing and saving the file: CTRL+X, Y, Enter.
   
-10. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
-  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. For more information about TJBotCZ lite program and what to do with it go to this [repository](https://github.com/tjbotcz/tjbotcz_lite).
+10. And now, bring TJBotCZ to life !!! Navigate back to folder Desktop/tjbotcz_lite ... and run the program.
+  TJBotCZ is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have word Michael in them. For more information about TJBotCZ lite program and what to do with it go to this [repository](https://github.com/tjbotcz/tjbotcz_lite).
   ```
   cd ..
   sudo node tjbotcz_lite.js
@@ -101,7 +104,7 @@ Steps:
 
 ![Raspbian download](https://github.com/tjbotcz/manuals/blob/master/images/raspbian-download.png "Raspbian download")
 
-2. Download and install SW in order to install image Raspbian, for e.g. Etcher https://etcher.io/ and then install Raspbian OS on microSD card (click/select downloaded .img file, then already connected SD card, and…Flash!)
+2. Download and install SW for installing image of Raspbian to the microSD card - we like to use Etcher https://www.balena.io/etcher/ which is simple and easy. Use it to install downloaded image on microSD card (choose tjbotcz_lite.img file, select mounted microSD card , and…Flash!)
 
 ![Etcher](https://github.com/tjbotcz/manuals/blob/master/images/etcher-flashing.png "Etcher flashing")
 
@@ -136,23 +139,27 @@ This command will download a script from the server, which will run an interacti
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
-7. In Terminal open folder Desktop:
+7. Install MPG123 player in order to be able to play mp3 files.
+```
+sudo apt-get install mpg123
+```
+8. In Terminal open folder Desktop:
 ```
 cd Desktop
 ```
-8. Install one of the TJBotCZ programs (tjbotcz_lite, tjbotcz, tjbotcz_iot):
+9. Install one of the TJBotCZ programs (tjbotcz_lite, tjbotcz, tjbotcz_iot):
 ```
 git clone https://github.com/tjbotcz/<name of tjbotcz program>.git
 ```
-9. In Terminal open the newly created folder “tjbotcz_lite”, "tjbotcz" or tjbotcz_iot":
+10. In Terminal open the newly created folder “tjbotcz_lite”, "tjbotcz" or tjbotcz_iot":
 ```
 cd <name of the folder>
 ```
-10. Download dependencies defined in file package.json in the folder with program downloaded in step 8:
+11. Download dependencies defined in file package.json in the folder with program downloaded in step 8:
 ```
 npm install
 ```
-11. In order to chat with TJBot we need to have the followinf services provisioned in the IBM Cloud:
+12. In order to chat with TJBot we need to have the following services provisioned in the IBM Cloud:
 
 * Watson Assistant (service for creating dialogs/chats)
 * Speech to Text (service transcripting voice file to text file)
@@ -161,13 +168,13 @@ npm install
 
   Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
 
-12. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
+13. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
 
   MacOS:
   ```
   ssh pi@<ipadresa>
   ```
-  Windows (enter IP address of TJBota into highlighted field):
+  Windows (enter IP address of TJBotCZ into highlighted field):
 
   ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
 
@@ -192,8 +199,8 @@ npm install
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
   Closing and saving the file: CTRL+X, Y, Enter.
   
-16. And now, bring TJBot to life !!! back to folder Desktop/tjbotcz_lite ... and here we go.
-  TJBot is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have name Michael in them. 
+16. And now, bring TJBot to life !!! Navigate back to the folder Desktop/tjbotcz_lite ... and run the program.
+  TJBotCZ is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have word Michael in them. 
   ```
   cd ..
   sudo node tjbotcz_lite.js
@@ -299,5 +306,49 @@ sudo apt-get purge libreoffice*
 sudo apt-get autoremove
 ```
 
+### Cloning microSD card on MacOS
+Connect your microSD card with Raspbian to your MacBook.
+The first line of code lets you find out what is the disknumber assigned to your microSD card. You will see it in the list.
+Second line of code created an image of your microSD card in your Desktop.
+
+    diskutil list
+    sudo dd if=/dev/<disk number, e.g. disk4> of=~/Desktop/tjbotcz.img conv=sparse bs=1m
+    
+Creating the image takes a while. If you want to see the status, just press CTRL+T and the progress will show up in terminal. Created image will have the same size as is the capacity of the microSD card (e.g. 8GB or 16GB).
+
+### How to remotely edit files on TJBotCZ directly from VS Code
+In order to edit files remotely, you need to have Remote VS Code extenstion installed in your Visual Code Studio and also have rmate installed on your TJBOTCZ (Raspberry Pi).
+
+Installing rmate (Raspberry Pi): 
+On Raspberry pi open terminal (nebo remotely over SSH) a run this commands:
+
+```
+sudo wget -O /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
+sudo chmod a+x /usr/local/bin/rmate
+```
+
+Then in VS Code open Terminal window and connect to Raspberry Pi:
+
+```
+ssh -R 52698:localhost:52698 pi@<ip adresa R-pi>
+```
+
+In the Terminal window navigate to the file you want to edit and run:
+
+```
+rmate <název souboru>
+```
+
+The file will open in VS Code and you can edit it.
+
+Hint: If you do not want to enter  *ssh -R 52698:localhost:52698* *pi@<ip adresa R-pi>* every time, you can create alias. On MacOS create file .bash_profile under your username folder (if not yet existing) and in the file write something like: 
+
+```
+alias tjpi='ssh -R 52698:localhost:52698 pi@10.0.0.29'
+```
+In the above case it then takes just writing *tjpi* in VS Code and you are connected. Of course theIP address has to be changed whenever Raspberry Pi gets a new one.
+
+
 ---
+
 
