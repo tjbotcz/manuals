@@ -15,5 +15,5 @@ _Available in Croatian, Czech, English, French, German, Italian, Lithuanian, Rus
 
 Thanks to all the volunteers who are helping with the translations.
 
-The latest version of the manuals is V1.
+The latest version of the manuals is V2.
 
