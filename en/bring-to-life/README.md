@@ -12,6 +12,7 @@ Choose your path...
     * [Setting audio output to jack](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#setting-audio-output-to-jack)
     * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
     * [Cloning microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
+    * [How to remotely edit files on TJBotCZ directly from VS Code](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#how-to-remotely-edit-files-on-tjbotcz-directly-from-vs-code)
 
     
 ## Faststart from ready-made image 
@@ -315,7 +316,7 @@ Second line of code created an image of your microSD card in your Desktop.
     
 Creating the image takes a while. If you want to see the status, just press CTRL+T and the progress will show up in terminal. Created image will have the same size as is the capacity of the microSD card (e.g. 8GB or 16GB).
 
-### How to remotely edit files on TJBotCZ directly from VS Code?
+### How to remotely edit files on TJBotCZ directly from VS Code
 In order to edit files remotely, you need to have Remote VS Code extenstion installed in your Visual Code Studio and also have rmate installed on your TJBOTCZ (Raspberry Pi).
 
 Installing rmate (Raspberry Pi): 
