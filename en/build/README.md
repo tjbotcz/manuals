@@ -75,5 +75,18 @@ RGB LED uses 4 pins:
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
 
+**Connecting IP Button (OPTIONAL)**
+
+IP button is a regular button which you can connect to Raspberry Pi pins. This button runs _ipButton.js_ program telling you the IP address of the connected TJBotCZ. 
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
+
+**Connecting I2C LCD (16x2) (OPTIONAL)**
+
+Complementing the IP Button, TJBotCZ can print its IP Address also on the connected LCD display. We use 16x2 LCD with I2C.
+The LCD display is also used in some of the programs (e.g. tjbotcz_rps).
+
+![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
+
 
 
