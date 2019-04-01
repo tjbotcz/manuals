@@ -354,11 +354,16 @@ alias tjpi='ssh -R 52698:localhost:52698 pi@10.0.0.29'
 In the above case it then takes just writing *tjpi* in VS Code and you are connected. Of course theIP address has to be changed whenever Raspberry Pi gets a new one.
 
 ### How to setup IP button on TJBotCZ
-This feature is automatically installed by _run-me-first.sh_. Once connected to the internet via ethernet cable or via known WiFi you can get information about the TJBotCZ IP address by pressing the button. You have to have the button installed as described in ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build) manual. Optionally, if you have LCD installed as well (see ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build)), the IP address also shows up on the display.
+This feature is automatically installed by _run-me-first.sh_. If you have run the script, you do not need to perform the following setup.
 
+Once connected to the internet via ethernet cable or via known WiFi you can get information about the TJBotCZ IP address by pressing the button. You have to have the button installed as described in ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build) manual. Optionally, if you have LCD installed as well (see ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build)), the IP address also shows up on the display.
 
+Enter the follwing line at the end of the .bashrc file (sudo nano ~/.bashrc):
 
-
+```
+sudo node ~/Desktop/tjbotcz_lite/ipButton.js
+```
+Everytime TJBotCZ restarts, he will check for IP address and say it out on pressing the button.
 
 
 ---
