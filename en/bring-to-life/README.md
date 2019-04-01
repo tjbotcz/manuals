@@ -50,12 +50,12 @@ Steps:
 
 6. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). The easiest way to do this is through configuration webpage we have prepared:
 
-From browser on your computer navigate to (you have to be on the same network/WiFi as TJBotCZ):
+   From browser on your computer navigate to (you have to be on the same network/WiFi as TJBotCZ):
 
-```
-http://<IP ADDRESS OF TJBOT>/configme.html
-```
-Configure TJBotCZ and enter the credentials from step 5.
+   ```
+   http://<IP ADDRESS OF TJBOT>/configme.html
+   ```
+   Configure TJBotCZ and enter the credentials from step 5.
 
 
 7. And now, bring TJBotCZ to life !!! 
