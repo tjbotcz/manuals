@@ -13,6 +13,7 @@ Choose your path...
     * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
     * [Cloning microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
     * [How to remotely edit files on TJBotCZ directly from VS Code](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#how-to-remotely-edit-files-on-tjbotcz-directly-from-vs-code)
+    * [How to setup IP button on TJBotCZ]()
 
     
 ## Faststart from ready-made image 
@@ -38,7 +39,7 @@ Steps:
 
 4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
 
-5. In order to chat with TJBotCZ we need to have the following services provisioned in the IBM Cloud:
+5. In order to chat with TJBotCZ we need to have at least the following services provisioned in the IBM Cloud:
 
 * Watson Assistant (service for creating dialogs/chats)
 * Speech to Text (service transcripting voice file to text file)
@@ -47,45 +48,47 @@ Steps:
 
   Provision the services according to the manual in the folder ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md).
 
-6. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). Since the credentials are quite long strings, the best way to enter them is to remotely connect to TJBot from the computer where you created the Watson services and copy-paste them. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program fro remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
+6. If you have all the services provisioned then welcome back and let's continue. You need to enter the credentials of individual services into the configuration file (credentials.js). The easiest way to do this is through configuration webpage we have prepared:
 
-  MacOS:
-  ```
-  ssh pi@<ipadresa>
-  ```
-  Windows (enter IP address of TJBotCZ into highlighted field):
+From browser on your computer navigate to (you have to be on the same network/WiFi as TJBotCZ):
 
-  ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+```
+http://<IP ADDRESS OF TJBOT>/configme.html
+```
+Configure TJBotCZ and enter the credentials from step 5.
 
 
-  You will be asked for a password. Default password is: **_raspberry_**.
+7. And now, bring TJBotCZ to life !!! 
+To do this, remotely connect to TJBotCZ, navigate to program folder and run the program. So let's get started! 
 
-7. In Terminal (or cmd window in Windows) navigate to folder with configuration files:
+   a. If you are a Mac user, you will use terminal, if you are running Windows, you will use [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). PuTTy is a program for remote access and you need to install it first. Using Terminal or in PuTTy connect to TJBot (you need to be on the same network/WiFi as TJBot):
+   
+   MacOS:
+   ```
+   ssh pi@<ipadresa>
+   ```
+   
+   Windows (enter IP address of TJBotCZ into highlighted field):
+   ![PuTTy](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/putty.png)
+   
+   You will be asked for a password. Default password is: **_raspberry_**.
+   
+   b. Navigate back to folder Desktop/tjbotcz_lite
+   
+   ```
+   cd Desktop/tjbotcz_lite
+   ```
+   
+   c. ...and run the program.
+ 
+   ```
+   sudo node tjbotcz_lite.js
+   ```
 
-  ```
-  cd Desktop/tjbotcz_lite/configuration
-  ```
-8. Create a copy of credentials.default.js and config.default.js  files and name them credentials.js and config.js accordingly. You can do this also remotly via the Terminal/CMD window:
-  ```  
-  cp config.default.js config.js
-  cp credentials.default.js credentials.js
-  ```
-9. In text editor called nano insert the necessary credentials to individual services.
-  ```
-  nano credentials.js
-  ```
-  See picture below for places that need to be filled with credential data from Watson services (do not delete the quotation marks).
-  ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
-  Closing and saving the file: CTRL+X, Y, Enter.
-  
-10. And now, bring TJBotCZ to life !!! Navigate back to folder Desktop/tjbotcz_lite ... and run the program.
-  TJBotCZ is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have word Michael in them. For more information about TJBotCZ lite program and what to do with it go to this [repository](https://github.com/tjbotcz/tjbotcz_lite).
-  ```
-  cd ..
-  sudo node tjbotcz_lite.js
-  ```
-  
+TJBotCZ is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only          sentences that have word Michael in them. For more information about TJBotCZ lite program and what to do with it go to        this [repository](https://github.com/tjbotcz/tjbotcz_lite).
+   
 ![tjbot-waving](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/tjbot_wave.gif)
+ 
 
 ---
 
