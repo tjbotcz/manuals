@@ -202,6 +202,8 @@ npm install
   ![credentials.js soubor](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/credentials.png)
   Closing and saving the file: CTRL+X, Y, Enter.
   
+   In similar fashion you can update configuration file (config.js), where you can set voice gender, voice, name of the TJBotCZ, pins for RGB LED etc.
+   
 16. And now, bring TJBot to life !!! Navigate back to the folder Desktop/tjbotcz_lite ... and run the program.
   TJBotCZ is configured to speak in male voice and is reacting on name Michael. This means that he will recognize only sentences that have word Michael in them. 
   ```
@@ -350,6 +352,9 @@ Hint: If you do not want to enter  *ssh -R 52698:localhost:52698* *pi@<ip adresa
 alias tjpi='ssh -R 52698:localhost:52698 pi@10.0.0.29'
 ```
 In the above case it then takes just writing *tjpi* in VS Code and you are connected. Of course theIP address has to be changed whenever Raspberry Pi gets a new one.
+
+### How to setup IP button on TJBotCZ
+
 
 
 ---
