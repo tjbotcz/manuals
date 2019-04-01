@@ -13,7 +13,7 @@ Choose your path...
     * [Get more free space on microSD Card](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#get-more-free-space-on-microsd-card)
     * [Cloning microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
     * [How to remotely edit files on TJBotCZ directly from VS Code](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#how-to-remotely-edit-files-on-tjbotcz-directly-from-vs-code)
-    * [How to setup IP button on TJBotCZ]()
+    * [How to setup IP button on TJBotCZ](https://github.com/tjbotcz/manuals/tree/master/en/bring-to-life#how-to-setup-ip-button-on-tjbotcz)
 
     
 ## Faststart from ready-made image 
@@ -354,7 +354,7 @@ alias tjpi='ssh -R 52698:localhost:52698 pi@10.0.0.29'
 In the above case it then takes just writing *tjpi* in VS Code and you are connected. Of course theIP address has to be changed whenever Raspberry Pi gets a new one.
 
 ### How to setup IP button on TJBotCZ
-
+This feature is automatically installed by _run-me-first.sh_. Once connected to the internet via ethernet cable or via known WiFi you can get information about the TJBotCZ IP address by pressing the button. You have to have the button installed as described in ["build"](https://github.com/tjbotcz/manuals/blob/master/en/watson-services/README.md)
 
 
 ---
