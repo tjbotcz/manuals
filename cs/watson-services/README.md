@@ -34,7 +34,7 @@ V záložce "Catalog" vyhledejte službu _**Visual Recognition**_ a klikněte na
 
 ![Visual Recognition API KEY](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/visual-recognition-credentials.png)
 
-## Služba Watson Assisstant
+## Služba Watson Assistant
 
 Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  [Stáhněte si dialog zde](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Poznamenejte si API KEY a URL.
 
