@@ -45,13 +45,15 @@ In "Catalog" search for _**Visual Recognition**_ a click on "Create". New page w
 
 ## Watson Assisstant service
 
-Watson Assisstant is tool for creating dialogs (chats). For fast start we have prepared a simple dialog which you can import to the service before you start creating your own chats. [Download the dialog here](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). In "Catalog" search for _**Watson Assisstant**_ a click on "Create". New page with service configuration will open. Clicking the "Launch" button gets you to the new window - the actual user interface for creating chats. Select "Skills" tab, then create skills by importing the downloaded dialog file. On the tile of the created skills, you can access the credentials for the chat.
+Watson Assisstant is tool for creating dialogs (chats). For fast start we have prepared a simple dialog which you can import to the service before you start creating your own chats. [Download the dialog here](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). In "Catalog" search for _**Watson Assisstant**_ a click on "Create". New page with service configuration will open. Note down the API KEY and URL.
+
+![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
+
+Clicking the "Launch" button gets you to the new window - the actual user interface for creating chats. Select "Skills" tab, then create skills by importing the downloaded dialog file. On the tile of the created skills, you can access the credentials for the chat (View credentials details). Here you will find the WORKSPACE ID.
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
-In case of Watson Assisstant service we are using API V1, so there are 3 credentials you will need: workspace id, username a password. The username will be: *apikey*.
-
-![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
+In case of Watson Assisstant service we are using API V1, so there are 3 credentials you will need: WORKSPACE ID, APIKEY and URL.
 
 ---
 
