@@ -40,8 +40,7 @@ Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek j
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
-Pro přístup ke službě Watson Assistant používáme API V1 a potřebujeme celkem 3 údaje: WORKSPACE ID, 
-In case of Watson Assisstant service we are using API V1, so there are 3 credentials you will need: workspace id, username a password. The username will be: *apikey*.
+Pro přístup ke službě Watson Assistant používáme API V1 a potřebujeme celkem 3 údaje: WORKSPACE ID, API KEY a URL.
 
 ![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
 
