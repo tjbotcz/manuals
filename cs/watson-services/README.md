@@ -36,13 +36,16 @@ V záložce "Catalog" vyhledejte službu _**Visual Recognition**_ a klikněte na
 
 ## Služba Watson Assisstant
 
-Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  [Stáhněte si dialog zde](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Kliknutím na tlačítko "Launch" se vám otevře nové okno s nástrojem pro vytváření chatu. Přepněte na záložku "Skills", vytvořte nový Skill importováním stáhnutého souboru. Na dlaždici vytvořeného Skillu si můžete zobrazit potřebné přihlašovací údaje (View API details).
+Watson Assisstant je nástroj pro vytváření dialogů (chatu). Pro začátek jsme vám připravili jednoduchý dialog, který můžete do služby importovat, než začnete vytvářet vlastní TJBotí chat.  [Stáhněte si dialog zde](https://drive.google.com/open?id=1-H3Tm_Le7OZP0Uzuw1moKFghC54GRycN). V záložce "Catalog" vyhledejte službu _**Watson Assisstant**_ a klikněte na tlačítko "Create". Spustí se vám stránka s parametry služby. Poznamenejte si API KEY a URL.
+
+![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
+
+Kliknutím na tlačítko "Launch" se vám otevře nové okno s nástrojem pro vytváření chatu. Přepněte na záložku "Skills", vytvořte nový Skill importováním stáhnutého souboru. Na dlaždici vytvořeného Skillu si můžete zobrazit potřebné přihlašovací údaje (View API details), kde získáte i WORKSPACE ID.
 
 ![WA Workspace](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-workspace.png)
 
-Pro přístup ke službě Watson Assistant používáme API V1 a potřebujeme celkem 3 údaje: WORKSPACE ID, API KEY a URL.
+Pro přístup ke službě Watson Assistant používáme API V1 a potřebujeme tedy celkem 3 údaje: WORKSPACE ID, API KEY a URL.
 
-![WA Credentials](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/wa-credentials.png)
 
 ---
 
