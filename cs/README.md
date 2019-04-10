@@ -1,7 +1,18 @@
-# Návody k zprovoznění TJBota CZ
+# Návody pro TJBot CZ
 
-Složka _**oživení**_ obsahuje návody, jak nakonfigurovat Raspberry pi a nahrát do něj ukázkový program.
+## (Současná verze: V2, Nejnovější verze: V2)
 
-Složka _**sestavení**_ obsahuje návody, jak sestavit tělo TJBota a jak zapojit jednotliv hardware.
+###  >>>>> PŘEČTETE SI PŘEDTÍM, NEŽ BUDETE POKRAČOVAT
 
-Složka _**watson-services**_ obsahuje návody, jak si zprovoznit potřebné watson služby na IBM Cloudu.
+Předtím, než začnete, potřebujete mít připravené tyto věci. Jinak nebudete moci dobře používat manuály.
+1)	Připojení k internetu.
+2)	Monitor, nebo jiný **HDMI** výstup( např. LCD TV)
+3)	HDM1 kabel
+4)	USB klávesnice a USB myš
+5)	Čtečka micro SD karty, nebo vstup do vašeho počítače
+
+Složka **bring-to-life**_ obsahuje manuály pro nastavení Raspberry pi, uploaduje vzorový program a spouští ho. 
+
+Složka  _**build**_ obsahuje  manuály pro vytvoření těla  TJ BoTa z lepenky a propojuje hardware.
+
+Složka _**watson-services**_  obsahuje manuály k získání potřebných služeb na IBM Cloudu.
