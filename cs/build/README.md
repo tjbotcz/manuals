@@ -28,11 +28,11 @@ Zde je originální video návod, jak správně složit TJBota. Lze podle něj p
 1. Díl pro uchycení reproduktoru.
 2. RGB LED
 
-Dobrý popis pro složení TJBota je také na této adrese (v angličtině):
+Dobrý popis pro složení TJBota je k dispozici také zde:
 
 https://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/
 
-Pro lepší výdrž doporučujeme některá místa slepit tavící pistolí. Zejména nohy a chlopně držící Raspberry Pi.
+Pro delší  výdrž doporučujeme některá místa slepit tavící pistolí. Zejména nohy a chlopně držící Raspberry Pi.
 
 ### Zapojení hardwaru
 
@@ -67,11 +67,24 @@ Servo využívá piny celkem 3 piny:
 
 **Připojení RGB LED na GPIO piny**
 
-RGB LED využívá celkem 4 piny:
-* uzemnění / - (fyzický pin 09)
+RGB LEInění / - (fyzický pin 09)
 * GPIO 17 / R (fyzický pin 11) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
 * GPIO 27 / G (fyzický pin 13) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
 * GPIO 22 / B (fyzický pin 15) - lze nastavit v konfiguračním souboru TJBotCZ (config.js - viz oživení)
 
 ![servo](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw-rgbled.jpg)
 
+ 
+**Připojení přes IP Tlačítko (nepovinné)**
+
+Tlačítko IP je běžné tlačítko, které můžete připojit k Raspberry Pi pinům. Toto tlačítko spouští _ip Button.js_ program, který vám řekne IP adresu připojeného TJBotCZ (musíte mít připojený reproduktor). 
+
+![ipbutton](https://github.com/tjbotcz/manuals/raw/master/images/hw_ipbutton.jpg)
+
+**Připojení I2C LCD (16x2) (nepovinné)**
+
+Funguje jako doplněk IP tlačítka, TJBotCZ pak může zobrazit svou IP adresu také na LCD obrazovku. Používáme 16x2 LCD s I2C. LCD obrazovku používáme také u některých dalších programů (např. tjbotcz_rps).
+![lcd](https://raw.githubusercontent.com/tjbotcz/manuals/master/images/hw_lcd.jpg)
+
+
+ 
