@@ -1,6 +1,6 @@
 # Návody pro TJBot CZ
 
-## (Současná verze: V2, Nejnovější verze: V2)
+## (Současná verze: V2, nejnovější verze (EN): V2)
 
 ###  >>>>> PŘEČTETE SI PŘEDTÍM, NEŽ BUDETE POKRAČOVAT <<<<<
 
