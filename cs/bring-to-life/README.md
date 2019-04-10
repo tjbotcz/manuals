@@ -343,7 +343,7 @@ Pak vám bude stačit ve Visual Code Studiu napsat do okna Terminálu jen *tjpi*
 ### Jak nastavit IP tlačítko 
 Tato funkcionalita je automaticky nainstalována skriptem _run-me-first.sh_. Pokud jste skript spustili, nemusíte následující kroky procházet.
 
-Co to dělá? Jakmile jste připojení na internet, můžete dostat informaci o tom, jakou má TJBot IP adresu stisknutím tlačítka. TJBot Vám adresu řekne, eventuálně ji zobrazí i na LCD displeji, pokud jej máte instalován. Instalace tlačítka je k dispozici v návodu["build"](https://github.com/tjbotcz/manuals/tree/master/en/build),  stejně jako i instalace LCD displeje.
+Co to dělá? Jakmile jste připojení na internet, můžete dostat informaci o tom, jakou má TJBot IP adresu stisknutím tlačítka. TJBot Vám adresu řekne, eventuálně ji zobrazí i na LCD displeji, pokud jej máte instalován. Instalace tlačítka je k dispozici v návodu ["build"](https://github.com/tjbotcz/manuals/tree/master/cs/build),  stejně jako i instalace LCD displeje.
 
 Aby tlačítko automaticky fungovalo, přidejte na konec souboru .bashrc následující řádku (sudo nano ~/.bashrc):
 
