@@ -308,6 +308,16 @@ sudo apt-get purge libreoffice*
 sudo apt-get autoremove
 ```
 
+### Klonování microSD karty na MacOS
+Připojte microSD kartu k svému MacBooku. První řádek z kódu uvedeného níže vám umožní zjistit jaké číslo disku (disk4 apod.) dostala microSD karta přidělěné systémem. Druhý řádek vytvoří na Desktopu MacBooku image microSD karty. 
+
+```
+diskutil list
+sudo dd if=/dev/<disk number, e.g. disk4> of=~/Desktop/tjbotcz.img conv=sparse bs=1m
+```
+
+Vytváření image trvá, takže trpělivost. Pokud chcete zjistit stav vytváření image, stiskněte CTRL+T a v terminálu se vám ukáže kolik už je z image vytvořeno. Vytvořená image bude mít stejnou velikost jako je kapacita microSD karty (tj. 8GB nebo 16GB...).
+
 ### Jak vzdáleně editovat soubory na TJBotovi přímo z VS Code
 Abyste mohli vzdáleně editovat soubory, potřebujete mít ve Visual Code Studio nainstalované rozšíření _Remote VS Code_ a zároveň na TJBotovi (resp. Raspberry Pi) nainstalovaný _rmate_.
 
