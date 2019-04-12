@@ -10,7 +10,7 @@ Vyberte si svoji cestu...
     * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#hlasitost-raspberry-pi-z-p%C5%99%C3%ADkazov%C3%A9-%C5%99%C3%A1dky)
     * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
     * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
-    * [Klonování microSD Card]()
+    * [Klonování microSD Card](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#klonov%C3%A1n%C3%AD-microsd-karty-na-macos)
     * [Jak na dálku editovat soubory na TJBot.CZ přímo z VS Codu](https://github.com/tjbotcz/manuals/blob/master/cs/bring-to-life/README.md#jak-vzd%C3%A1len%C4%9B-editovat-soubory-na-tjbotovi-p%C5%99%C3%ADmo-z-vs-code)
     *  [Jak nastavit IP tlačítko na TJBotCZ](https://github.com/tjbotcz/manuals/blob/master/cs/bring-to-life/README.md#jak-nastavit-ip-tla%C4%8D%C3%ADtko)
 	
