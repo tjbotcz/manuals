@@ -1,18 +1,18 @@
 # Oživujeme TJBota na Raspberry-Pi
 Vyberte si svoji cestu...
-1. [Rychlé oživení z předpřipravené image](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
-2. [Oživení hezky od píky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
+1. [Rychlé oživení z předpřipravené image](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#rychl%C3%A9-o%C5%BEiven%C3%AD-z-p%C5%99edp%C5%99ipraven%C3%A9-image)
+2. [Oživení hezky od píky](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#o%C5%BEiven%C3%AD-hezky-od-p%C3%ADky)
 3. Pár návodů, které se můžou hodit
-    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-windows-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku)
-    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-mac-os-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
-    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#kop%C3%ADrov%C3%A1n%C3%AD-z-rasberry-pi-do-mac-os-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
-    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-pevn%C3%A9-ip-adresy-na-raspberry-pi)
-    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#hlasitost-raspberry-pi-z-p%C5%99%C3%ADkazov%C3%A9-%C5%99%C3%A1dky)
-    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
-    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/oziveni#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
-    * [Klonování microSD Card](https://github.com/tjbotcz/manuals/blob/master/en/bring-to-life/README.md#cloning-microsd-card-on-macos)
+    * [Kopírování z Windows na Raspberry Pi přes příkazovou řádku (ve Windows)](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#kop%C3%ADrov%C3%A1n%C3%AD-z-windows-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku)
+    * [Kopírování z Mac OS na Raspberry Pi přes příkazovou řádku (v Mac OS)](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#kop%C3%ADrov%C3%A1n%C3%AD-z-mac-os-na-raspberry-pi-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
+    * [Kopírování z Rasberry Pi do Mac OS přes příkazovou řádku (v Mac Os)](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#kop%C3%ADrov%C3%A1n%C3%AD-z-rasberry-pi-do-mac-os-p%C5%99es-p%C5%99%C3%ADkazovou-%C5%99%C3%A1dku-v-mac-os)
+    * [Nastavení pevné IP adresy na Raspberry Pi](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#nastaven%C3%AD-pevn%C3%A9-ip-adresy-na-raspberry-pi)
+    * [Ovládání hlasitosti zvukového výstupu Raspberry Pi z příkazové řádky](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#hlasitost-raspberry-pi-z-p%C5%99%C3%ADkazov%C3%A9-%C5%99%C3%A1dky)
+    * [Nastavení audio výstupu na jack](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#nastaven%C3%AD-audio-v%C3%BDstupu-na-jack)
+    * [Uvolnění místa na SD kartě](https://github.com/tjbotcz/manuals/tree/master/cs/bring-to-life#uvoln%C4%9Bn%C3%AD-m%C3%ADsta-na-sd-kart%C4%9B)
+    * [Klonování microSD Card]()
     * [Jak na dálku editovat soubory na TJBot.CZ přímo z VS Codu](https://github.com/tjbotcz/manuals/blob/master/cs/bring-to-life/README.md#jak-vzd%C3%A1len%C4%9B-editovat-soubory-na-tjbotovi-p%C5%99%C3%ADmo-z-vs-code)
-	 *  [Jak nastavit IP tlačítko na TJBotCZ](https://github.com/tjbotcz/manuals/blob/master/cs/bring-to-life/README.md#jak-nastavit-ip-tla%C4%8D%C3%ADtko)
+    *  [Jak nastavit IP tlačítko na TJBotCZ](https://github.com/tjbotcz/manuals/blob/master/cs/bring-to-life/README.md#jak-nastavit-ip-tla%C4%8D%C3%ADtko)
 	
 	##  Rychlé oživení z předpřipravené image
 	 Samozřejmě chcete, aby váš TJBot už fungoval. Proto jsme pro vás předem připravili image, kde jsme předem nastavili Raspbian for TJBot.CZ.
