@@ -26,7 +26,7 @@ Vyberte si svoji cestu...
 	
 	Kroky:
 	
-1. Stáhněte si předem připravenou image[image TJBotCZ]((https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V)a rozbalte to.
+1. Stáhněte si předem připravenou image[image TJBotCZ](https://drive.google.com/open?id=1d_CRvtKdND36NPi7GKzZatBY5vo-nD4V)a rozbalte to.
 	 
 2. Stáhněte si a nainstalujte SW na instalaci image Raspbianu, např. Etcher: https://etcher.io/ a nainstalujte Raspbian OS na microSD kartu (vyberte stáhnutý tjbotcz_lite.img soubor, vyberte připojenou SD kartu , a…Flash!)
 
@@ -34,7 +34,7 @@ Vyberte si svoji cestu...
 
 3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat. Připojení k internetu budete potřebovat pro krok 4.
 
-4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Skript stáhne nejnovější verzi[TJBotCZ_lite program]( https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
+4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Skript stáhne nejnovější verzi[TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
 
 5. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
 
