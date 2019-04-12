@@ -34,7 +34,7 @@ Vyberte si svoji cestu...
 
 3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat. Připojení k internetu budete potřebovat pro krok 4.
 
-4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Skript stáhne nejnovější verzi[TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
+4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Skript stáhne nejnovější verzi [TJBotCZ_lite programu](https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
 
 5. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
 
@@ -57,7 +57,7 @@ Vyberte si svoji cestu...
 7. A teď, probuďte vašeho TJ Bota k životu!!! Abyste to mohli udělat, připojte se na dálku k 
 k TJ Botovi, přesměrujte se na programovou složku a spusťte program. Můžete začít! 
 
-   a. Pokud používáte Mac,  používejte terminál, pokud používáte Windows, použijte [PuTTy]( https://www.chiark.greenend.org.uk/-sqtatham/putty/latest.html) PuTTy je program, který umožňuje přístup na dálku a vy ho musíte nejdříve nainstalovat. Pomocí Terminálu nebo in PuTTY se připojíte k TJ Botovi (potřebujete být na stejné síti/WiFi jako TJBot): 
+   a. Pokud používáte Mac,  používejte terminál, pokud používáte Windows, použijte [PuTTy]( https://www.chiark.greenend.org.uk/-sqtatham/putty/latest.html). PuTTy je program, který umožňuje přístup na dálku a vy ho musíte nejdříve nainstalovat. Pomocí Terminálu nebo in PuTTY se připojíte k TJ Botovi (potřebujete být na stejné síti/WiFi jako TJBot): 
    MacOS:
 
    ```
