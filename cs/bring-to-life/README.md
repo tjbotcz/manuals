@@ -54,8 +54,9 @@ Skript stáhne nejnovější verzi [TJBotCZ_lite programu](https://github.com/tj
 6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru (credentials.js). Nejjednodušší cesta vede přes konfigurační stránku TJBota, kterou jsme připravili. Do prohlížeče zadejte: 
   
   ```
-  http://<IP ADDRESS OF TJBOT>/configme.html
+  http://<IP ADDRESS OF TJBOT>/
   ```
+  ...a vyplňte potřebné údaje.
   
  (Musíte být na stejné sít jako je TJBot, jinak Vám stránka nepůjde otevřít.)
   
