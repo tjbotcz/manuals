@@ -37,7 +37,13 @@ Steps:
 
 3. Insert preinstalled microSD card into Raspberry-Pi, connect it with a keyboard, mouse and with RJ-45 (ethernet) internet cable. The second option is to connect it to internet via  WiFi (if you use WiFi you need to configurate connection from the OS Raspbian GUI, Raspberry Pi will remember this setting for the future). You will need the connectivity in step 4.
 
-4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
+4. On Raspbian Desktop we prepared a script "run-me-first.sh".  Run it (double click and execute in terminal). In case you are not working directly on the Rapberry-Pi but and you are connected remotely via SSH or PuTTy, you can use this script to run the bash script remotely:
+
+```
+ssh pi@<IP Address> 'bash -s' < run-me-first.sh
+```
+
+Script will download the latest version of [TJBotCZ_lite program](https://github.com/tjbotcz/tjbotcz_lite) from the internet and will install necessary dependencies.
 
 5. In order to chat with TJBotCZ we need to have at least the following services provisioned in the IBM Cloud:
 
