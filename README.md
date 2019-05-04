@@ -15,7 +15,5 @@ _Available in Croatian, Czech, English, French, German, Italian, Lithuanian, Rus
 
 Thanks to all the volunteers who are helping with the translations.
 
-The latest version of the manuals is V2. 
-
-EN version is always the latest release.
+The latest version of the manuals is V2. EN version is always the latest release.
 
