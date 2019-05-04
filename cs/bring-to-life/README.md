@@ -34,7 +34,13 @@ Vyberte si svoji cestu...
 
 3. Vložte nainstalovanou microSD kartu do Raspberry-Pi, připojte k němu HDMI monitor, klávesnici, myš a RJ-45 (ethernet) kabel na internet. Druhou možnosti je připojit se k internetu přes WiFi - pak musíte v grafickém prostředí OS Raspbianu nastavit připojení k WiFi, Raspberry Pi si toto připojení bude pamatovat. Připojení k internetu budete potřebovat pro krok 4.
 
-4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Skript stáhne nejnovější verzi [TJBotCZ_lite programu](https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
+4. Na Raspbian Desktop jsme připravili skript "run-me-first.sh". Spusťte ho ( dvouklikem). Pokud nepracujete přímo na Raspberry-Pi, ale jste k němu připojeni vzáleně přes terminál, tak můžete využít tento skript:
+
+```
+ssh pi@<IP Adresa> 'bash -s' < run-me-first.sh
+```
+
+Skript stáhne nejnovější verzi [TJBotCZ_lite programu](https://github.com/tjbotcz/tjbotcz_lite) z internetu a nainstaluje všechno potřebné.
 
 5. Abychom mohli s TJBotem konverzovat, je potřeba mít připravené následující služby v IBM Cloudu:
 
