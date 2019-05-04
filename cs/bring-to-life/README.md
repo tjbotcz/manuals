@@ -358,7 +358,7 @@ alias tjpi='ssh -R 52698:localhost:52698 pi@<IP ADRESA TJBOTA>'
 Pak vám bude stačit ve Visual Code Studiu napsat do okna Terminálu jen *tjpi* a jste připojeni na TJBota. IP adresu musíte samozřejmě změnit, kdykoliv TJBot (resp. Raspberry Pi) dostane přidělenu novou (DHCP).
 
 ### Jak nastavit IP tlačítko 
-Tato funkcionalita je automaticky nainstalována jako součást předpřipravené image. Pokud jste oživili TJBota z předpřipravené image, nemusíte následující kroky procházet.
+Tato funkcionalita je automaticky nainstalována skriptem run-me-first. Pokud jste použili tento skript, nemusíte následující kroky procházet.
 
 Co to dělá? Jakmile jste připojení na internet, můžete dostat informaci o tom, jakou má TJBot IP adresu stisknutím tlačítka. TJBot Vám adresu řekne, eventuálně ji zobrazí i na LCD displeji, pokud jej máte instalován. Instalace tlačítka je k dispozici v návodu ["build"](https://github.com/tjbotcz/manuals/tree/master/cs/build),  stejně jako i instalace LCD displeje.
 
