@@ -62,6 +62,7 @@ Script will download the latest version of [TJBotCZ_lite program](https://github
    http://<IP ADDRESS OF TJBOT>/
    ```
    Configure TJBotCZ and enter the credentials from step 5.
+   (Alternatively you can add credentials following instructions in step 16. below)
 
 
 7. And now, bring TJBotCZ to life !!! 
@@ -363,6 +364,12 @@ In the above case it then takes just writing *tjpi* in VS Code and you are conne
 This feature is automatically enabled by run-me-first script. In that case, you do not need to perform the following setup.
 
 Once connected to the internet via ethernet cable or via known WiFi you can get information about the TJBotCZ IP address by pressing the button. You have to have the button installed as described in ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build) manual. Optionally, if you have LCD installed as well (see ["build"](https://github.com/tjbotcz/manuals/tree/master/en/build)), the IP address also shows up on the display.
+
+Install espeak (an offline text to speech program):
+
+```
+sudo apt-get install espeak
+```
 
 Enter the following line at the end of the .bashrc file (sudo nano ~/.bashrc):
 
