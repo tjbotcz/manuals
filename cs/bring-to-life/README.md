@@ -362,6 +362,12 @@ Tato funkcionalita je automaticky nainstalována skriptem run-me-first. Pokud js
 
 Co to dělá? Jakmile jste připojení na internet, můžete dostat informaci o tom, jakou má TJBot IP adresu stisknutím tlačítka. TJBot Vám adresu řekne, eventuálně ji zobrazí i na LCD displeji, pokud jej máte instalován. Instalace tlačítka je k dispozici v návodu ["build"](https://github.com/tjbotcz/manuals/tree/master/cs/build),  stejně jako i instalace LCD displeje.
 
+Nainstalujte espeak (program pro offline převod textu na zvuk):
+
+```
+sudo apt-get install espeak
+```
+
 Aby tlačítko automaticky fungovalo, přidejte na konec souboru .bashrc následující řádku (sudo nano ~/.bashrc):
 
 ```
