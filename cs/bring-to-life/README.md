@@ -51,18 +51,18 @@ Skript stáhne nejnovější verzi [TJBotCZ_lite programu](https://github.com/tj
 
   Služby si zprovozněte podle návodu v sekci ["watson-services"](https://github.com/tjbotcz/manuals/blob/master/cs/watson-services/README.md).
 
-6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru (credentials.js). Nejjednodušší cesta vede přes konfigurační stránku TJBota, kterou jsme připravili. Do prohlížeče zadejte: 
+6. Pokud máte všechny služby připravené, tak vítejte zpět a můžeme pokračovat. Musíme zadat přihlašovací údaje k jednotlivým službám do konfiguračního souboru (credentials.js). Nejjednodušší cesta vede přes konfigurační stránku TJBota, kterou jsme připravili. Do prohlížeče zadejte (musíte být na stejné sít jako je TJBot, jinak Vám stránka nepůjde otevřít): 
   
   ```
   http://<IP ADDRESS OF TJBOT>/
   ```
   ...a vyplňte potřebné údaje.
   
- (Musíte být na stejné sít jako je TJBot, jinak Vám stránka nepůjde otevřít.)
+  (Alternativně můžete vložit přihlašovací údaje podle bodu 16. níže.)
   
 
-7. A teď, probuďte vašeho TJ Bota k životu!!! Abyste to mohli udělat, připojte se na dálku k 
-k TJ Botovi, přesměrujte se na programovou složku a spusťte program. Můžete začít! 
+7. A teď, probuďte vašeho TJ Bota k životu!!! Abyste to mohli udělat, připojíme se na dálku k 
+k TJ Botovi, přesměrujeme se do složky s programem tjbotcz_lite.js a spustíme ho. Pojďme na to! 
 
    a. Pokud používáte Mac,  používejte terminál, pokud používáte Windows, použijte [PuTTy]( https://www.chiark.greenend.org.uk/-sqtatham/putty/latest.html). PuTTy je program, který umožňuje přístup na dálku a vy ho musíte nejdříve nainstalovat. Pomocí Terminálu nebo in PuTTY se připojíte k TJ Botovi (potřebujete být na stejné síti/WiFi jako TJBot): 
    MacOS:
